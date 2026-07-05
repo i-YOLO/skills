@@ -1,0 +1,4 @@
+interface:
+  display_name: "社媒视频文案提取"
+  short_description: "抖音B站小红书公开视频下载、音频提取与真实逐字稿流程"
+  default_prompt: "使用 $social-video-digest 下载这个公开视频，提取音频并生成真实逐字稿和重点提炼。"
