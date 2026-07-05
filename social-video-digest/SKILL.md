@@ -19,7 +19,7 @@ description: Download and process public social-media videos for personal learni
 
 ## 任务路由
 
-- 用户说“下载、抓视频、保存视频”：只下载视频并用 `scripts/probe_media.py` 校验轨道；抖音优先走 `video.currentSrc`。
+- 用户说“下载、抓视频、保存视频”：只下载视频并用 `scripts/probe_media.py` 校验轨道；抖音优先走标准详情页，先稳定主播放器并至少采样两次，若出现登录弹窗先关闭，再按 `video.currentSrc` 分类处理，`http(s)` 直下，`blob:` / 空值先短等并尝试 `pageAssets.list()` 恢复视频轨和音频轨，最后才回退 `yt-dlp`。
 - 用户说“提取音频”：从已下载视频或用户提供的本地视频中抽音频，使用 `scripts/extract_audio.py`。
 - 用户说“文案、逐字稿、转录、提取口播”：获取音频后用 Whisper 转录；不得用标题、简介或常识替代真实逐字稿。
 - 用户说“总结、重点、拆解”：必须先有真实逐字稿，再基于逐字稿提炼；无法转录时只报告失败和可补齐项。
@@ -40,7 +40,7 @@ outputs/social-video-digest/<platform>/<id>/
 - `audio-source.m4a`：原始音频轨。
 - `audio.wav`：Whisper 用 `16k mono wav`。
 - `transcript.txt`：完整逐字稿。
-- `metadata.json`：公开元数据或工具输出。
+- `metadata.json`：公开元数据或工具输出，抖音需额外记录 `videoSrc`、`videoSrcType`、`videoPlayerIndex`、`currentTimeAtCapture`、`downloadMethod`；`downloadMethod` 建议取值为 `currentSrc-http-download`、`pageAssets-list-fetch-merge` 或 `yt-dlp-fallback`。若使用 `pageAssets` 兜底，还需记录 `pageAssetsVideoSrc`、`pageAssetsAudioSrc`、`mergeMethod` 和登录弹窗是否关闭，并确保它们和实际下载路径一致。
 - `result.md`：用户要求保存时的整理结果。
 
 ## 工具检查
@@ -60,7 +60,7 @@ whisper --help
 
 - B站：优先标准公开路径 `https://www.bilibili.com/video/<BV>`，使用 `yt-dlp` 下载和校验。
 - 小红书：优先完整公开分享链接；`xsec_token` 缺失时，裸 `explore/<note_id>` 可能拿不到视频格式。
-- 抖音：优先标准公开路径 `https://www.douyin.com/video/<aweme_id>`；先在隔离 Chrome 中读取 `video.currentSrc` 作为首选下载源，`yt-dlp` 仅作为回退。
+- 抖音：优先标准公开路径 `https://www.douyin.com/video/<aweme_id>`；先在隔离 Chrome 中稳定播放器、至少轮询两次并枚举所有 `video` 选择主播放器，若出现登录弹窗先关闭，再读取并分类 `video.currentSrc`，其中 `http(s)` 直接下载、`blob:` 只当暂态、空值继续等待并尝试 `pageAssets.list()` 恢复视频轨和音频轨；默认模式下 `yt-dlp` 仅作为最终回退，用户明确要求先不用 `yt-dlp` 时直接失败。
 - 其他平台：先用 `yt-dlp --dump-single-json --no-download --no-playlist` 探测，失败则报告原因。
 
 ## 脚本

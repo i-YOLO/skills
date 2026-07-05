@@ -27,7 +27,7 @@ python3 -m pip install -U 'yt-dlp[default,curl-cffi]' openai-whisper
 - `yt-dlp`：B站、小红书和其他公开平台下载。
 - `ffmpeg` / `ffprobe`：抽音频、合并音视频、校验媒体轨道。
 - `whisper`：真实音频 ASR 转录。
-- Google Chrome：抖音优先在隔离 Chrome 中读取 `video.currentSrc` 直接下载，`yt-dlp` 作为回退。
+- Google Chrome：抖音优先在隔离 Chrome 中稳定播放器、至少采样两次、选主视频、读取并分类 `video.currentSrc`；如果出现登录弹窗先关闭，`http(s)` 直下，`blob:` / 空值先短等并尝试 `pageAssets.list()` 恢复视频轨和音频轨，`yt-dlp` 只作为最后回退。
 
 ### 环境检查
 
@@ -66,8 +66,10 @@ https://www.douyin.com/video/<aweme_id>
 
 说明：
 
-- 抖音优先在隔离 Chrome 中读取 `video.currentSrc` 直接下载。
-- 若 `currentSrc` 为空、不可下载或校验失败，再回退 `yt-dlp`。
+- 抖音优先在隔离 Chrome 中稳定播放器、至少采样两次、枚举所有 `video`，选择当前正在播放且 `currentTime` 前进的主播放器后读取 `video.currentSrc`；若登录弹窗出现，先关闭再继续。
+- `http(s)` currentSrc 直接下载，`blob:` 只表示播放器暂态，不直接当下载地址。
+- 默认模式下，`currentSrc` 为空、`blob:` 持续不变、不可下载或校验失败时，先尝试 `pageAssets.list()` 恢复视频轨和音频轨，再回退 `yt-dlp`。
+- 如果用户明确要求“先不用 yt-dlp”或“Chrome-only”，则不回退，超时后直接失败。
 - 不使用现有浏览器登录态。
 
 ### B站

@@ -14,6 +14,17 @@
 - 音频：
 - 合成结果：
 
+媒体源：
+- videoSrc：
+- videoSrcType：
+- videoPlayerIndex：
+- currentTimeAtCapture：
+- downloadMethod：
+- pageAssetsVideoSrc：
+- pageAssetsAudioSrc：
+- mergeMethod：
+- loginPopupClosed：
+
 校验：
 - 视频轨：
 - 音频轨：
@@ -22,6 +33,8 @@
 - 大小：
 
 状态：
+- 是否关闭登录弹窗：
+- 是否启用 pageAssets 兜底：
 限制/失败原因：
 人工补齐建议：
 ```
