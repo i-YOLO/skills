@@ -27,7 +27,7 @@ python3 -m pip install -U 'yt-dlp[default,curl-cffi]' openai-whisper
 - `yt-dlp`：B站、小红书和其他公开平台下载。
 - `ffmpeg` / `ffprobe`：抽音频、合并音视频、校验媒体轨道。
 - `whisper`：真实音频 ASR 转录。
-- Google Chrome：抖音公开视频在 `yt-dlp` 失败时，用隔离 Chrome 公开播放路线。
+- Google Chrome：抖音优先在隔离 Chrome 中读取 `video.currentSrc` 直接下载，`yt-dlp` 作为回退。
 
 ### 环境检查
 
@@ -66,8 +66,8 @@ https://www.douyin.com/video/<aweme_id>
 
 说明：
 
-- `yt-dlp` 直抓抖音可能失败。
-- 若公开视频页能未登录自然播放，skill 会走隔离 Chrome 公开播放路线，保存自然加载的音视频分轨并合并。
+- 抖音优先在隔离 Chrome 中读取 `video.currentSrc` 直接下载。
+- 若 `currentSrc` 为空、不可下载或校验失败，再回退 `yt-dlp`。
 - 不使用现有浏览器登录态。
 
 ### B站

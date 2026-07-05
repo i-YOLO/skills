@@ -19,7 +19,7 @@ description: Download and process public social-media videos for personal learni
 
 ## 任务路由
 
-- 用户说“下载、抓视频、保存视频”：只下载视频并用 `scripts/probe_media.py` 校验轨道。
+- 用户说“下载、抓视频、保存视频”：只下载视频并用 `scripts/probe_media.py` 校验轨道；抖音优先走 `video.currentSrc`。
 - 用户说“提取音频”：从已下载视频或用户提供的本地视频中抽音频，使用 `scripts/extract_audio.py`。
 - 用户说“文案、逐字稿、转录、提取口播”：获取音频后用 Whisper 转录；不得用标题、简介或常识替代真实逐字稿。
 - 用户说“总结、重点、拆解”：必须先有真实逐字稿，再基于逐字稿提炼；无法转录时只报告失败和可补齐项。
@@ -60,7 +60,7 @@ whisper --help
 
 - B站：优先标准公开路径 `https://www.bilibili.com/video/<BV>`，使用 `yt-dlp` 下载和校验。
 - 小红书：优先完整公开分享链接；`xsec_token` 缺失时，裸 `explore/<note_id>` 可能拿不到视频格式。
-- 抖音：优先标准公开路径 `https://www.douyin.com/video/<aweme_id>`；`yt-dlp` 失败时，使用隔离 Chrome 公开播放路线。
+- 抖音：优先标准公开路径 `https://www.douyin.com/video/<aweme_id>`；先在隔离 Chrome 中读取 `video.currentSrc` 作为首选下载源，`yt-dlp` 仅作为回退。
 - 其他平台：先用 `yt-dlp --dump-single-json --no-download --no-playlist` 探测，失败则报告原因。
 
 ## 脚本
