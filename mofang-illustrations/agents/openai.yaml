@@ -1,4 +1,4 @@
 interface:
   display_name: "Mofang Illustrations"
-  short_description: "墨方中文知识内容配图的策划、Image Gen 生成、评图、迭代与交付"
-  default_prompt: "Use $mofang-illustrations 为这篇中文内容策划并生成一组墨方风格配图。"
+  short_description: "中文知识内容配图的风格选择、Image Gen 生成、评图、迭代与交付"
+  default_prompt: "Use $mofang-illustrations 为这篇中文内容策划并生成一组可选风格配图。"

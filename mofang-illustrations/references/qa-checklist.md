@@ -1,39 +1,72 @@
 # QA Checklist
 
-## 必过项
+Run this before delivering final images. Reject attractive images when they fail the user's actual content need.
 
-- 正文配图是 16:9；头像是 1:1；世界观图遵循用户指定或默认 1:1。
-- 背景干净、浅色、安静且留白充分。
-- 墨方具有圆头、圆框眼镜、半眯眼、黑领结、工作触手和系统魔方等核心身份特征。
-- 墨方承担核心动作，而不是装饰或旁观者。
-- 一张图只讲一个核心结构。
-- 黑色手绘线稿构成视觉骨架，彩色只承担结构功能。
-- 默认没有文字；明确要求的标签必须逐字正确且没有额外文字。
-- 没有复刻案例素材的具体构图、文案或节点布局。
-- 没有水印、无关 logo 或额外角色。
+## Universal
 
-## 失败信号
+- The selected style matches the user's choice or the Agent's stated reason.
+- The image answers the content need, not merely the production method.
+- The whole subject fits; no important object, label, icon, axis, or data mark is cropped.
+- Background is clean, light, and not visually noisy.
+- One image explains one core action, structure, state, mechanism, or data point.
+- No watermark, unrelated logo, fake UI chrome, or accidental extra characters.
+- The image is readable at the intended display size.
 
-- 主角不是墨方，或墨方像普通章鱼宠物、儿童卡通、表情包。
-- 墨方只是站在旁边看，触手没有承担工作。
-- 画面像 PPT、课程课件、正式流程图或复杂架构图。
-- 元素、箭头、节点或文字过多。
-- 出现泛紫蓝 AI 科技风、高饱和赛博风、炫光或科技 UI。
-- 头像混入世界观能力标签，或世界观图退化成简单头像。
-- 复刻精选素材的左右布局、环形网络、跷跷板、六宫格或阶段图。
-- 比例错误、主体被裁切、身份参考漂移或未指定区域被改变。
+## 手绘系统草图风
 
-## 单变量迭代
+- Mofang has round head, round glasses, half-lidded eyes, black bow tie, working tentacles, and system cube when required.
+- Mofang performs the core action rather than standing beside it.
+- Graphite black hand-drawn linework is the visual skeleton; color is sparse and functional.
+- The mood is calm, lucid, long-termist, and system-oriented.
+- The image does not look like a PPT infographic, courseware page, dense architecture diagram, childish mascot, or commercial flat illustration.
+- The composition does not copy examples: no reused telescope crowd layout, seesaw cube, ring network, six-grid agents, full reflect loop, cloud-to-framework layout, or chaos-to-order stage chart unless the user explicitly requests it.
 
-- 太普通：让墨方承担更具体的物理动作。
-- 太复杂：删掉节点和标签，只保留一个动作。
-- 太可爱：强化 calm、half-lidded、system architect、not mascot、not childish。
-- 太 PPT：删除标题、整齐网格、说明框和多余箭头，改成场景隐喻。
-- 太像旧案例：保留核心意思，替换主物件、墨方动作或空间关系。
-- 文字错误：只修文字或减少标签，不同时重做构图。
+## 3D 材质解释图风
 
-每次只选择一个最主要问题迭代一次，然后重新执行完整检查。
+- The image uses clean Swiss editorial 3D material style: off-white background, black ink outlines, refined gray surfaces, soft studio lighting, and one accent color.
+- The visual structure matches the chosen mode: cycle, pipeline, hub-and-spoke, before/after, layer stack, data-first scene, scientific mechanism, or text scene.
+- Labels, arrows, objects, and flows point to the correct relationships.
+- The image does not become a decorative poster; the explanation remains legible.
+- No dense legend, paragraph text, decorative blobs, gradient background, or cramped screenshot layout.
 
-## 交付判断
+## Text
 
-读者应先看见“墨方正在搭系统”，并在一秒内理解核心结构。如果第一眼像教程页、商业信息图或可爱 mascot，则不合格。
+- If the user chose no in-image text, the image contains no labels, headings, fake UI text, or accidental English.
+- If labels were confirmed, every label is present exactly once and spelled exactly as confirmed.
+- Labels are short, horizontal, readable, high-contrast, and placed near the matching object or flow.
+- No extra words beyond confirmed labels unless the prompt explicitly allowed them.
+- If labels are wrong, garbled, missing, duplicated, or clipped, regenerate or repair; do not deliver as final.
+
+## Charts And Data
+
+- Chart type matches the source data.
+- Category order is correct.
+- Axis labels, units, tick labels, and ranges are correct when specified.
+- Every value label is exact when exact data was provided.
+- Data marks visually match the numbers.
+- Error bars or uncertainty ranges appear when requested.
+- Scene elements do not block chart reading.
+- If exact values cannot be read, the output records uncertainty or asks for data; it must not invent values.
+
+## Reference Facts
+
+- For niche, scientific, historical, cultural, brand, model, map, place, or apparatus topics, reference cues are accurate enough for the intended audience.
+- Brand/model/entity icons are stylized cues, not pasted flat logos, unless the user explicitly asks for exact logos.
+- Historical, cultural, scientific, or biological details do not imply unsupported certainty.
+- Scientific or educational diagrams do not mislead on direction, scale, sequence, or part labels.
+
+## Single-variable Iteration
+
+- Too ordinary: make the core physical action more specific.
+- Too complex: remove nodes, labels, or props until one idea remains.
+- Too cute: strengthen calm, half-lidded, system architect, not mascot, not childish.
+- Too PPT: remove titles, neat grids, explanatory boxes, and excessive arrows; use a scene or material explainer instead.
+- Too close to old examples: keep the core meaning, change the main object, action, or spatial relationship.
+- Text wrong: only repair text or reduce labels; do not also redesign the composition.
+- Data wrong: repair chart data first; do not accept an attractive but inaccurate chart.
+
+## Delivery Judgment
+
+For hand-drawn system sketch style, the reader should first see Mofang actively building or operating a system and understand the core structure in one second.
+
+For 3D material explainer style, the reader should first understand the concept, process, mechanism, or data relationship; style is secondary to clarity and accuracy.
