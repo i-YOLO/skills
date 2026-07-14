@@ -1,0 +1,9 @@
+interface:
+  display_name: "YOLO 知识配图"
+  short_description: "为中文知识内容生成带 YOLO 个人 IP 的手绘配图资产"
+  default_prompt: "Use $yolo-illustrations 为这篇中文文章设计并生成一组个人 IP 知识配图。"
+  icon_small: "./assets/identity/yolo-avatar.png"
+  icon_large: "./assets/identity/yolo-full-body.png"
+  brand_color: "#2F6BFF"
+policy:
+  allow_implicit_invocation: true
