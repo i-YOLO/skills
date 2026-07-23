@@ -1,0 +1,4 @@
+interface:
+  display_name: "VOX 拼贴视频制作"
+  short_description: "将中文口播制作成经过审核的多比例 VOX 纸艺拼贴视频"
+  default_prompt: "Use $vox-collage-video-production to create a reviewed VOX collage video from my Chinese voiceover."

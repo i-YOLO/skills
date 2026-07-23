@@ -1,0 +1,24 @@
+{
+  "name": "vox-collage-remotion-template",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "studio": "remotion studio --no-open",
+    "typecheck": "tsc --noEmit",
+    "render:preview": "remotion render VoxCollageVideo dist/preview.mp4 --scale=0.5",
+    "render:master": "remotion render VoxCollageVideo dist/master.mp4"
+  },
+  "dependencies": {
+    "@remotion/captions": "4.0.496",
+    "@remotion/cli": "4.0.496",
+    "@remotion/media": "4.0.496",
+    "@remotion/transitions": "4.0.496",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.496"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.7",
+    "typescript": "5.9.3"
+  }
+}
