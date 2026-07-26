@@ -1,0 +1,4 @@
+interface:
+  display_name: "口播声画同步验收"
+  short_description: "用真实词级时间轴逐项同步动画、修复闪现并验收交付"
+  default_prompt: "使用 $sync-explainer-video，把我的动画与口播按语义动作逐项同步并完成验收。"
