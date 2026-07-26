@@ -45,7 +45,7 @@ RUNTIME=/Users/shike/.codex/runtimes/video-skills-py311
 6. 先补齐 `visual_actions`：登记每个有意义的标题、卡片、标签、节点、连线、高亮和 CTA 的场景、类型、概念归属、展示截止与是否需要同步。为每个需要同步的动作建立一条严格 `sync_events` 语义事件。
 7. 按“词位出现 → 词后完成 → 后续解释继续推进”修改动画。排比、流程和循环必须按口播语序逐项展开，不能整页在场景开头一次性播完后静止等待。
 8. 仅当短句临近转场会闪现时，才建立 `prelude_events`：容器、轮廓或弱化标签可提前最多 `0.75s`；完整文案、关键词和高亮仍在对应词位出现。已有专页详解的概念不得在前一页以完整卡片重复展开。
-9. 修改 Remotion/Manim 项目或成片后重渲染，先运行 `audit_action_timing.py`，再运行 `validate_sync.py`。
+9. 修改 Remotion/Manim 项目或成片后重渲染，先运行 `audit_action_timing.py`，再运行 `validate_sync.py`。同步通过后，交给 `$madem` 以已确认文案生成字幕并加入默认 BGM；BGM 不参与转录、词级对齐或动作锚点计算。
 
 ```bash
 python scripts/audit_action_timing.py --timeline <timeline.json> --require-manifest --out <action-audit.json>
@@ -62,6 +62,7 @@ python scripts/validate_sync.py --timeline <timeline.json> --require-manifest --
 - 文字、箭头、连线、高亮、图片、视频和技术关系是否正确、可读且不重叠。
 - 每个 `sync_required` 动作是否有严格语义锚点；预入场是否只作视觉铺垫、领先不超过 `0.75s`，且短时元素没有在转场前闪退。
 - 每个概念是否有唯一详解拥有场景；标题、卡片与下一屏是否在真实语义处接手，而不是为保留旧分镜时长提前堆叠。
+- 发布版字幕是否使用已确认文案、真实词级时间与最终帧率；BGM 是否只在同步和字幕画面审核通过后加入，且没有改变已验收视频流。
 
 调用 `$madem` 的 `extract_review_frames.py` 进行每秒基础抽帧和事件帧抽取；允许正常弹入/弹出，但必须修复重叠、越界、模糊、单帧闪烁、不合理布局、播放卡顿、未声明长静止，以及技术示意与口播不一致。
 

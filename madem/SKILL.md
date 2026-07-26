@@ -13,6 +13,8 @@ description: 制作、修复和验收程序化口播动画视频。用于把文�
 
 默认交付为 `1920×1080`、`60fps`、H.264 MP4。支持 16:9、9:16、1:1、4:3，24/25/30/50/60fps，静音、有声、音乐、字幕和多音轨。
 
+有真实口播的发布成片默认烧录字幕并使用 `madem-default-bgm-v3` 背景音乐；只有用户明确要求静音、无字幕或替换音乐时才关闭或覆盖。静音动画、预览版和未完成同步的项目不得添加字幕或 BGM。
+
 在目标项目目录创建并持续更新以下文件：
 
 - `video-job.json`：输入、输出、分镜和制作阶段。
@@ -94,7 +96,15 @@ python scripts/visual_qc.py --video <silent.mp4> --timeline <timeline.json> --ou
 - 差值超过 `±20%`，或调速后看起来生硬时，音频较长则增加有讲解价值的素材、卡片或镜头；音频较短则压缩或移除非关键画面。
 - 不得用明显慢放、长时间空转或无意义静止硬拖时长。短句接近转场时，可以让容器、轮廓或弱化标签提前最多 `0.75s` 淡入；完整语义文字与高亮仍严格锚定真实词位。
 
-### 4. 修复已有项目或成片
+### 4. 输出发布版字幕与默认 BGM
+
+同步与画面审核通过后，阅读 [references/publishing-delivery.md](references/publishing-delivery.md)。使用 `build_captions.py` 以已确认口播稿生成 SRT、ASS、Remotion JSON 和字幕报告；Faster-Whisper 的 `timeline.words` 只提供真实时间，不能把识别错字作为字幕正文。
+
+在 Remotion 项目复制 `assets/remotion-caption-overlay/CaptionOverlay.tsx` 并使用字幕 JSON；非 Remotion 项目使用 ASS 烧录。默认字幕为底部居中、白字描边、无黑底面板，最多两行。使用 `extract_review_frames.py --captions <captions.json>` 检查每条字幕的起始、中间和结束帧是否遮挡画面，再以带原始口播音频的字幕版调用 `mix_default_bgm.py`。它会将默认音乐复制到项目内、在人声期间自动避让，并复制视频流而非重编码画面。
+
+默认 BGM 配置为用户提供的 `Instrumental Minimal`，基础音量 `0.238`（约 `−12.5 dB`）、1.2 秒淡入、3 秒淡出、1 秒循环交叉淡化。背景音乐不参与词级同步；替换音乐需要用户明确授权。
+
+### 5. 修复已有项目或成片
 
 先识别已确认的场景和问题范围，仅改指定部分；然后扫描全片是否存在同类缺陷。修复后重新抽取受影响场景帧、相邻转场帧和整片每秒帧。
 
@@ -106,9 +116,11 @@ python scripts/visual_qc.py --video <silent.mp4> --timeline <timeline.json> --ou
 python scripts/validate_delivery.py \
   --video <final.mp4> --timeline <timeline.json> --audio <voiceover.wav> \
   --visual-qc <visual-qc.json> --sync-report <sync-report.json> \
+  --caption-report <captions-report.json> --audio-mix-report <audio-mix-report.json> \
+  --reference-video <captioned-voiceover.mp4> \
   --manual-review pass --out <qa-report.json>
 ```
 
-只有同时满足以下条件才标记可交付：可完整解码、规格正确、每秒帧和事件帧已人工视觉复核、无未豁免长静止、无必须修复的视觉缺陷，并且 `$sync-explainer-video` 的严格词位、动作覆盖、预入场、展示时长与概念所有权审计均通过。
+只有同时满足以下条件才标记可交付：可完整解码、规格正确、每秒帧和事件帧已人工视觉复核、无未豁免长静止、无必须修复的视觉缺陷，并且 `$sync-explainer-video` 的严格词位、动作覆盖、预入场、展示时长与概念所有权审计均通过。有口播的默认发布版还必须通过字幕报告、BGM 混音报告和字幕版/最终版视频流一致性检查。
 
 阅读 [references/qa-protocol.md](references/qa-protocol.md) 后执行验收。不要因为成功导出 MP4 就声称完成交付。

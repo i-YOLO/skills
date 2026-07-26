@@ -30,6 +30,23 @@ def check_decode(video: Path) -> tuple[bool, str]:
     return result.returncode == 0, (result.stderr.strip() or "fully decoded")
 
 
+def stream_md5(video: Path) -> str:
+    result = subprocess.run(
+        ["ffmpeg", "-v", "error", "-i", str(video), "-map", "0:v:0", "-c", "copy", "-f", "md5", "-"],
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+    return result.stdout.strip().split("=", 1)[1]
+
+
+def report_check(path: Path, kind: str) -> tuple[str, dict | str]:
+    try:
+        return "pass", json.loads(path.read_text())
+    except (OSError, json.JSONDecodeError) as error:
+        return "fail", f"invalid {kind} report: {error}"
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--video", required=True, type=Path)
@@ -37,6 +54,9 @@ def main() -> None:
     parser.add_argument("--audio", type=Path)
     parser.add_argument("--visual-qc", type=Path)
     parser.add_argument("--sync-report", type=Path, help="Output of sync-explainer-video validate_sync.py")
+    parser.add_argument("--caption-report", type=Path, help="Output of build_captions.py for a burned-caption delivery")
+    parser.add_argument("--audio-mix-report", type=Path, help="Output of mix_default_bgm.py for a BGM delivery")
+    parser.add_argument("--reference-video", type=Path, help="Captioned source video; required to prove BGM mixing preserved its video stream")
     parser.add_argument("--manual-review", choices=("pending", "pass", "fail"), default="pending")
     parser.add_argument("--width", type=int, default=1920)
     parser.add_argument("--height", type=int, default=1080)
@@ -63,6 +83,48 @@ def main() -> None:
         unresolved = [item for item in visual.get("static_candidates", []) if item.get("requires_repair")]
         checks.append({"name": "unexplained_long_static", "status": "fail" if unresolved else "pass", "candidates": unresolved})
 
+    if args.caption_report:
+        load_status, caption = report_check(args.caption_report, "caption")
+        if load_status == "fail":
+            checks.append({"name": "captions", "status": "fail", "detail": caption})
+        else:
+            assert isinstance(caption, dict)
+            status = "pass" if (
+                caption.get("status") == "pass"
+                and caption.get("text_source") == "approved script"
+                and float(caption.get("exact_alignment_coverage", 0)) >= 0.94
+                and float(caption.get("timing_coverage_after_interpolation", 0)) >= 0.98
+                and int(caption.get("max_lines", 99)) <= 2
+                and float(caption.get("max_frame_error", 99)) <= 1e-6
+            ) else "fail"
+            checks.append({"name": "captions", "status": status, "detail": caption})
+
+    if args.audio_mix_report:
+        load_status, mix = report_check(args.audio_mix_report, "audio mix")
+        if load_status == "fail":
+            checks.append({"name": "audio_mix", "status": "fail", "detail": mix})
+        else:
+            assert isinstance(mix, dict)
+            expected_audio = mix.get("output_audio") or {}
+            status = "pass" if (
+                mix.get("status") == "pass"
+                and expected_audio.get("codec") == "aac"
+                and expected_audio.get("sample_rate") == 48000
+                and expected_audio.get("channels") == 1
+                and mix.get("source_video_stream_md5") == mix.get("output_video_stream_md5")
+            ) else "fail"
+            checks.append({"name": "audio_mix", "status": status, "detail": mix})
+
+    if args.audio_mix_report and not args.reference_video:
+        checks.append({"name": "video_stream_preserved", "status": "fail", "detail": "--reference-video is required with --audio-mix-report"})
+    elif args.reference_video:
+        if not args.reference_video.exists():
+            checks.append({"name": "video_stream_preserved", "status": "fail", "detail": f"reference video not found: {args.reference_video}"})
+        else:
+            reference_md5 = stream_md5(args.reference_video)
+            output_md5 = stream_md5(args.video)
+            checks.append({"name": "video_stream_preserved", "status": "pass" if reference_md5 == output_md5 else "fail", "reference_md5": reference_md5, "output_md5": output_md5})
+
     sync = {"status": "not-applicable", "events": [], "max_error_frames": None}
     if args.audio:
         sync = {"status": "needs-evidence", "events": [], "max_error_frames": None}
@@ -83,7 +145,8 @@ def main() -> None:
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n")
     print(json.dumps(report, ensure_ascii=False, indent=2))
+    return 0 if status == "pass" else 2
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

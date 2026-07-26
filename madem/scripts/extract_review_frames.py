@@ -37,6 +37,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--video", required=True, type=Path)
     parser.add_argument("--timeline", type=Path)
+    parser.add_argument("--captions", type=Path, help="Caption JSON emitted by build_captions.py; adds start/middle/end evidence frames")
     parser.add_argument("--out", required=True, type=Path)
     parser.add_argument("--jpeg-quality", type=int, default=2)
     args = parser.parse_args()
@@ -72,6 +73,15 @@ def main() -> None:
         label = prelude.get("id", "prelude")
         for offset, phase in ((-step, "before"), (0, "at"), (step, "after")):
             add(evidence, time + offset, last_frame_time, f"prelude:{label}:{phase}")
+    if args.captions:
+        captions = json.loads(args.captions.read_text())
+        for index, caption in enumerate(captions, start=1):
+            start = float(caption["startMs"]) / 1000
+            end = float(caption["endMs"]) / 1000
+            label = str(caption.get("text", "caption")).replace("\n", " ")[:24]
+            add(evidence, start, last_frame_time, f"caption:{index}:{label}:start")
+            add(evidence, (start + end) / 2, last_frame_time, f"caption:{index}:{label}:middle")
+            add(evidence, max(start, end - step), last_frame_time, f"caption:{index}:{label}:end")
     for transition in timeline.get("transitions", []):
         time = float(transition["time"])
         label = transition.get("id", "transition")
@@ -97,7 +107,7 @@ def main() -> None:
         "fps": fps,
         "frame_count": len(frames),
         "frames": frames,
-        "review_note": "Normal entrance and exit animation is allowed. Visually inspect all frames for overlap, clipping, readability, layout, blur, and semantic correctness.",
+        "review_note": "Normal entrance and exit animation is allowed. Visually inspect all frames for overlap, clipping, readability, layout, blur, caption obstruction, and semantic correctness.",
     }
     (args.out / "frame-index.json").write_text(json.dumps(index, ensure_ascii=False, indent=2) + "\n")
     print(json.dumps(index, ensure_ascii=False, indent=2))

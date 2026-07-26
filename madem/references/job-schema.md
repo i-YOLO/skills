@@ -20,7 +20,21 @@
     "height": 1080,
     "fps": 60,
     "codec": "h264",
-    "audio_mode": "silent"
+    "audio_mode": "silent",
+    "post_sync_defaults": {
+      "captions": {
+        "enabled_for_voiceover_publish": true,
+        "status": "deferred-until-voiceover",
+        "text_source": "approved-script",
+        "timing_source": "real-word-timeline"
+      },
+      "background_music": {
+        "enabled_for_voiceover_publish": true,
+        "status": "deferred-until-voiceover",
+        "profile_id": "madem-default-bgm-v3",
+        "override_requires_user_request": true
+      }
+    }
   },
   "scenes": []
 }
@@ -61,3 +75,5 @@
 ## `qa-report.json`
 
 保留脚本输出的 `status`、`checks`、`issues`、`sync`、`manual_review` 和证据文件路径。不要删除失败记录；修复后新增一轮结果与时间戳。
+
+有口播的发布版还应在 `delivery` 中记录字幕文件与 `caption_report`，以及默认音乐的 `audio_mix_report`、`profile_id`、项目内音乐路径和 SHA-256。静音阶段只保留 `post_sync_defaults`，不得标为已配字幕或已混音。

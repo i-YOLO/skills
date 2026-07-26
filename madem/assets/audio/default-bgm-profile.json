@@ -1,0 +1,27 @@
+{
+  "id": "madem-default-bgm-v3",
+  "title": "Instrumental Minimal",
+  "artist": "The_Mountain",
+  "asset": "the_mountain-instrumental-minimal-522469.mp3",
+  "sha256": "bcf7b26b208b4795d9f87adceefa14a3b1c07731b910e18b16d07fea68c9eb2c",
+  "reuse_scope": "user-local future voiceover publishing projects",
+  "base_volume": 0.238,
+  "base_gain_db": -12.5,
+  "fade_in_seconds": 1.2,
+  "fade_out_seconds": 3.0,
+  "loop_crossfade_seconds": 1.0,
+  "sidechain": {
+    "threshold": 0.06,
+    "ratio": 4.0,
+    "attack_ms": 20,
+    "release_ms": 350,
+    "makeup": 1.0
+  },
+  "limiter": 0.95,
+  "output_audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "bitrate": "160k"
+  }
+}

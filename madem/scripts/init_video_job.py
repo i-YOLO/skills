@@ -50,6 +50,20 @@ def main() -> None:
             "fps": args.fps,
             "codec": "h264",
             "audio_mode": audio_mode,
+            "post_sync_defaults": {
+                "captions": {
+                    "enabled_for_voiceover_publish": True,
+                    "status": "pending-after-sync" if audio else "deferred-until-voiceover",
+                    "text_source": "approved-script",
+                    "timing_source": "real-word-timeline",
+                },
+                "background_music": {
+                    "enabled_for_voiceover_publish": True,
+                    "status": "pending-after-captions" if audio else "deferred-until-voiceover",
+                    "profile_id": "madem-default-bgm-v3",
+                    "override_requires_user_request": True,
+                },
+            },
         },
         "scenes": [],
     }
