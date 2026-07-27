@@ -6,7 +6,7 @@
 
 ```json
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "phase": "silent-production",
   "inputs": {
     "script": "script.md",
@@ -21,6 +21,12 @@
     "fps": 60,
     "codec": "h264",
     "audio_mode": "silent",
+    "visual_system": {
+      "profile_id": "madem-warm-knowledge-v1",
+      "background": "#FAF8F3",
+      "caption_safe_region_1080p": {"x_min": 140, "x_max": 1780, "y_min": 860, "y_max": 1040},
+      "content_max_y_1080p": 820
+    },
     "post_sync_defaults": {
       "captions": {
         "enabled_for_voiceover_publish": true,
@@ -44,7 +50,7 @@
 
 ```json
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "fps": 60,
   "audio": null,
   "scenes": [
@@ -52,6 +58,7 @@
       "id": "scene-01",
       "start": 0.0,
       "end": 5.0,
+      "visual_exit_start": 4.5,
       "engine": "remotion",
       "hold": false,
       "narration_active": true,
@@ -68,7 +75,7 @@
 }
 ```
 
-静音阶段先登记 `visual_actions`：所有语义性标题、卡片、标签、节点、连线、高亮和 CTA 都要有 `id`、`scene_id`、`element_type`、`sync_required` 和概念归属。真实音频到位后，为每个 `sync_required` 动作补 `sync_event_id` 与严格语义同步事件。
+静音阶段先登记 `visual_actions`：所有语义性标题、卡片、标签、节点、连线、高亮和 CTA 都要有 `id`、`scene_id`、`element_type`、`sync_required`、`settled_at`、`min_settled_seconds` 和概念归属。场景必须登记 `visual_exit_start`，且 `visual_exit_start - settled_at >= min_settled_seconds`。真实音频到位后，为每个 `sync_required` 动作补 `sync_event_id` 与严格语义同步事件。
 
 `words` 只能由真实 ASR 或经过人工校正的时间轴填充。`sync_events` 用于严格词位验收，结构见 `$sync-explainer-video` 的 `references/sync-schema.md`；`prelude_events` 只记录最多提前 `0.75s` 的容器/轮廓/弱化标签，不替代语义同步事件。
 

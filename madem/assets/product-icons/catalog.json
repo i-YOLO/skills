@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "display": {
+    "labels_visible": false,
+    "canvas_size": [220, 220],
+    "background": "transparent",
+    "alignment": "visual-center",
+    "normalize_perceived_size": true
+  },
+  "assets": [
+    {
+      "asset_id": "product-icon-doubao",
+      "display_name": "豆包",
+      "file": "doubao.png",
+      "size": [220, 220],
+      "alpha": true,
+      "source_file": "public/brands/doubao-normalized.png",
+      "provenance_status": "user-approved-project-asset",
+      "status": "library-approved",
+      "sha256": "a1e64ff9c8ac055f46643e8b37b0c2d9a88e32c8271ac9ced1bec7f8a5cec942"
+    },
+    {
+      "asset_id": "product-icon-deepseek",
+      "display_name": "DeepSeek",
+      "file": "deepseek.png",
+      "size": [220, 220],
+      "alpha": true,
+      "source_file": "public/brands/deepseek-normalized.png",
+      "provenance_status": "user-approved-project-asset",
+      "status": "library-approved",
+      "sha256": "0f4d6405be685bd80ea4ff149b09e308a4fe2444b81bd973107583742cfcbec3"
+    },
+    {
+      "asset_id": "product-icon-yuanbao",
+      "display_name": "元宝",
+      "file": "yuanbao.png",
+      "size": [220, 220],
+      "alpha": true,
+      "source_file": "public/brands/yuanbao-normalized.png",
+      "provenance_status": "user-approved-project-asset",
+      "status": "library-approved",
+      "sha256": "7c1c9c46e7ab741533592603833f99be69a34b712c37020bcf86124ff421b5da"
+    },
+    {
+      "asset_id": "product-icon-kimi",
+      "display_name": "Kimi",
+      "file": "kimi.png",
+      "size": [220, 220],
+      "alpha": true,
+      "source_file": "public/brands/kimi-normalized.png",
+      "provenance_status": "user-approved-project-asset",
+      "status": "library-approved",
+      "sha256": "b385253ecc846c2e3174262f595cf3f150f4c5d02da6dcf904a7bbe09058d113"
+    }
+  ]
+}

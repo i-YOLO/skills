@@ -6,7 +6,7 @@
 
 1. 从已确认口播稿与 `timeline.json.words` 生成字幕；识别结果只提供时间，不作为观众可见文案。
 2. 将 `captions.json` 接入 Remotion 的 `CaptionOverlay.tsx`，或将 `captions.ass` 烧录到非 Remotion 视频；输出带原始口播音轨的字幕版视频。
-3. 使用 `extract_review_frames.py --captions <captions.json>` 抽取每秒帧及每条字幕的起始/中间/结束帧，人工检查遮挡风险。字幕默认底部居中、白字描边、无不透明底板；关键图形位于底部时，先调整画面或字幕安全区。
+3. 使用 `extract_review_frames.py --captions <captions.json>` 抽取每秒帧及每条字幕的起始/中间/结束帧，人工检查遮挡风险。字幕默认底部居中、49px 白字、纯黑 10px 描边、无阴影和不透明底板；关键图形位于底部时，先调整画面，不能临时下移字幕安全区。
 4. 仅对已验收字幕版运行 `mix_default_bgm.py`。脚本会把默认音乐复制到项目 `public/audio/`，以复制视频流方式输出最终发布版。
 5. 以原始口播音频运行同步验收；背景音乐不参与词级对齐，也不能作为动作锚点证据。
 

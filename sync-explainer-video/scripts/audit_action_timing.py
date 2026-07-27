@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit semantic-action coverage, prelude timing, hold risk, and concept ownership."""
+"""Audit semantic coverage, prelude timing, settled holds, and concept ownership."""
 
 from __future__ import annotations
 
@@ -15,6 +15,14 @@ HOLD_DEFAULT_TYPES = {"card", "label", "node", "title", "highlight", "cta"}
 ELEMENT_TYPES = HOLD_DEFAULT_TYPES | {"connection"}
 PRELUDE_KINDS = {"container", "outline", "muted-label"}
 CONCEPT_ROLES = {"owner", "context"}
+
+
+def schema_at_least(value: Any, minimum: tuple[int, int]) -> bool:
+    try:
+        major, minor = (int(part) for part in str(value).split(".", maxsplit=1))
+    except (TypeError, ValueError):
+        return False
+    return (major, minor) >= minimum
 
 
 def severity_status(checks: list[dict[str, Any]], *, needs_evidence: bool = False) -> str:
@@ -53,6 +61,7 @@ def audit_timeline(
 
     visual_actions = timeline.get("visual_actions")
     manifest_mode = "explicit" if isinstance(visual_actions, list) else "legacy-sync-events"
+    strict_settle_contract = require_manifest and schema_at_least(timeline.get("schema_version"), (1, 2))
     if manifest_mode == "explicit":
         actions = visual_actions
     else:
@@ -88,6 +97,10 @@ def audit_timeline(
                 checks.append({"kind": "action-sync-required", "status": "fail", "action_id": action_id, "detail": "visual action must state sync_required"})
             if action.get("concept_id") and action.get("concept_role") not in CONCEPT_ROLES:
                 checks.append({"kind": "concept-role", "status": "fail", "action_id": action_id, "detail": f"concept_role must be one of {sorted(CONCEPT_ROLES)}"})
+            if strict_settle_contract:
+                for field in ("visible_from", "settled_at", "min_settled_seconds"):
+                    if field not in action:
+                        checks.append({"kind": "settle-contract", "status": "fail", "action_id": action_id, "detail": f"schema 1.2 action requires {field}"})
         if action.get("sync_required", False):
             required_actions.append(action)
             event_id = action.get("sync_event_id", action_id)
@@ -105,6 +118,21 @@ def audit_timeline(
                 continue
             state = "pass" if error <= 0.5 else ("warning" if error <= 1 else "fail")
             checks.append({"kind": "semantic-time", "status": state, "event_id": event_id, "error_frames": error})
+            if action.get("visible_from") is not None:
+                try:
+                    visible_from = float(action["visible_from"])
+                except (TypeError, ValueError):
+                    checks.append({"kind": "future-state", "status": "fail", "action_id": action_id, "detail": "visible_from must be numeric"})
+                else:
+                    if visible_from < float(event["visual_time"]):
+                        checks.append({
+                            "kind": "future-state",
+                            "status": "fail",
+                            "action_id": action_id,
+                            "visible_from": visible_from,
+                            "semantic_time": float(event["visual_time"]),
+                            "detail": "semantic element becomes visible before its spoken event",
+                        })
 
     for action_id, count in action_ids.items():
         if count > 1:
@@ -141,6 +169,21 @@ def audit_timeline(
         prelude_by_target[target_id].append(prelude)
 
     if manifest_mode == "explicit":
+        for scene_id, scene in scenes.items():
+            if strict_settle_contract and "visual_exit_start" not in scene:
+                checks.append({"kind": "scene-exit-contract", "status": "fail", "scene_id": scene_id, "detail": "schema 1.2 scene requires visual_exit_start"})
+                continue
+            if "visual_exit_start" in scene:
+                try:
+                    exit_start = float(scene["visual_exit_start"])
+                    scene_start = float(scene["start"])
+                    scene_end = float(scene["end"])
+                except (KeyError, TypeError, ValueError):
+                    checks.append({"kind": "scene-exit-contract", "status": "fail", "scene_id": scene_id, "detail": "scene start/end/visual_exit_start must be numeric"})
+                else:
+                    if not scene_start <= exit_start <= scene_end:
+                        checks.append({"kind": "scene-exit-contract", "status": "fail", "scene_id": scene_id, "detail": "visual_exit_start must fall inside the scene"})
+
         for action in required_actions:
             event_id = action.get("sync_event_id", action.get("id"))
             event = event_by_id.get(event_id)
@@ -159,6 +202,69 @@ def audit_timeline(
             prelude_visible = max((end - float(item["visual_time"]) for item in prelude_by_target.get(event_id, [])), default=0.0)
             if semantic_visible < min_hold and prelude_visible < min_hold:
                 checks.append({"kind": "flash-risk", "status": "fail", "action_id": action.get("id"), "semantic_visible_seconds": semantic_visible, "prelude_visible_seconds": prelude_visible, "minimum_seconds": min_hold, "detail": "move the scene boundary, extend the action, or add a compliant prelude"})
+
+        sequence_groups: dict[str, list[dict[str, Any]]] = defaultdict(list)
+        for action in actions:
+            action_id = action.get("id")
+            scene = scenes.get(action.get("scene_id"))
+            if not action_id or not scene or action.get("settled_at") is None:
+                continue
+            try:
+                settled_at = float(action["settled_at"])
+                visible_from = float(action.get("visible_from", scene["start"]))
+                exit_start = float(scene.get("visual_exit_start", scene["end"]))
+                min_settled = float(action.get("min_settled_seconds", default_min_hold_seconds))
+            except (KeyError, TypeError, ValueError):
+                checks.append({"kind": "settle-contract", "status": "fail", "action_id": action_id, "detail": "settled timing fields must be numeric"})
+                continue
+            if min_settled < 0:
+                checks.append({"kind": "settle-contract", "status": "fail", "action_id": action_id, "detail": "min_settled_seconds cannot be negative"})
+                continue
+            if not float(scene["start"]) <= visible_from <= settled_at <= float(scene["end"]):
+                checks.append({"kind": "settle-contract", "status": "fail", "action_id": action_id, "detail": "expected scene.start <= visible_from <= settled_at <= scene.end"})
+                continue
+            settled_hold = exit_start - settled_at
+            status = "pass" if settled_hold >= min_settled else "fail"
+            checks.append({
+                "kind": "settled-hold",
+                "status": status,
+                "action_id": action_id,
+                "settled_at": settled_at,
+                "visual_exit_start": exit_start,
+                "settled_hold_seconds": settled_hold,
+                "minimum_seconds": min_settled,
+                "detail": None if status == "pass" else "animation is not fully settled long enough before visual exit",
+            })
+            group_id = action.get("sequence_group_id")
+            if group_id is not None:
+                sequence_groups[str(group_id)].append(action)
+
+        for group_id, group in sequence_groups.items():
+            try:
+                ordered_group = sorted(group, key=lambda item: float(item["sequence_index"]))
+                indexes = [float(item["sequence_index"]) for item in ordered_group]
+                settled_times = [float(item["settled_at"]) for item in ordered_group]
+            except (KeyError, TypeError, ValueError):
+                checks.append({"kind": "sequence-completion", "status": "fail", "sequence_group_id": group_id, "detail": "sequence actions require numeric sequence_index and settled_at"})
+                continue
+            if len(indexes) != len(set(indexes)):
+                checks.append({"kind": "sequence-completion", "status": "fail", "sequence_group_id": group_id, "detail": "sequence_index values must be unique"})
+            if settled_times != sorted(settled_times):
+                checks.append({"kind": "sequence-completion", "status": "fail", "sequence_group_id": group_id, "detail": "settled_at must follow sequence_index order"})
+            final_action = ordered_group[-1]
+            final_scene = scenes.get(final_action.get("scene_id"))
+            if final_scene:
+                final_hold = float(final_scene.get("visual_exit_start", final_scene["end"])) - float(final_action["settled_at"])
+                minimum = float(final_action.get("min_settled_seconds", default_min_hold_seconds))
+                checks.append({
+                    "kind": "sequence-completion",
+                    "status": "pass" if final_hold >= minimum else "fail",
+                    "sequence_group_id": group_id,
+                    "final_action_id": final_action.get("id"),
+                    "final_settled_at": float(final_action["settled_at"]),
+                    "settled_hold_seconds": final_hold,
+                    "minimum_seconds": minimum,
+                })
 
         concepts: dict[str, list[dict[str, Any]]] = defaultdict(list)
         for action in actions:

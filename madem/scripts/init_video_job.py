@@ -35,7 +35,7 @@ def main() -> None:
     audio_mode = "voiceover" if audio else "silent"
 
     job = {
-        "schema_version": "1.1",
+        "schema_version": "1.2",
         "phase": phase,
         "inputs": {
             "script": str(args.script.resolve()) if args.script else None,
@@ -50,12 +50,19 @@ def main() -> None:
             "fps": args.fps,
             "codec": "h264",
             "audio_mode": audio_mode,
+            "visual_system": {
+                "profile_id": "madem-warm-knowledge-v1",
+                "background": "#FAF8F3",
+                "caption_safe_region_1080p": {"x_min": 140, "x_max": 1780, "y_min": 860, "y_max": 1040},
+                "content_max_y_1080p": 820,
+            },
             "post_sync_defaults": {
                 "captions": {
                     "enabled_for_voiceover_publish": True,
                     "status": "pending-after-sync" if audio else "deferred-until-voiceover",
                     "text_source": "approved-script",
                     "timing_source": "real-word-timeline",
+                    "style_profile_id": "madem-caption-white-black10-v1",
                 },
                 "background_music": {
                     "enabled_for_voiceover_publish": True,
@@ -68,7 +75,7 @@ def main() -> None:
         "scenes": [],
     }
     timeline = {
-        "schema_version": "1.1",
+        "schema_version": "1.2",
         "fps": args.fps,
         "audio": audio,
         "scenes": [],
@@ -80,7 +87,7 @@ def main() -> None:
         "sync_events": [],
     }
     qa = {
-        "schema_version": "1.1",
+        "schema_version": "1.2",
         "status": "not-run",
         "manual_review": "pending",
         "checks": [],

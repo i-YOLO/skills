@@ -15,6 +15,7 @@
   "id": "attention",
   "start": 12.0,
   "end": 20.0,
+  "visual_exit_start": 19.2,
   "audio_start": 13.1,
   "audio_end": 23.0,
   "hold": false
@@ -37,7 +38,10 @@
       "element_type": "title",
       "sync_required": true,
       "sync_event_id": "action-timeline-key-action",
+      "visible_from": 15.25,
+      "settled_at": 15.6,
       "min_visible_seconds": 1.0,
+      "min_settled_seconds": 1.0,
       "concept_id": "word-timed-key-action",
       "concept_role": "owner"
     }
@@ -47,6 +51,9 @@
 
 - `element_type` 使用 `card`、`label`、`node`、`title`、`highlight`、`cta` 或 `connection`。
 - `sync_required: true` 的动作必须有一条语义同步事件；`order` 可选，用于显式检查排比、流程和循环的口播顺序。
+- `visible_from` 是元素首次可见时间；完整语义元素不得早于对应 `sync_event.visual_time`。容器预入场应登记为独立的非语义元素和 `prelude_event`。
+- `settled_at` 是入场、绘制或展开完全完成的时间；`min_settled_seconds` 默认 `1.0`。每个场景必须满足 `visual_exit_start - settled_at >= min_settled_seconds`。
+- 顺序动画的每项可用相同 `sequence_group_id` 和递增 `sequence_index` 登记；组完成时间取最大 `sequence_index` 对应动作的 `settled_at`，不能取第一项出现时间。
 - `visible_until` 可覆盖场景结尾；卡片、标签、节点、标题、高亮和 CTA 默认至少需要 `1.0s` 的可见时长，或使用合规预入场。
 - 一个 `concept_id` 只能有一个 `concept_role: "owner"`。在前页只做上下文的元素标记为 `context`，不得提前完整展示由后页拥有的详解卡片。
 
@@ -100,6 +107,8 @@
 - 音频短时优先删减非关键视觉节拍，不牺牲概念顺序。
 - 不确定的重复、口误或未朗读内容必须标记为待人工确认，不能擅自剪掉。
 - 场景边界可随真实语义调整。不要为了保留旧分镜时长，让动作一次性播完后静止等待口播。
+- 箭头、标签、答案和下一阶段节点属于未来状态，必须在对应语义发生前完全不可见。SVG 路径进度为零时不得保留 `markerEnd`。
+- 循环、返回、继续和完成路径分别维护进度；不得以一个共享进度同时暴露多条路径。
 
 ## 发布字幕与背景音乐边界
 

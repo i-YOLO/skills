@@ -16,15 +16,15 @@ export type PatternPalette = {
 };
 
 export const defaultPatternPalette: PatternPalette = {
-  ink: "#070B16",
-  surface: "#10182C",
-  surface2: "#17233D",
-  text: "#F5F8FF",
-  muted: "#A7B5D1",
-  mint: "#61F4C3",
-  orange: "#FFB86B",
-  lavender: "#A7A0FF",
-  red: "#FF7A95",
+  ink: "#12315B",
+  surface: "#FFFCF7",
+  surface2: "#F4EFE6",
+  text: "#12315B",
+  muted: "#64748B",
+  mint: "#2F9E76",
+  orange: "#FF6B1A",
+  lavender: "#2563EB",
+  red: "#D95D5D",
 };
 
 const easeOut = Easing.bezier(0.16, 1, 0.3, 1);
@@ -48,9 +48,9 @@ const PatternCard: React.FC<React.PropsWithChildren<{
   style?: React.CSSProperties;
 }>> = ({children, palette, tone = "mint", style}) => (
   <div style={{
-    background: "rgba(18, 29, 52, 0.86)",
-    border: `1px solid ${palette[tone]}55`,
-    boxShadow: `0 18px 60px ${palette[tone]}18`,
+    background: palette.surface,
+    border: `2px solid ${palette[tone]}44`,
+    boxShadow: `0 18px 50px ${palette.ink}12`,
     borderRadius: 30,
     padding: "28px 30px",
     ...style,
@@ -91,12 +91,23 @@ export const PipelineFlow: React.FC<{
   steps: string[];
   finalTone?: PatternTone;
   palette?: PatternPalette;
-}> = ({steps, finalTone = "mint", palette = defaultPatternPalette}) => {
+  startAt?: number;
+  stepStarts?: number[];
+}> = ({
+  steps,
+  finalTone = "mint",
+  palette = defaultPatternPalette,
+  startAt = 0,
+  stepStarts,
+}) => {
   const frame = useCurrentFrame();
   return (
     <div style={{display: "flex", alignItems: "center", gap: 16, width: "100%"}}>
-      {steps.map((step, index) => (
-        <React.Fragment key={step}>
+      {steps.map((step, index) => {
+        const itemStart = stepStarts?.[index] ?? startAt + index * 12;
+        const nextStart = stepStarts?.[index + 1] ?? itemStart + 28;
+        return (
+          <React.Fragment key={step}>
           <PatternCard
             palette={palette}
             tone={index === steps.length - 1 ? finalTone : "lavender"}
@@ -108,8 +119,8 @@ export const PipelineFlow: React.FC<{
               alignItems: "center",
               justifyContent: "center",
               textAlign: "center",
-              ...enter(frame, index * 12, 0),
-              scale: interpolate(frame, [index * 12, index * 12 + 22], [0.86, 1], {
+              ...enter(frame, itemStart, 0),
+              scale: interpolate(frame, [itemStart, itemStart + 22], [0.86, 1], {
                 extrapolateLeft: "clamp",
                 extrapolateRight: "clamp",
                 easing: easeOut,
@@ -121,13 +132,14 @@ export const PipelineFlow: React.FC<{
           {index < steps.length - 1 ? <div style={{
             color: palette.mint,
             fontSize: 40,
-            opacity: interpolate(frame, [index * 12 + 16, index * 12 + 30], [0, 1], {
+            opacity: interpolate(frame, [nextStart - 12, nextStart + 2], [0, 1], {
               extrapolateLeft: "clamp",
               extrapolateRight: "clamp",
             }),
           }}>→</div> : null}
-        </React.Fragment>
-      ))}
+          </React.Fragment>
+        );
+      })}
     </div>
   );
 };
@@ -233,7 +245,14 @@ export type LayerColumn = {
 export const LayerCards: React.FC<{
   columns: LayerColumn[];
   palette?: PatternPalette;
-}> = ({columns, palette = defaultPatternPalette}) => {
+  columnStarts?: number[];
+  tagStarts?: number[][];
+}> = ({
+  columns,
+  palette = defaultPatternPalette,
+  columnStarts,
+  tagStarts,
+}) => {
   const frame = useCurrentFrame();
   return (
     <div style={{display: "grid", gridTemplateColumns: `repeat(${columns.length}, minmax(0, 1fr))`, gap: 22, width: "100%", maxWidth: 1500, margin: 0}}>
@@ -243,10 +262,34 @@ export const LayerCards: React.FC<{
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          ...enter(frame, index * 14, 60),
+          ...enter(frame, columnStarts?.[index] ?? index * 14, 60),
         }}>
           <div style={{color: palette[column.tone], fontSize: 30, fontWeight: 900, letterSpacing: 2}}>{column.label}</div>
-          <SequentialChips items={column.tags} accent={column.tone} startAt={index * 14 + 20} palette={palette} />
+          <div style={{display: "flex", gap: 10, flexWrap: "wrap"}}>
+            {column.tags.map((tag, tagIndex) => (
+              <div
+                key={tag}
+                style={{
+                  color: palette.text,
+                  border: `1px solid ${palette[column.tone]}88`,
+                  background: `${palette[column.tone]}18`,
+                  borderRadius: 14,
+                  padding: "10px 13px",
+                  fontSize: 30,
+                  fontWeight: 800,
+                  lineHeight: 1.1,
+                  ...enter(
+                    frame,
+                    tagStarts?.[index]?.[tagIndex] ??
+                      (columnStarts?.[index] ?? index * 14) + 20 + tagIndex * 13,
+                    22,
+                  ),
+                }}
+              >
+                {tag}
+              </div>
+            ))}
+          </div>
         </PatternCard>
       ))}
     </div>
@@ -262,7 +305,7 @@ export const TimelineAnchor: React.FC<{
   const positions = steps.map((_, index) => 18 + index * (60 / Math.max(1, steps.length - 1)));
   return (
     <div style={{display: "flex", flexDirection: "column", gap: 32, width: "100%", maxWidth: 1480, margin: 0}}>
-      <div style={{height: 12, borderRadius: 12, background: "rgba(255,255,255,0.16)", position: "relative"}}>
+      <div style={{height: 12, borderRadius: 12, background: `${palette.ink}18`, position: "relative"}}>
         <div style={{height: "100%", borderRadius: 12, background: palette.mint, width: `${interpolate(frame, [0, 100], [0, 100], {
           extrapolateLeft: "clamp",
           extrapolateRight: "clamp",

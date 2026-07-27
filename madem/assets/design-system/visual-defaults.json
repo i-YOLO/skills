@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 60,
+    "background": "#FAF8F3",
+    "solid_background_only": true
+  },
+  "palette": {
+    "ink": "#12315B",
+    "primary": "#2563EB",
+    "accent": "#FF6B1A",
+    "success": "#2F9E76",
+    "surface": "#FFFCF7",
+    "surface2": "#F4EFE6",
+    "border": "#D8CEBE",
+    "muted": "#64748B",
+    "danger": "#D95D5D"
+  },
+  "captions": {
+    "font_size": 49,
+    "font_color": "#FFFFFF",
+    "stroke_color": "#000000",
+    "stroke_width": 10,
+    "shadow": false,
+    "bottom_margin": 86,
+    "horizontal_margin": 140,
+    "max_width": 1540,
+    "max_lines": 2,
+    "safe_region": {
+      "x_min": 140,
+      "x_max": 1780,
+      "y_min": 860,
+      "y_max": 1040
+    }
+  },
+  "content": {
+    "maximum_y": 820,
+    "minimum_caption_gap": 48,
+    "minimum_element_gap": 48,
+    "horizontal_group_alignment": "visual-center"
+  }
+}

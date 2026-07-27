@@ -26,10 +26,10 @@ export type CaptionOverlayProps = {
 /** Copy into the target Remotion project after build_captions.py emits captions.json. */
 export const CaptionOverlay: React.FC<CaptionOverlayProps> = ({
   captionSrc,
-  bottomMargin = 38,
-  horizontalMargin = 120,
-  maxWidth = 1440,
-  fontSize = 44,
+  bottomMargin = 86,
+  horizontalMargin = 140,
+  maxWidth = 1540,
+  fontSize = 49,
 }) => {
   const [captions, setCaptions] = useState<CaptionCue[] | null>(null);
   const [handle] = useState(() => delayRender("Load caption cues"));
@@ -81,8 +81,8 @@ export const CaptionOverlay: React.FC<CaptionOverlayProps> = ({
           letterSpacing: 0.4 * scale,
           textAlign: "center",
           whiteSpace: "pre-line",
-          WebkitTextStroke: `${2 * scale}px #111622`,
-          textShadow: `0 ${2 * scale}px ${5 * scale}px rgba(7, 11, 22, 0.88)`,
+          WebkitTextStroke: `${10 * scale}px #000000`,
+          paintOrder: "stroke fill",
         }}
       >
         {active.text}

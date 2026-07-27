@@ -1,0 +1,26 @@
+export const visualDefaults = {
+  canvas: {width: 1920, height: 1080, fps: 60, background: "#FAF8F3"},
+  palette: {
+    ink: "#12315B",
+    primary: "#2563EB",
+    accent: "#FF6B1A",
+    success: "#2F9E76",
+    surface: "#FFFCF7",
+    surface2: "#F4EFE6",
+    border: "#D8CEBE",
+    muted: "#64748B",
+    danger: "#D95D5D",
+  },
+  captions: {
+    fontSize: 49,
+    color: "#FFFFFF",
+    strokeColor: "#000000",
+    strokeWidth: 10,
+    bottomMargin: 86,
+    horizontalMargin: 140,
+    maxWidth: 1540,
+    maxLines: 2,
+    safeRegion: {xMin: 140, xMax: 1780, yMin: 860, yMax: 1040},
+  },
+  content: {maximumY: 820, minimumCaptionGap: 48, minimumElementGap: 48},
+} as const;

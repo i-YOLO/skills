@@ -246,7 +246,7 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
-Style: Captions,PingFang SC Semibold,44,&H00FFFFFF,&H00000000,&H00111622,&H00000000,1,0,0,0,100,100,0,0,1,3,0,2,120,120,38,1
+Style: Captions,PingFang SC Semibold,49,&H00FFFFFF,&H00000000,&H00000000,&H00000000,1,0,0,0,100,100,0,0,1,10,0,2,140,140,86,1
 
 [Events]
 Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
@@ -285,7 +285,17 @@ def main() -> int:
         "max_frame_error": round(max(frame_errors, default=0.0), 6),
         "max_lines": max_lines,
         "minimum_hold_seconds": 0.8,
-        "placement": "bottom-center / white outlined text / no opaque panel",
+        "placement": "bottom-center / white text / 10px pure-black outline / no shadow or opaque panel",
+        "style": {
+            "font_size": 49,
+            "font_color": "#FFFFFF",
+            "stroke_width": 10,
+            "stroke_color": "#000000",
+            "shadow": 0,
+            "margin_left": 140,
+            "margin_right": 140,
+            "margin_bottom": 86,
+        },
         "captions": [asdict(cue) for cue in captions],
     }
     write_outputs(captions, args.out, args.prefix, report)

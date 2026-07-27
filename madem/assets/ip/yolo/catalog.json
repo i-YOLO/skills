@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "assets": [
+    {
+      "asset_id": "yolo-opening",
+      "file": "poses/opening.png",
+      "role": "opening",
+      "recommended_scenes": ["hook", "product-entry"],
+      "size": [1672, 941],
+      "alpha": true,
+      "source_file": "public/ip/yolo-opening.png",
+      "provenance_status": "user-approved-project-asset",
+      "status": "library-approved",
+      "sha256": "4651e72f1f392b1fa2ae5900feb16de33a531b8c89b10525b27d677a2872fef1"
+    },
+    {
+      "asset_id": "yolo-closing",
+      "file": "poses/closing.png",
+      "role": "closing-point",
+      "recommended_scenes": ["recap", "next-video"],
+      "size": [1672, 941],
+      "alpha": true,
+      "source_file": "public/ip/yolo-closing.png",
+      "provenance_status": "user-approved-project-asset",
+      "status": "library-approved",
+      "sha256": "fb8e4ab43ae1c6519ba8e610d1f46c6f49e1119ec51ed533060d12b30689ee91"
+    }
+  ],
+  "excluded": "Chroma-key intermediates and project-specific poses are not library assets."
+}

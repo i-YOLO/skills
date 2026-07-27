@@ -72,7 +72,7 @@ def main() -> None:
         target = args.merge_into
     else:
         payload = {
-            "schema_version": "1.1", "audio": str(args.audio.resolve()),
+            "schema_version": "1.2", "audio": str(args.audio.resolve()),
             "words": words, "pauses": pauses, "segments": segment_records,
             "visual_actions": [], "prelude_events": [], "sync_events": [],
             "transcription": transcription,

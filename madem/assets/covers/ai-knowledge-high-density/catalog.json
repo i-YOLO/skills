@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "preset_id": "ai-knowledge-high-density",
+  "status": "library-approved",
+  "references": [
+    {
+      "aspect_ratio": "4:3",
+      "file": "reference-4x3.png",
+      "size": [1448, 1086],
+      "sha256": "9fb6c7f35dbba6ee62aa02151fc3b1dd8d92b77714d0fb118bb80b6609c716d6"
+    },
+    {
+      "aspect_ratio": "3:4",
+      "file": "reference-3x4.png",
+      "size": [1086, 1448],
+      "sha256": "4f1abbd8a61f183d7950f00b1a31bd69727b5ed452f46b5cc8fd09bb42904175"
+    }
+  ],
+  "delivery_default": ["4:3", "3:4"],
+  "composition_policy": "Compose each ratio independently; never crop one ratio into the other."
+}

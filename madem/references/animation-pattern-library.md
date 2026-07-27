@@ -11,13 +11,21 @@
 | `TimelineAnchor` | 关键词、停顿、帧位、时序触发 | 声画同步、事件触发、项目里程碑 | 时点/阶段标签、当前强调节点 | 不存在时间关系的概念对比 |
 | `CompoundingFlywheel` | 飞轮、复利、每次积累、持续验证 | 收尾、增长机制、持续改进 | 4 个循环阶段、中心概念 | 单次操作或简单线性步骤 |
 | `SequentialChips` | 排比、并列名词、连续动作 | 关键术语、标签、短动作清单 | 2–5 个短词、出现顺序 | 长段完整句或需要层级解释的内容 |
+| `FiveLayerStack` | 多层能力地图逐层展开 | 系统分层、能力地图 | 层号、名称、解释、逐层起始时间 | 只有装饰轮廓、没有每层含义 |
+| `MockChatWindow` | 聊天、输入、生成、资料入口 | AI 助手、软件操作状态 | 中性标题、消息、侧栏、输入提示 | 冒充真实产品截图 |
+| `BrandIconRow` | 多个产品入口或工具集合 | 产品入口集合 | 透明图标、无障碍标签、起始时间 | 图标下重复显示小字 |
+| `AgentDecisionLoop` | 判断、追问、返回、继续 | Agent 动态决策 | 节点、四段独立进度、因果标签 | 用同一进度驱动全部分支 |
+| `PermissionGateCards` | 权限、核对、人工确认 | 边界与风险控制 | 门卡、说明、逐卡起始时间 | 无约束自动执行的表达 |
+| `InterfaceToSystemReveal` | 从表层界面拉开到系统能力 | 聊天框背后的系统 | 模拟界面、箭头、层级数据 | 中间堆叠无含义白卡 |
 
 ## 使用方式
 
-1. 从 `assets/remotion-animation-library/PatternLibrary.tsx` 复制需要的组件到目标 Remotion 项目；不要让项目运行时依赖全局 Skill 路径。
+1. 从 `assets/remotion-animation-library/PatternLibrary.tsx` 和 `KnowledgeVisuals.tsx` 复制需要的组件到目标 Remotion 项目；不要让项目运行时依赖全局 Skill 路径。
 2. 将口播中的专有文案、色板和时长作为 props 传入；保留组件的顺序入场逻辑。
 3. 流程、时间线、卡片组与循环图的首个图形外边界对齐标题左边安全线；视觉居中仅指垂直安排，不水平居中整组图形。
 4. 连续两段不要机械复用同一结构；语义相近时优先改变资产类型或镜头角度。
+5. `PipelineFlow` 使用 `stepStarts`，`LayerCards` 使用 `columnStarts`/`tagStarts`，让每一项对齐口播；最后一项完成后至少保留 1 秒完整状态。
+6. `AgentDecisionLoop` 的返回、继续和完成路径分别传入独立进度；路径进度不超过 0.02 时组件不显示箭头端点。
 
 ## 入库门槛
 
