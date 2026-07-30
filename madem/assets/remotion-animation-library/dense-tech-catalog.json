@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "asset_family": "madem-dense-motion-v1",
+  "status": "project-proven",
+  "reference_project": "codex-mg-clone-v1",
+  "reference_metrics": {
+    "duration_seconds": 61.077,
+    "scene_count": 13,
+    "strict_semantic_actions": 38,
+    "semantic_actions_per_second": 0.622,
+    "manual_visual_review": "pass",
+    "user_review": "approved"
+  },
+  "entrypoint": "DenseTechMotion.tsx",
+  "components": [
+    "TechGridBackground",
+    "TechGridSceneShell",
+    "NeonTag",
+    "AppWindowFrame",
+    "ProductIcon",
+    "IconSwarmCollector",
+    "FolderCollector",
+    "QualityInspectionLoop",
+    "MotionGallery",
+    "MicroMotion",
+    "MotionGatherTransition"
+  ],
+  "micro_motion_kinds": [
+    "growth-bars",
+    "flow-path",
+    "particle-gather",
+    "typewriter",
+    "ring-progress",
+    "check-complete"
+  ],
+  "copy_contract": {
+    "copy_into_project": true,
+    "global_runtime_dependency": false,
+    "required_sibling_component": "../product-icons/v2/ProductIcon.tsx",
+    "required_public_assets": "../product-icons/v2"
+  }
+}

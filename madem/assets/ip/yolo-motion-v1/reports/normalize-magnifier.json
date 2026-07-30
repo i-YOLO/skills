@@ -1,0 +1,29 @@
+{
+  "canvas": [
+    512,
+    512
+  ],
+  "subject_height": 420,
+  "anchor": [
+    256,
+    486
+  ],
+  "source_union_bbox": [
+    323,
+    249,
+    940,
+    944
+  ],
+  "scale": 0.60431654676259,
+  "frames": [
+    {
+      "file": "magnifier.png",
+      "bbox": [
+        70,
+        66,
+        443,
+        486
+      ]
+    }
+  ]
+}

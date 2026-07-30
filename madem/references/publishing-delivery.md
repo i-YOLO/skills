@@ -6,7 +6,7 @@
 
 1. 从已确认口播稿与 `timeline.json.words` 生成字幕；识别结果只提供时间，不作为观众可见文案。
 2. 将 `captions.json` 接入 Remotion 的 `CaptionOverlay.tsx`，或将 `captions.ass` 烧录到非 Remotion 视频；输出带原始口播音轨的字幕版视频。
-3. 使用 `extract_review_frames.py --captions <captions.json>` 抽取每秒帧及每条字幕的起始/中间/结束帧，人工检查遮挡风险。字幕默认底部居中、49px 白字、纯黑 10px 描边、无阴影和不透明底板；关键图形位于底部时，先调整画面，不能临时下移字幕安全区。
+3. 使用 `extract_review_frames.py --captions <captions.json>` 抽取每秒帧及每条字幕的起始/中间/结束帧，人工检查遮挡风险。字幕默认底部居中、强制单行、49px 白字、纯黑 10px 描边、无阴影和不透明底板；长句可缩到 36px，仍放不下时按真实词位拆成两条连续字幕。
 4. 仅对已验收字幕版运行 `mix_default_bgm.py`。脚本会把默认音乐复制到项目 `public/audio/`，以复制视频流方式输出最终发布版。
 5. 以原始口播音频运行同步验收；背景音乐不参与词级对齐，也不能作为动作锚点证据。
 
@@ -23,7 +23,8 @@
 
 ```bash
 python scripts/build_captions.py \
-  --script <approved-script.md> --timeline <timeline.json> --out <out/captions> --fps <fps>
+  --script <approved-script.md> --timeline <timeline.json> --out <out/captions> \
+  --fps <fps> --frame-width <width> --frame-height <height> --min-font-size 36
 
 # 将 assets/remotion-caption-overlay/CaptionOverlay.tsx 复制到目标 Remotion 项目，
 # 使用上一步生成的 captions.json 后渲染字幕版视频。
@@ -34,3 +35,5 @@ python scripts/mix_default_bgm.py \
 ```
 
 传入自定义音乐前，必须先获得用户明确的替换授权，并同时使用 `--music <path> --allow-custom-music`；否则保持默认配置。
+
+MP4/AAC 容器时长允许 `1ms` 取整误差；混音仍必须完整解码、保持原视频流 MD5 不变，并满足 AAC 48kHz 单声道规格。

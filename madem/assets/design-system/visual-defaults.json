@@ -20,6 +20,7 @@
   },
   "captions": {
     "font_size": 49,
+    "minimum_font_size": 36,
     "font_color": "#FFFFFF",
     "stroke_color": "#000000",
     "stroke_width": 10,
@@ -27,7 +28,7 @@
     "bottom_margin": 86,
     "horizontal_margin": 140,
     "max_width": 1540,
-    "max_lines": 2,
+    "max_lines": 1,
     "safe_region": {
       "x_min": 140,
       "x_max": 1780,

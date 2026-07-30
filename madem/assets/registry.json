@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "canonical_root": "assets",
+  "selection_policy": {
+    "default_allowed_statuses": [
+      "project-proven",
+      "library-approved"
+    ],
+    "candidate_requires_project_opt_in": true,
+    "copy_selected_assets_into_project": true,
+    "allow_runtime_dependency_on_global_skill_path": false,
+    "project_trial_location": "project-local",
+    "knowledge_base_role": "documentation-index-and-project-trial-evidence; never-canonical-or-runtime"
+  },
+  "packs": [
+    {
+      "id": "madem-design-system",
+      "kind": "design-system",
+      "path": "design-system",
+      "catalog": "design-system/visual-defaults.json",
+      "status": "library-approved",
+      "entrypoints": [
+        "design-system/visualDefaults.ts",
+        "design-system/cream-FAF8F3-1920x1080.png"
+      ],
+      "consumers": [
+        "madem"
+      ]
+    },
+    {
+      "id": "madem-product-icons",
+      "kind": "raster-icon-pack",
+      "path": "product-icons",
+      "catalog": "product-icons/catalog.json",
+      "status": "library-approved",
+      "consumers": [
+        "madem"
+      ]
+    },
+    {
+      "id": "madem-product-icons-v2",
+      "kind": "hybrid-product-icon-pack",
+      "path": "product-icons/v2",
+      "catalog": "product-icons/v2/catalog.json",
+      "status": "project-proven",
+      "entrypoints": [
+        "product-icons/v2/ProductIcon.tsx"
+      ],
+      "consumers": [
+        "madem"
+      ]
+    },
+    {
+      "id": "madem-ai-tech-dark-v1",
+      "kind": "design-system",
+      "path": "design-system",
+      "catalog": "design-system/ai-tech-dark-v1.json",
+      "status": "project-proven",
+      "entrypoints": [
+        "design-system/aiTechDarkV1.ts"
+      ],
+      "consumers": [
+        "madem",
+        "sync-explainer-video"
+      ]
+    },
+    {
+      "id": "yolo-static-poses",
+      "kind": "character-pose-pack",
+      "path": "ip/yolo",
+      "catalog": "ip/yolo/catalog.json",
+      "status": "library-approved",
+      "consumers": [
+        "madem"
+      ]
+    },
+    {
+      "id": "yolo-motion-v1",
+      "kind": "character-motion-pack",
+      "path": "ip/yolo-motion-v1",
+      "catalog": "ip/yolo-motion-v1/catalog.json",
+      "status": "candidate",
+      "entrypoints": [
+        "remotion-animation-library/YoloMotion.tsx"
+      ],
+      "consumers": [
+        "madem",
+        "sync-explainer-video"
+      ],
+      "default_selectable": false
+    },
+    {
+      "id": "ai-knowledge-high-density-covers",
+      "kind": "cover-preset",
+      "path": "covers/ai-knowledge-high-density",
+      "catalog": "covers/ai-knowledge-high-density/catalog.json",
+      "status": "library-approved",
+      "consumers": [
+        "madem"
+      ]
+    },
+    {
+      "id": "madem-remotion-animation-library",
+      "kind": "remotion-component-pack",
+      "path": "remotion-animation-library",
+      "status": "project-proven",
+      "entrypoints": [
+        "remotion-animation-library/PatternLibrary.tsx",
+        "remotion-animation-library/KnowledgeVisuals.tsx",
+        "remotion-animation-library/YoloMotion.tsx"
+      ],
+      "consumers": [
+        "madem"
+      ]
+    },
+    {
+      "id": "madem-dense-motion-v1",
+      "kind": "remotion-component-pack",
+      "path": "remotion-animation-library",
+      "catalog": "remotion-animation-library/dense-tech-catalog.json",
+      "status": "project-proven",
+      "entrypoints": [
+        "remotion-animation-library/DenseTechMotion.tsx"
+      ],
+      "consumers": [
+        "madem",
+        "sync-explainer-video"
+      ]
+    },
+    {
+      "id": "madem-caption-overlay",
+      "kind": "remotion-component",
+      "path": "remotion-caption-overlay",
+      "status": "project-proven",
+      "entrypoints": [
+        "remotion-caption-overlay/CaptionOverlay.tsx"
+      ],
+      "consumers": [
+        "madem"
+      ]
+    },
+    {
+      "id": "madem-default-bgm-v3",
+      "kind": "audio-profile",
+      "path": "audio",
+      "catalog": "audio/default-bgm-profile.json",
+      "status": "project-proven",
+      "entrypoints": [],
+      "publication_scope": "profile-only; the user-local audio asset is intentionally excluded from this public repository",
+      "consumers": [
+        "madem"
+      ]
+    }
+  ]
+}

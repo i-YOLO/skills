@@ -11,10 +11,24 @@ from typing import Any
 
 
 SEMANTIC_STAGE = "semantic"
-HOLD_DEFAULT_TYPES = {"card", "label", "node", "title", "highlight", "cta"}
+HOLD_DEFAULT_TYPES = {"card", "label", "node", "title", "highlight", "cta", "character-motion"}
 ELEMENT_TYPES = HOLD_DEFAULT_TYPES | {"connection"}
 PRELUDE_KINDS = {"container", "outline", "muted-label"}
 CONCEPT_ROLES = {"owner", "context"}
+MOTION_PHASES = {"idle", "prepare", "key-action", "outcome", "settled"}
+MOTION_PHASE_ORDER = {"idle": 0, "prepare": 1, "key-action": 2, "outcome": 3, "settled": 4}
+MOTION_FACINGS = {"left", "right"}
+MOTION_REQUIRED_FIELDS = {
+    "motion_asset_id",
+    "motion_variant",
+    "motion_phase",
+    "facing",
+    "occupied_rect_1080p",
+}
+YOLO_SLOTS_1080P = (
+    {"x_min": 80, "x_max": 460, "y_min": 440, "y_max": 820},
+    {"x_min": 1460, "x_max": 1840, "y_min": 440, "y_max": 820},
+)
 
 
 def schema_at_least(value: Any, minimum: tuple[int, int]) -> bool:
@@ -62,6 +76,7 @@ def audit_timeline(
     visual_actions = timeline.get("visual_actions")
     manifest_mode = "explicit" if isinstance(visual_actions, list) else "legacy-sync-events"
     strict_settle_contract = require_manifest and schema_at_least(timeline.get("schema_version"), (1, 2))
+    strict_motion_contract = schema_at_least(timeline.get("schema_version"), (1, 3))
     if manifest_mode == "explicit":
         actions = visual_actions
     else:
@@ -101,6 +116,68 @@ def audit_timeline(
                 for field in ("visible_from", "settled_at", "min_settled_seconds"):
                     if field not in action:
                         checks.append({"kind": "settle-contract", "status": "fail", "action_id": action_id, "detail": f"schema 1.2 action requires {field}"})
+            if action.get("element_type") == "character-motion" and strict_motion_contract:
+                missing = sorted(field for field in MOTION_REQUIRED_FIELDS if field not in action)
+                if missing:
+                    checks.append({
+                        "kind": "character-motion-contract",
+                        "status": "fail",
+                        "action_id": action_id,
+                        "detail": f"schema 1.3 character-motion requires {', '.join(missing)}",
+                    })
+                if not isinstance(action.get("motion_asset_id"), str) or not action.get("motion_asset_id", "").strip():
+                    checks.append({"kind": "character-motion-contract", "status": "fail", "action_id": action_id, "detail": "motion_asset_id must be a non-empty string"})
+                if not isinstance(action.get("motion_variant"), str) or not action.get("motion_variant", "").strip():
+                    checks.append({"kind": "character-motion-contract", "status": "fail", "action_id": action_id, "detail": "motion_variant must be a non-empty string"})
+                phase = action.get("motion_phase")
+                if phase not in MOTION_PHASES:
+                    checks.append({"kind": "character-motion-phase", "status": "fail", "action_id": action_id, "detail": f"motion_phase must be one of {sorted(MOTION_PHASES)}"})
+                elif phase == "idle" and action.get("sync_required"):
+                    checks.append({"kind": "character-motion-phase", "status": "fail", "action_id": action_id, "detail": "idle character presence must be non-synchronous"})
+                elif phase != "idle" and not action.get("sync_required"):
+                    checks.append({"kind": "character-motion-phase", "status": "fail", "action_id": action_id, "detail": "prepare, key-action, outcome, and settled phases require a real word sync event"})
+                if action.get("facing") not in MOTION_FACINGS:
+                    checks.append({"kind": "character-motion-facing", "status": "fail", "action_id": action_id, "detail": f"facing must be one of {sorted(MOTION_FACINGS)}"})
+                rect = action.get("occupied_rect_1080p")
+                if not isinstance(rect, dict) or any(field not in rect for field in ("x_min", "x_max", "y_min", "y_max")):
+                    checks.append({"kind": "character-motion-layout", "status": "fail", "action_id": action_id, "detail": "occupied_rect_1080p must contain x_min, x_max, y_min, and y_max"})
+                else:
+                    try:
+                        numeric_rect = {field: float(rect[field]) for field in ("x_min", "x_max", "y_min", "y_max")}
+                    except (TypeError, ValueError):
+                        checks.append({"kind": "character-motion-layout", "status": "fail", "action_id": action_id, "detail": "occupied_rect_1080p values must be numeric"})
+                    else:
+                        has_area = (
+                            numeric_rect["x_min"] < numeric_rect["x_max"]
+                            and numeric_rect["y_min"] < numeric_rect["y_max"]
+                        )
+                        fits_slot = any(
+                            numeric_rect["x_min"] >= slot["x_min"]
+                            and numeric_rect["x_max"] <= slot["x_max"]
+                            and numeric_rect["y_min"] >= slot["y_min"]
+                            and numeric_rect["y_max"] <= slot["y_max"]
+                            for slot in YOLO_SLOTS_1080P
+                        )
+                        if not has_area or not fits_slot:
+                            checks.append({
+                                "kind": "character-motion-layout",
+                                "status": "fail",
+                                "action_id": action_id,
+                                "detail": "character motion must stay inside a reserved lower-left or lower-right slot and end at or before y=820",
+                            })
+                if phase in {"outcome", "settled"}:
+                    try:
+                        result_hold = float(action.get("min_settled_seconds", 0))
+                    except (TypeError, ValueError):
+                        result_hold = 0
+                    if result_hold < 1.0:
+                        checks.append({
+                            "kind": "character-motion-result-hold",
+                            "status": "fail",
+                            "action_id": action_id,
+                            "minimum_seconds": 1.0,
+                            "detail": "outcome and settled character frames must hold for at least 1 second",
+                        })
         if action.get("sync_required", False):
             required_actions.append(action)
             event_id = action.get("sync_event_id", action_id)
@@ -166,6 +243,15 @@ def audit_timeline(
         checks.append({"kind": "prelude-time", "status": state, "prelude_id": prelude.get("id"), "target_id": target_id, "lead_seconds": lead, "max_prelude_seconds": max_prelude_seconds})
         if prelude.get("scene_id") and target.get("scene_id") and prelude["scene_id"] != target["scene_id"]:
             checks.append({"kind": "prelude-scene", "status": "fail", "prelude_id": prelude.get("id"), "detail": "prelude and target must be in the same scene"})
+        target_action = action_by_event.get(target_id)
+        if target_action and target_action.get("element_type") == "character-motion":
+            checks.append({
+                "kind": "character-motion-prelude",
+                "status": "fail",
+                "prelude_id": prelude.get("id"),
+                "action_id": target_action.get("id"),
+                "detail": "early static character presence must be a non-synchronous idle action, not a prelude",
+            })
         prelude_by_target[target_id].append(prelude)
 
     if manifest_mode == "explicit":
@@ -265,6 +351,39 @@ def audit_timeline(
                     "settled_hold_seconds": final_hold,
                     "minimum_seconds": minimum,
                 })
+
+            motion_group = [
+                item
+                for item in ordered_group
+                if item.get("element_type") == "character-motion"
+            ]
+            if motion_group:
+                phases = [item.get("motion_phase") for item in motion_group]
+                valid_phases = all(phase in MOTION_PHASE_ORDER for phase in phases)
+                phase_indexes = [MOTION_PHASE_ORDER[phase] for phase in phases] if valid_phases else []
+                if not valid_phases or phase_indexes != sorted(phase_indexes):
+                    checks.append({
+                        "kind": "character-motion-sequence",
+                        "status": "fail",
+                        "sequence_group_id": group_id,
+                        "phases": phases,
+                        "detail": "character motion phases must progress from prepare to key-action to outcome to settled",
+                    })
+                elif "outcome" not in phases or "settled" not in phases:
+                    checks.append({
+                        "kind": "character-motion-sequence",
+                        "status": "fail",
+                        "sequence_group_id": group_id,
+                        "phases": phases,
+                        "detail": "synchronous character motion sequences require outcome and settled phases",
+                    })
+                else:
+                    checks.append({
+                        "kind": "character-motion-sequence",
+                        "status": "pass",
+                        "sequence_group_id": group_id,
+                        "phases": phases,
+                    })
 
         concepts: dict[str, list[dict[str, Any]]] = defaultdict(list)
         for action in actions:

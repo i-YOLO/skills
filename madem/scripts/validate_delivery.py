@@ -56,6 +56,7 @@ def main() -> None:
     parser.add_argument("--sync-report", type=Path, help="Output of sync-explainer-video validate_sync.py")
     parser.add_argument("--caption-report", type=Path, help="Output of build_captions.py for a burned-caption delivery")
     parser.add_argument("--audio-mix-report", type=Path, help="Output of mix_default_bgm.py for a BGM delivery")
+    parser.add_argument("--motion-density-report", type=Path, help="Output of audit_motion_density.py; required by dense-tech-v1 timelines")
     parser.add_argument("--reference-video", type=Path, help="Captioned source video; required to prove BGM mixing preserved its video stream")
     parser.add_argument("--manual-review", choices=("pending", "pass", "fail"), default="pending")
     parser.add_argument("--width", type=int, default=1920)
@@ -89,12 +90,23 @@ def main() -> None:
             checks.append({"name": "captions", "status": "fail", "detail": caption})
         else:
             assert isinstance(caption, dict)
+            minimum_caption_size = caption.get(
+                "minimum_estimated_font_size",
+                (caption.get("style") or {}).get("dynamic_min_font_size", 0),
+            )
+            caption_payload_single_line = all(
+                "\n" not in str(cue.get("text", ""))
+                and "\r" not in str(cue.get("text", ""))
+                for cue in caption.get("captions", [])
+            )
             status = "pass" if (
                 caption.get("status") == "pass"
                 and caption.get("text_source") == "approved script"
                 and float(caption.get("exact_alignment_coverage", 0)) >= 0.94
                 and float(caption.get("timing_coverage_after_interpolation", 0)) >= 0.98
-                and int(caption.get("max_lines", 99)) <= 2
+                and int(caption.get("max_lines", 99)) <= 1
+                and caption_payload_single_line
+                and float(minimum_caption_size) >= 36
                 and float(caption.get("max_frame_error", 99)) <= 1e-6
             ) else "fail"
             checks.append({"name": "captions", "status": status, "detail": caption})
@@ -114,6 +126,30 @@ def main() -> None:
                 and mix.get("source_video_stream_md5") == mix.get("output_video_stream_md5")
             ) else "fail"
             checks.append({"name": "audio_mix", "status": status, "detail": mix})
+
+    timeline = {}
+    if args.timeline and args.timeline.exists():
+        timeline = json.loads(args.timeline.read_text())
+    density_profile = (timeline.get("motion_density") or {}).get("profile_id")
+    density_required = density_profile == "dense-tech-v1"
+    if args.motion_density_report:
+        load_status, density = report_check(args.motion_density_report, "motion density")
+        status = (
+            "pass"
+            if load_status == "pass"
+            and isinstance(density, dict)
+            and density.get("status") == "pass"
+            else "fail"
+        )
+        checks.append({"name": "motion_density", "status": status, "detail": density})
+    elif density_required:
+        checks.append(
+            {
+                "name": "motion_density",
+                "status": "fail",
+                "detail": "dense-tech-v1 requires --motion-density-report",
+            }
+        )
 
     if args.audio_mix_report and not args.reference_video:
         checks.append({"name": "video_stream_preserved", "status": "fail", "detail": "--reference-video is required with --audio-mix-report"})

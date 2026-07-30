@@ -1,4 +1,4 @@
 interface:
   display_name: "MADEM 口播动画制作"
-  short_description: "静音先行、词级同步、默认字幕与背景音乐的口播动画交付"
-  default_prompt: "使用 $madem，先制作并验收静音口播动画；接入口播后按词级同步，并交付默认字幕和背景音乐发布版。"
+  short_description: "制作高清口播动画、AI 科技密集动效、透明图标与发布成片"
+  default_prompt: "使用 $madem，先制作并验收静音动画；AI/Agent 题材使用暗色高密度预设和高清透明图标，接入口播后交付单行字幕与背景音乐发布版。"

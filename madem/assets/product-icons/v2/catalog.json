@@ -1,0 +1,186 @@
+{
+  "schema_version": "2.0",
+  "asset_family": "madem-product-icons-v2",
+  "status": "project-proven",
+  "refresh_policy": "manual-only-after-light-dark-contact-sheet-review",
+  "usage_note": "Product-entry identification only; no endorsement or official-UI claim.",
+  "raster_contract": {
+    "size": 1024,
+    "mode": "RGBA",
+    "background": "transparent",
+    "corner_alpha": 0,
+    "fit": "contain",
+    "preferred_source": "svg-then-user-approved-high-resolution-png"
+  },
+  "assets": [
+    {
+      "asset_id": "chatgpt",
+      "display_name": "ChatGPT",
+      "official_domain": "chatgpt.com",
+      "source_file": "source/chatgpt.png",
+      "canonical_file": "png/chatgpt.png",
+      "source_kind": "user-approved-project-png",
+      "status": "project-proven",
+      "source_sha256": "390dfb48c33581be5a9199f701a3f09bcbad34046dc0dd21ee0c527032f952db",
+      "sha256": "305c2955ab1be347a4839da31ee76c120c487b7c59a0eeee86f9c609f09948e2",
+      "alpha_bbox": [
+        79,
+        81,
+        945,
+        943
+      ]
+    },
+    {
+      "asset_id": "claude",
+      "display_name": "Claude",
+      "official_domain": "claude.ai",
+      "source_file": "source/claude.svg",
+      "canonical_file": "source/claude.svg",
+      "source_kind": "user-approved-project-svg",
+      "status": "project-proven",
+      "source_sha256": "5119ef950a0d648b3fd62865791e73f07f32e18ddab84e4f21160f8c641c0f5f",
+      "sha256": "5119ef950a0d648b3fd62865791e73f07f32e18ddab84e4f21160f8c641c0f5f",
+      "alpha_bbox": null
+    },
+    {
+      "asset_id": "gemini",
+      "display_name": "Gemini",
+      "official_domain": "gemini.google.com",
+      "source_file": "source/gemini.png",
+      "canonical_file": "png/gemini.png",
+      "source_kind": "user-approved-project-original-png",
+      "status": "project-proven",
+      "preserve_original_shape": true,
+      "source_sha256": "53dfcbeaa79c4f8cbea0a08a901c9979831dd2968e4a127a8d3fc01645782331",
+      "sha256": "53dfcbeaa79c4f8cbea0a08a901c9979831dd2968e4a127a8d3fc01645782331",
+      "alpha_bbox": [
+        31,
+        31,
+        993,
+        993
+      ]
+    },
+    {
+      "asset_id": "manus",
+      "display_name": "Manus",
+      "official_domain": "manus.im",
+      "source_file": "source/manus.png",
+      "canonical_file": "png/manus.png",
+      "source_kind": "user-approved-project-png",
+      "status": "project-proven",
+      "source_sha256": "b82deb825fd6ed49b74e5ab0a95efcb953a6e0c989259309167dcb96ed0af748",
+      "sha256": "ff42608684397be39b28e8aa9166ceb9f74da7741722eef2a56b52ca99d36c65",
+      "alpha_bbox": [
+        0,
+        122,
+        1024,
+        1024
+      ]
+    },
+    {
+      "asset_id": "perplexity",
+      "display_name": "Perplexity",
+      "official_domain": "perplexity.ai",
+      "source_file": "source/perplexity.svg",
+      "canonical_file": "source/perplexity.svg",
+      "source_kind": "user-approved-project-svg",
+      "status": "project-proven",
+      "source_sha256": "d9c018cd2fc0594ec0a4cfd174b157020c09c5fe5b2e38e07371062f5ac283c5",
+      "sha256": "d9c018cd2fc0594ec0a4cfd174b157020c09c5fe5b2e38e07371062f5ac283c5",
+      "alpha_bbox": null
+    },
+    {
+      "asset_id": "coze",
+      "display_name": "Coze",
+      "official_domain": "coze.com",
+      "source_file": "source/coze.png",
+      "canonical_file": "png/coze.png",
+      "source_kind": "user-approved-project-original-png",
+      "status": "project-proven",
+      "preserve_original_shape": true,
+      "source_sha256": "c915cebdddd5d6cc9b8cfde490c91d1afa9a4ac9c3a05a0158bee461ff4bc14e",
+      "sha256": "c915cebdddd5d6cc9b8cfde490c91d1afa9a4ac9c3a05a0158bee461ff4bc14e",
+      "alpha_bbox": [
+        0,
+        0,
+        1024,
+        1024
+      ]
+    },
+    {
+      "asset_id": "grok",
+      "display_name": "Grok",
+      "official_domain": "grok.com",
+      "source_file": "source/grok.png",
+      "canonical_file": "png/grok.png",
+      "source_kind": "user-approved-boundary-cleaned-png",
+      "status": "project-proven",
+      "exterior_cleanup": "Only boundary-connected white/gray corner pixels were removed; the enclosed white glyph remains opaque.",
+      "source_sha256": "62870e7a159e47a329825f076ea3c33b716123bf01f41f893074a294b71a0078",
+      "sha256": "62870e7a159e47a329825f076ea3c33b716123bf01f41f893074a294b71a0078",
+      "alpha_bbox": [
+        0,
+        0,
+        1024,
+        1024
+      ]
+    },
+    {
+      "asset_id": "deepseek",
+      "display_name": "DeepSeek",
+      "official_domain": "deepseek.com",
+      "source_file": "source/deepseek.svg",
+      "canonical_file": "source/deepseek.svg",
+      "source_kind": "user-approved-project-svg",
+      "status": "project-proven",
+      "source_sha256": "5d2c1b237c7491fc075ee24195fb1d1231e8c269e38eaddb48ed364c5ef2c1d0",
+      "sha256": "5d2c1b237c7491fc075ee24195fb1d1231e8c269e38eaddb48ed364c5ef2c1d0",
+      "alpha_bbox": null
+    },
+    {
+      "asset_id": "yuanbao",
+      "display_name": "元宝",
+      "official_domain": "yuanbao.tencent.com",
+      "source_file": "source/yuanbao.png",
+      "canonical_file": "png/yuanbao.png",
+      "source_kind": "library-approved-raster-source",
+      "status": "project-proven",
+      "source_sha256": "7c1c9c46e7ab741533592603833f99be69a34b712c37020bcf86124ff421b5da",
+      "sha256": "0f20a2b453a6409b4152012729b4e3593bce440df9d7bcd1c97984f3ac7d6e32",
+      "alpha_bbox": [
+        91,
+        91,
+        933,
+        933
+      ]
+    },
+    {
+      "asset_id": "kimi",
+      "display_name": "Kimi",
+      "official_domain": "kimi.moonshot.cn",
+      "source_file": "source/kimi.png",
+      "canonical_file": "png/kimi.png",
+      "source_kind": "library-approved-raster-source",
+      "status": "project-proven",
+      "source_sha256": "b385253ecc846c2e3174262f595cf3f150f4c5d02da6dcf904a7bbe09058d113",
+      "sha256": "6febee2178fa015999b411bf9687643eec6d7ade8037b4fee22dbbdb6695234b",
+      "alpha_bbox": [
+        91,
+        91,
+        933,
+        933
+      ]
+    }
+  ],
+  "validation": {
+    "backgrounds": [
+      "transparent-checkerboard",
+      "black",
+      "white"
+    ],
+    "contact_sheet_html": "review/icon-contact-sheet.html",
+    "contact_sheet_png": "review/icon-contact-sheet.png",
+    "contact_sheet_sha256": "20ea0f780d3cc0164c5865c624a8951c7b7f498f380ff4fbdba7b2cffeac681d",
+    "manual_review": "pass"
+  }
+}

@@ -1,6 +1,6 @@
 ---
 name: sync-explainer-video
-description: 将知识讲解、教学、技术原理、数据可视化和产品演示动画与真实口播音频逐词同步，并修复同步、转场、可读性和媒体参数问题。用于已有静音动画、Manim/Remotion 项目或成片加入口播；使用 Faster-Whisper 建立词级时间轴、识别停顿/重复/未朗读内容、给出分镜级改动方案并验收交付。当用户提到“sync-explainer-video”“声画同步”“逐词对齐”“动画提前/滞后”或要验收口播动画时使用。
+description: 将知识讲解、教学、技术原理、数据可视化、AI/Agent 高密度动效和产品演示动画与真实口播音频逐词同步，并修复同步、节奏密度、转场、可读性和媒体参数问题。用于已有静音动画、Manim/Remotion 项目或成片加入口播；使用 Faster-Whisper 建立词级时间轴、保持语义动作与低强度微动的节奏，并验收交付。当用户提到“sync-explainer-video”“声画同步”“逐词对齐”“密集动画同步”“动画提前/滞后”或要验收口播动画时使用。
 ---
 
 # Sync Explainer Video：口播声画同步与验收
@@ -41,12 +41,13 @@ RUNTIME=/Users/shike/.codex/runtimes/video-skills-py311
 2. 使用 `transcript_compare.py` 对比逐字稿和真实转录，标记可能的停顿、重复、口误和未朗读内容；把不确定项交给用户或人工回听确认。
 3. 为每个分镜补齐 `audio_start` 和 `audio_end`，使其对应实际解释该概念的语音区间；运行 `plan_sync.py` 生成分镜级同步方案。
 4. 单个场景音频与静音动画差值在 `±20%` 内时，允许调整停留、转场和动作节奏。若动作变得不自然，仍需补画面。
-5. 音频较长且超阈值时，增加有讲解价值的卡片、素材或镜头；音频较短且超阈值时，压缩或移除非关键画面。不要靠明显慢放、空转或长静止凑时长。
-6. 先补齐 `visual_actions`：登记每个有意义的标题、卡片、标签、节点、连线、高亮和 CTA 的场景、类型、概念归属、`visible_from`、`settled_at`、`min_settled_seconds`、展示截止与是否需要同步；场景登记 `visual_exit_start`。为每个需要同步的动作建立一条严格 `sync_events` 语义事件。
+5. 音频较长且超阈值时，优先增加新的语义或状态变化；AI 科技题材可从 `$madem` 的 `DenseTechMotion.tsx` 选择检查、进度、扫描或低强度微动。音频较短且超阈值时，压缩或移除非关键画面。不要靠明显慢放、空转、拉长单个主动画或长静止凑时长。
+6. 先补齐 schema 1.3 的 `visual_actions`：登记每个有意义的标题、卡片、标签、节点、连线、高亮、CTA 和 `character-motion` 的场景、类型、概念归属、`visible_from`、`settled_at`、`min_settled_seconds`、展示截止与是否需要同步；场景登记 `visual_exit_start`。角色动作先从 `$madem` 的 `assets/registry.json` 和对应 pack catalog 解析，额外登记 `motion_asset_id`、`motion_variant`、`motion_phase`、`facing` 和 `occupied_rect_1080p`，并将准备、关键动作、结果、落定分别绑定真实词位。为每个需要同步的动作建立一条严格 `sync_events` 语义事件。完整资产解析和阶段缩放规则见 [references/character-motion-sync.md](references/character-motion-sync.md)。
 7. 按“词位出现 → 词后完成 → 后续解释继续推进”修改动画。排比、流程和循环必须按口播语序逐项展开，不能整页在场景开头一次性播完后静止等待。
 8. 仅当短句临近转场会闪现时，才建立 `prelude_events`：容器、轮廓或弱化标签可提前最多 `0.75s`；完整文案、关键词和高亮仍在对应词位出现。已有专页详解的概念不得在前一页以完整卡片重复展开。
 9. 确保每个动作满足 `visual_exit_start - settled_at >= min_settled_seconds`；顺序组以最后一项完成为 `settled_at`。箭头、标签、答案和下一节点在语义发生前必须完全不可见，SVG 零进度不得显示箭头端点。
 10. 修改 Remotion/Manim 项目或成片后重渲染，先运行 `audit_action_timing.py`，再运行 `validate_sync.py`。同步通过后，交给 `$madem` 以已确认文案生成字幕并加入默认 BGM；BGM 不参与转录、词级对齐或动作锚点计算。
+11. `motion_density.profile_id` 为 `dense-tech-v1` 时，保留 schema 1.4 的状态/环境轨，运行 `$madem/scripts/audit_motion_density.py`。超过 3 秒的语义空档必须有状态或低强度环境轨，且不能出现两个高注意力入场窗口重叠。
 
 ```bash
 python scripts/audit_action_timing.py --timeline <timeline.json> --require-manifest --out <action-audit.json>
@@ -65,10 +66,12 @@ python scripts/validate_sync.py --timeline <timeline.json> --require-manifest --
 - 文字、箭头、连线、高亮、图片、视频和技术关系是否正确、可读且不重叠。
 - 每个 `sync_required` 动作是否有严格语义锚点；预入场是否只作视觉铺垫、领先不超过 `0.75s`，且短时元素没有在转场前闪退。
 - 每个概念是否有唯一详解拥有场景；标题、卡片与下一屏是否在真实语义处接手，而不是为保留旧分镜时长提前堆叠。
+- 每个 `character-motion` 是否能从 `$madem` 的资产注册表和 pack catalog 唯一解析；默认不得使用未显式采用的 `candidate`，也不得让最终项目运行时依赖全局 Skill 路径。
 - 发布版字幕是否使用已确认文案、真实词级时间与最终帧率；BGM 是否只在同步和字幕画面审核通过后加入，且没有改变已验收视频流。
+- 高密度项目是否保持每秒 `0.55–0.85` 个语义动作的建议区间；长场景是否有至少三个语义/状态节点；最终编码视频是否没有静止候选。
 
 调用 `$madem` 的 `extract_review_frames.py` 进行每秒基础抽帧和事件帧抽取；允许正常弹入/弹出，但必须修复重叠、越界、模糊、单帧闪烁、不合理布局、播放卡顿、未声明长静止，以及技术示意与口播不一致。
 
 同步误差目标为不超过半帧；超过半帧但不超过一帧为警告，超过一帧为失败。没有严格 `sync_events`、动作清单证据或动作审计失败时，验收状态必须为 `needs-evidence` 或 `fail`，不得标记已同步。
 
-字段定义和修复边界见 [references/sync-schema.md](references/sync-schema.md)。
+字段定义和修复边界见 [references/sync-schema.md](references/sync-schema.md)；逐帧人物动作的资产解析、阶段绑定和节奏回退见 [references/character-motion-sync.md](references/character-motion-sync.md)。

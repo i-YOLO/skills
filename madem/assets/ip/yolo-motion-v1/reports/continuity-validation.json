@@ -1,0 +1,597 @@
+{
+  "status": "pass",
+  "catalog": "/Users/shike/.codex/skills/madem/assets/ip/yolo-motion-v1/catalog.json",
+  "checks": [
+    {
+      "kind": "keyframe-count",
+      "status": "pass",
+      "detail": "yolo-verify-source right/not-found has at least 8 independent PNG entries",
+      "motion_id": "yolo-verify-source",
+      "facing": "right",
+      "outcome": "not-found",
+      "keyframes": 11
+    },
+    {
+      "kind": "frame-continuity",
+      "status": "pass",
+      "detail": "yolo-verify-source right/not-found has no extreme adjacent-frame jump",
+      "motion_id": "yolo-verify-source",
+      "facing": "right",
+      "outcome": "not-found",
+      "median_mean_difference": 2.4199,
+      "maximum_mean_difference": 5.0091,
+      "threshold": 28.0
+    },
+    {
+      "kind": "result-hold",
+      "status": "pass",
+      "detail": "yolo-verify-source right/not-found final frame holds at least 1 second",
+      "motion_id": "yolo-verify-source",
+      "facing": "right",
+      "outcome": "not-found",
+      "final_ticks": 12,
+      "source_fps": 12
+    },
+    {
+      "kind": "keyframe-count",
+      "status": "pass",
+      "detail": "yolo-verify-source left/not-found has at least 8 independent PNG entries",
+      "motion_id": "yolo-verify-source",
+      "facing": "left",
+      "outcome": "not-found",
+      "keyframes": 11
+    },
+    {
+      "kind": "frame-continuity",
+      "status": "pass",
+      "detail": "yolo-verify-source left/not-found has no extreme adjacent-frame jump",
+      "motion_id": "yolo-verify-source",
+      "facing": "left",
+      "outcome": "not-found",
+      "median_mean_difference": 4.0699,
+      "maximum_mean_difference": 7.0313,
+      "threshold": 28.0
+    },
+    {
+      "kind": "result-hold",
+      "status": "pass",
+      "detail": "yolo-verify-source left/not-found final frame holds at least 1 second",
+      "motion_id": "yolo-verify-source",
+      "facing": "left",
+      "outcome": "not-found",
+      "final_ticks": 12,
+      "source_fps": 12
+    },
+    {
+      "kind": "facing-independence",
+      "status": "pass",
+      "detail": "yolo-verify-source not-found left facing is not a pixel mirror of right facing",
+      "motion_id": "yolo-verify-source",
+      "outcome": "not-found",
+      "mirrored_mean_difference": 7.5709
+    },
+    {
+      "kind": "keyframe-count",
+      "status": "pass",
+      "detail": "yolo-verify-source right/verified has at least 8 independent PNG entries",
+      "motion_id": "yolo-verify-source",
+      "facing": "right",
+      "outcome": "verified",
+      "keyframes": 11
+    },
+    {
+      "kind": "frame-continuity",
+      "status": "pass",
+      "detail": "yolo-verify-source right/verified has no extreme adjacent-frame jump",
+      "motion_id": "yolo-verify-source",
+      "facing": "right",
+      "outcome": "verified",
+      "median_mean_difference": 2.4199,
+      "maximum_mean_difference": 5.9642,
+      "threshold": 28.0
+    },
+    {
+      "kind": "result-hold",
+      "status": "pass",
+      "detail": "yolo-verify-source right/verified final frame holds at least 1 second",
+      "motion_id": "yolo-verify-source",
+      "facing": "right",
+      "outcome": "verified",
+      "final_ticks": 12,
+      "source_fps": 12
+    },
+    {
+      "kind": "keyframe-count",
+      "status": "pass",
+      "detail": "yolo-verify-source left/verified has at least 8 independent PNG entries",
+      "motion_id": "yolo-verify-source",
+      "facing": "left",
+      "outcome": "verified",
+      "keyframes": 11
+    },
+    {
+      "kind": "frame-continuity",
+      "status": "pass",
+      "detail": "yolo-verify-source left/verified has no extreme adjacent-frame jump",
+      "motion_id": "yolo-verify-source",
+      "facing": "left",
+      "outcome": "verified",
+      "median_mean_difference": 4.0699,
+      "maximum_mean_difference": 7.0288,
+      "threshold": 28.0
+    },
+    {
+      "kind": "result-hold",
+      "status": "pass",
+      "detail": "yolo-verify-source left/verified final frame holds at least 1 second",
+      "motion_id": "yolo-verify-source",
+      "facing": "left",
+      "outcome": "verified",
+      "final_ticks": 12,
+      "source_fps": 12
+    },
+    {
+      "kind": "facing-independence",
+      "status": "pass",
+      "detail": "yolo-verify-source verified left facing is not a pixel mirror of right facing",
+      "motion_id": "yolo-verify-source",
+      "outcome": "verified",
+      "mirrored_mean_difference": 7.5709
+    },
+    {
+      "kind": "keyframe-count",
+      "status": "pass",
+      "detail": "yolo-quiet-observe right/loop has at least 8 independent PNG entries",
+      "motion_id": "yolo-quiet-observe",
+      "facing": "right",
+      "outcome": "loop",
+      "keyframes": 8
+    },
+    {
+      "kind": "frame-continuity",
+      "status": "pass",
+      "detail": "yolo-quiet-observe right/loop has no extreme adjacent-frame jump",
+      "motion_id": "yolo-quiet-observe",
+      "facing": "right",
+      "outcome": "loop",
+      "median_mean_difference": 3.3638,
+      "maximum_mean_difference": 7.9879,
+      "threshold": 28.0
+    },
+    {
+      "kind": "loop-seam",
+      "status": "pass",
+      "detail": "yolo-quiet-observe right/loop closes on the exact loop pose",
+      "motion_id": "yolo-quiet-observe",
+      "facing": "right",
+      "outcome": "loop",
+      "seam_mean_difference": 0.0
+    },
+    {
+      "kind": "keyframe-count",
+      "status": "pass",
+      "detail": "yolo-quiet-observe left/loop has at least 8 independent PNG entries",
+      "motion_id": "yolo-quiet-observe",
+      "facing": "left",
+      "outcome": "loop",
+      "keyframes": 8
+    },
+    {
+      "kind": "frame-continuity",
+      "status": "pass",
+      "detail": "yolo-quiet-observe left/loop has no extreme adjacent-frame jump",
+      "motion_id": "yolo-quiet-observe",
+      "facing": "left",
+      "outcome": "loop",
+      "median_mean_difference": 1.9178,
+      "maximum_mean_difference": 10.1419,
+      "threshold": 28.0
+    },
+    {
+      "kind": "loop-seam",
+      "status": "pass",
+      "detail": "yolo-quiet-observe left/loop closes on the exact loop pose",
+      "motion_id": "yolo-quiet-observe",
+      "facing": "left",
+      "outcome": "loop",
+      "seam_mean_difference": 0.0
+    },
+    {
+      "kind": "facing-independence",
+      "status": "pass",
+      "detail": "yolo-quiet-observe loop left facing is not a pixel mirror of right facing",
+      "motion_id": "yolo-quiet-observe",
+      "outcome": "loop",
+      "mirrored_mean_difference": 6.886
+    },
+    {
+      "kind": "keyframe-count",
+      "status": "pass",
+      "detail": "yolo-chin-think right/loop has at least 8 independent PNG entries",
+      "motion_id": "yolo-chin-think",
+      "facing": "right",
+      "outcome": "loop",
+      "keyframes": 8
+    },
+    {
+      "kind": "frame-continuity",
+      "status": "pass",
+      "detail": "yolo-chin-think right/loop has no extreme adjacent-frame jump",
+      "motion_id": "yolo-chin-think",
+      "facing": "right",
+      "outcome": "loop",
+      "median_mean_difference": 6.7171,
+      "maximum_mean_difference": 13.1409,
+      "threshold": 28.0
+    },
+    {
+      "kind": "loop-seam",
+      "status": "pass",
+      "detail": "yolo-chin-think right/loop closes on the exact loop pose",
+      "motion_id": "yolo-chin-think",
+      "facing": "right",
+      "outcome": "loop",
+      "seam_mean_difference": 0.0
+    },
+    {
+      "kind": "keyframe-count",
+      "status": "pass",
+      "detail": "yolo-chin-think left/loop has at least 8 independent PNG entries",
+      "motion_id": "yolo-chin-think",
+      "facing": "left",
+      "outcome": "loop",
+      "keyframes": 8
+    },
+    {
+      "kind": "frame-continuity",
+      "status": "pass",
+      "detail": "yolo-chin-think left/loop has no extreme adjacent-frame jump",
+      "motion_id": "yolo-chin-think",
+      "facing": "left",
+      "outcome": "loop",
+      "median_mean_difference": 6.5654,
+      "maximum_mean_difference": 23.1445,
+      "threshold": 28.0
+    },
+    {
+      "kind": "loop-seam",
+      "status": "pass",
+      "detail": "yolo-chin-think left/loop closes on the exact loop pose",
+      "motion_id": "yolo-chin-think",
+      "facing": "left",
+      "outcome": "loop",
+      "seam_mean_difference": 0.0
+    },
+    {
+      "kind": "facing-independence",
+      "status": "pass",
+      "detail": "yolo-chin-think loop left facing is not a pixel mirror of right facing",
+      "motion_id": "yolo-chin-think",
+      "outcome": "loop",
+      "mirrored_mean_difference": 13.5343
+    },
+    {
+      "kind": "keyframe-count",
+      "status": "pass",
+      "detail": "yolo-point-tap right/default has at least 8 independent PNG entries",
+      "motion_id": "yolo-point-tap",
+      "facing": "right",
+      "outcome": "default",
+      "keyframes": 8
+    },
+    {
+      "kind": "frame-continuity",
+      "status": "pass",
+      "detail": "yolo-point-tap right/default has no extreme adjacent-frame jump",
+      "motion_id": "yolo-point-tap",
+      "facing": "right",
+      "outcome": "default",
+      "median_mean_difference": 6.3805,
+      "maximum_mean_difference": 24.3626,
+      "threshold": 28.0
+    },
+    {
+      "kind": "result-hold",
+      "status": "pass",
+      "detail": "yolo-point-tap right/default final frame holds at least 1 second",
+      "motion_id": "yolo-point-tap",
+      "facing": "right",
+      "outcome": "default",
+      "final_ticks": 12,
+      "source_fps": 12
+    },
+    {
+      "kind": "keyframe-count",
+      "status": "pass",
+      "detail": "yolo-point-tap left/default has at least 8 independent PNG entries",
+      "motion_id": "yolo-point-tap",
+      "facing": "left",
+      "outcome": "default",
+      "keyframes": 8
+    },
+    {
+      "kind": "frame-continuity",
+      "status": "pass",
+      "detail": "yolo-point-tap left/default has no extreme adjacent-frame jump",
+      "motion_id": "yolo-point-tap",
+      "facing": "left",
+      "outcome": "default",
+      "median_mean_difference": 14.6218,
+      "maximum_mean_difference": 24.8737,
+      "threshold": 28.0
+    },
+    {
+      "kind": "result-hold",
+      "status": "pass",
+      "detail": "yolo-point-tap left/default final frame holds at least 1 second",
+      "motion_id": "yolo-point-tap",
+      "facing": "left",
+      "outcome": "default",
+      "final_ticks": 12,
+      "source_fps": 12
+    },
+    {
+      "kind": "facing-independence",
+      "status": "pass",
+      "detail": "yolo-point-tap default left facing is not a pixel mirror of right facing",
+      "motion_id": "yolo-point-tap",
+      "outcome": "default",
+      "mirrored_mean_difference": 8.3697
+    },
+    {
+      "kind": "keyframe-count",
+      "status": "pass",
+      "detail": "yolo-catch-card right/default has at least 8 independent PNG entries",
+      "motion_id": "yolo-catch-card",
+      "facing": "right",
+      "outcome": "default",
+      "keyframes": 8
+    },
+    {
+      "kind": "frame-continuity",
+      "status": "pass",
+      "detail": "yolo-catch-card right/default has no extreme adjacent-frame jump",
+      "motion_id": "yolo-catch-card",
+      "facing": "right",
+      "outcome": "default",
+      "median_mean_difference": 12.4806,
+      "maximum_mean_difference": 17.4053,
+      "threshold": 28.0
+    },
+    {
+      "kind": "result-hold",
+      "status": "pass",
+      "detail": "yolo-catch-card right/default final frame holds at least 1 second",
+      "motion_id": "yolo-catch-card",
+      "facing": "right",
+      "outcome": "default",
+      "final_ticks": 12,
+      "source_fps": 12
+    },
+    {
+      "kind": "keyframe-count",
+      "status": "pass",
+      "detail": "yolo-catch-card left/default has at least 8 independent PNG entries",
+      "motion_id": "yolo-catch-card",
+      "facing": "left",
+      "outcome": "default",
+      "keyframes": 8
+    },
+    {
+      "kind": "frame-continuity",
+      "status": "pass",
+      "detail": "yolo-catch-card left/default has no extreme adjacent-frame jump",
+      "motion_id": "yolo-catch-card",
+      "facing": "left",
+      "outcome": "default",
+      "median_mean_difference": 10.5065,
+      "maximum_mean_difference": 23.2579,
+      "threshold": 28.0
+    },
+    {
+      "kind": "result-hold",
+      "status": "pass",
+      "detail": "yolo-catch-card left/default final frame holds at least 1 second",
+      "motion_id": "yolo-catch-card",
+      "facing": "left",
+      "outcome": "default",
+      "final_ticks": 12,
+      "source_fps": 12
+    },
+    {
+      "kind": "facing-independence",
+      "status": "pass",
+      "detail": "yolo-catch-card default left facing is not a pixel mirror of right facing",
+      "motion_id": "yolo-catch-card",
+      "outcome": "default",
+      "mirrored_mean_difference": 8.1278
+    },
+    {
+      "kind": "keyframe-count",
+      "status": "pass",
+      "detail": "yolo-risk-reminder right/default has at least 8 independent PNG entries",
+      "motion_id": "yolo-risk-reminder",
+      "facing": "right",
+      "outcome": "default",
+      "keyframes": 8
+    },
+    {
+      "kind": "frame-continuity",
+      "status": "pass",
+      "detail": "yolo-risk-reminder right/default has no extreme adjacent-frame jump",
+      "motion_id": "yolo-risk-reminder",
+      "facing": "right",
+      "outcome": "default",
+      "median_mean_difference": 15.0443,
+      "maximum_mean_difference": 17.022,
+      "threshold": 28.0
+    },
+    {
+      "kind": "result-hold",
+      "status": "pass",
+      "detail": "yolo-risk-reminder right/default final frame holds at least 1 second",
+      "motion_id": "yolo-risk-reminder",
+      "facing": "right",
+      "outcome": "default",
+      "final_ticks": 12,
+      "source_fps": 12
+    },
+    {
+      "kind": "keyframe-count",
+      "status": "pass",
+      "detail": "yolo-risk-reminder left/default has at least 8 independent PNG entries",
+      "motion_id": "yolo-risk-reminder",
+      "facing": "left",
+      "outcome": "default",
+      "keyframes": 8
+    },
+    {
+      "kind": "frame-continuity",
+      "status": "pass",
+      "detail": "yolo-risk-reminder left/default has no extreme adjacent-frame jump",
+      "motion_id": "yolo-risk-reminder",
+      "facing": "left",
+      "outcome": "default",
+      "median_mean_difference": 6.1077,
+      "maximum_mean_difference": 21.5278,
+      "threshold": 28.0
+    },
+    {
+      "kind": "result-hold",
+      "status": "pass",
+      "detail": "yolo-risk-reminder left/default final frame holds at least 1 second",
+      "motion_id": "yolo-risk-reminder",
+      "facing": "left",
+      "outcome": "default",
+      "final_ticks": 12,
+      "source_fps": 12
+    },
+    {
+      "kind": "facing-independence",
+      "status": "pass",
+      "detail": "yolo-risk-reminder default left facing is not a pixel mirror of right facing",
+      "motion_id": "yolo-risk-reminder",
+      "outcome": "default",
+      "mirrored_mean_difference": 11.018
+    }
+  ],
+  "metrics": [
+    {
+      "motion_id": "yolo-verify-source",
+      "facing": "right",
+      "outcome": "not-found",
+      "keyframes": 11,
+      "median_mean_difference": 2.4199,
+      "maximum_mean_difference": 5.0091
+    },
+    {
+      "motion_id": "yolo-verify-source",
+      "facing": "left",
+      "outcome": "not-found",
+      "keyframes": 11,
+      "median_mean_difference": 4.0699,
+      "maximum_mean_difference": 7.0313
+    },
+    {
+      "motion_id": "yolo-verify-source",
+      "facing": "right",
+      "outcome": "verified",
+      "keyframes": 11,
+      "median_mean_difference": 2.4199,
+      "maximum_mean_difference": 5.9642
+    },
+    {
+      "motion_id": "yolo-verify-source",
+      "facing": "left",
+      "outcome": "verified",
+      "keyframes": 11,
+      "median_mean_difference": 4.0699,
+      "maximum_mean_difference": 7.0288
+    },
+    {
+      "motion_id": "yolo-quiet-observe",
+      "facing": "right",
+      "outcome": "loop",
+      "keyframes": 8,
+      "median_mean_difference": 3.3638,
+      "maximum_mean_difference": 7.9879
+    },
+    {
+      "motion_id": "yolo-quiet-observe",
+      "facing": "left",
+      "outcome": "loop",
+      "keyframes": 8,
+      "median_mean_difference": 1.9178,
+      "maximum_mean_difference": 10.1419
+    },
+    {
+      "motion_id": "yolo-chin-think",
+      "facing": "right",
+      "outcome": "loop",
+      "keyframes": 8,
+      "median_mean_difference": 6.7171,
+      "maximum_mean_difference": 13.1409
+    },
+    {
+      "motion_id": "yolo-chin-think",
+      "facing": "left",
+      "outcome": "loop",
+      "keyframes": 8,
+      "median_mean_difference": 6.5654,
+      "maximum_mean_difference": 23.1445
+    },
+    {
+      "motion_id": "yolo-point-tap",
+      "facing": "right",
+      "outcome": "default",
+      "keyframes": 8,
+      "median_mean_difference": 6.3805,
+      "maximum_mean_difference": 24.3626
+    },
+    {
+      "motion_id": "yolo-point-tap",
+      "facing": "left",
+      "outcome": "default",
+      "keyframes": 8,
+      "median_mean_difference": 14.6218,
+      "maximum_mean_difference": 24.8737
+    },
+    {
+      "motion_id": "yolo-catch-card",
+      "facing": "right",
+      "outcome": "default",
+      "keyframes": 8,
+      "median_mean_difference": 12.4806,
+      "maximum_mean_difference": 17.4053
+    },
+    {
+      "motion_id": "yolo-catch-card",
+      "facing": "left",
+      "outcome": "default",
+      "keyframes": 8,
+      "median_mean_difference": 10.5065,
+      "maximum_mean_difference": 23.2579
+    },
+    {
+      "motion_id": "yolo-risk-reminder",
+      "facing": "right",
+      "outcome": "default",
+      "keyframes": 8,
+      "median_mean_difference": 15.0443,
+      "maximum_mean_difference": 17.022
+    },
+    {
+      "motion_id": "yolo-risk-reminder",
+      "facing": "left",
+      "outcome": "default",
+      "keyframes": 8,
+      "median_mean_difference": 6.1077,
+      "maximum_mean_difference": 21.5278
+    }
+  ],
+  "summary": {
+    "checks": 49,
+    "failures": 0,
+    "motion_outcome_variants": 14
+  }
+}

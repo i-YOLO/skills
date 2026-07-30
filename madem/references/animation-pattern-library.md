@@ -17,6 +17,11 @@
 | `AgentDecisionLoop` | 判断、追问、返回、继续 | Agent 动态决策 | 节点、四段独立进度、因果标签 | 用同一进度驱动全部分支 |
 | `PermissionGateCards` | 权限、核对、人工确认 | 边界与风险控制 | 门卡、说明、逐卡起始时间 | 无约束自动执行的表达 |
 | `InterfaceToSystemReveal` | 从表层界面拉开到系统能力 | 聊天框背后的系统 | 模拟界面、箭头、层级数据 | 中间堆叠无含义白卡 |
+| `YoloMotion` | 核验、提醒、指向、接收等轻量角色动作 | 口播词位旁的 IP 强调 | 动作 ID、朝向、结果分支、目标时间节点、槽位和显示高度 | 没有预留角色槽位，或需要大幅全屏表演 |
+| `IconSwarmCollector` | 多个图标聚合、吞噬、吸入、收纳 | AI 产品入口汇聚、文件夹收纳 | `assetId` 列表、目标点、起止帧 | 单个产品的功能详解 |
+| `QualityInspectionLoop` | 检查、失败、修改、重渲、通过 | 自动验收和迭代修复 | 检查项、失败/修复/通过帧 | 没有状态变化的普通清单 |
+| `MotionGallery` | 多种动效能力的可信演示 | 动效合集、能力证明 | 2–6 个短标签、入场点 | 纯文字功能列表 |
+| `MotionGatherTransition` | 多种动效最终汇入一个目标 | 收尾、归档、聚合交付 | 起止帧、目标点 | 不存在聚合关系的装饰转场 |
 
 ## 使用方式
 
@@ -26,6 +31,8 @@
 4. 连续两段不要机械复用同一结构；语义相近时优先改变资产类型或镜头角度。
 5. `PipelineFlow` 使用 `stepStarts`，`LayerCards` 使用 `columnStarts`/`tagStarts`，让每一项对齐口播；最后一项完成后至少保留 1 秒完整状态。
 6. `AgentDecisionLoop` 的返回、继续和完成路径分别传入独立进度；路径进度不超过 0.02 时组件不显示箭头端点。
+7. `YoloMotion` 从 `assets/ip/yolo-motion-v1/catalog.json` 读取帧时长和道具轨迹；复制组件与所需 PNG 到项目内。结果帧至少保持 1 秒，左右朝向不得用 CSS 镜像替代。
+8. AI、Agent、Codex 和软件工作流题材默认阅读 [dense-motion-system.md](dense-motion-system.md)，选择 `madem-ai-tech-dark-v1 + dense-tech-v1`；用户指定其他风格时覆盖。
 
 ## 入库门槛
 

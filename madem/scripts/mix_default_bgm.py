@@ -147,7 +147,9 @@ def main() -> int:
     output_md5 = stream_md5(args.out, "0:v:0")
     if source_md5 != output_md5:
         raise RuntimeError("BGM mixing changed the encoded video stream")
-    if abs(float(output_info["format_duration"]) - target_seconds) > 1 / expected["sample_rate"] + 1e-6:
+    duration_error = abs(float(output_info["format_duration"]) - target_seconds)
+    duration_tolerance = max(0.001, 1 / expected["sample_rate"] + 1e-6)
+    if duration_error > duration_tolerance:
         raise RuntimeError("mixed output duration does not match the original voiceover duration")
 
     report = {
@@ -159,9 +161,20 @@ def main() -> int:
         "output_video_stream_md5": output_md5,
         "voiceover_duration_seconds": target_seconds,
         "output_duration_seconds": output_info["format_duration"],
+        "duration_error_seconds": duration_error,
+        "duration_tolerance_seconds": duration_tolerance,
+        "duration_note": "MP4/AAC timestamps may round to millisecond container precision.",
         "music": {"path": str(copied_music), "sha256": music_hash, "duration_seconds": track_seconds, "loop_count": loops},
         "mix": {key: profile[key] for key in ("base_volume", "base_gain_db", "fade_in_seconds", "fade_out_seconds", "loop_crossfade_seconds", "sidechain", "limiter")},
         "output_audio": output_audio,
+        "checks": {
+            "decode": True,
+            "video_stream_unchanged": source_md5 == output_md5,
+            "audio_codec": output_audio["codec"] == expected["codec"],
+            "audio_sample_rate": output_audio["sample_rate"] == expected["sample_rate"],
+            "audio_channels": output_audio["channels"] == expected["channels"],
+            "duration_within_container_timebase": duration_error <= duration_tolerance,
+        },
     }
     args.report.parent.mkdir(parents=True, exist_ok=True)
     args.report.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

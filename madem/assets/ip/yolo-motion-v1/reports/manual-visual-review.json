@@ -1,0 +1,40 @@
+{
+  "status": "pass",
+  "review_scope": {
+    "background": "#FAF8F3",
+    "display_heights": [280, 320, 380],
+    "facings": ["left", "right"],
+    "motion_ids": [
+      "yolo-verify-source",
+      "yolo-quiet-observe",
+      "yolo-chin-think",
+      "yolo-point-tap",
+      "yolo-catch-card",
+      "yolo-risk-reminder"
+    ],
+    "verify_source_outcomes": ["not-found", "verified"]
+  },
+  "reviewed_evidence": [
+    "previews/verify-source-size-review.png",
+    "previews/*-contact-sheet.png",
+    "previews/*-60fps.mp4"
+  ],
+  "checks": {
+    "identity_and_palette_consistency": "pass",
+    "transparent_edges_and_chroma_spill": "pass",
+    "left_right_facing_independence": "pass",
+    "prop_character_layering": "pass",
+    "small_size_readability": "pass",
+    "foot_anchor_and_reserved_slot": "pass",
+    "caption_safe_region": "pass",
+    "outline_jump_and_single_frame_anomaly": "pass",
+    "branch_and_loop_seams": "pass",
+    "final_result_hold": "pass"
+  },
+  "promotion": {
+    "current_status": "candidate",
+    "project_validation": null,
+    "eligible_for_project_proven": false,
+    "reason": "Requires real Day 2 LLM film use, second-by-second review, event-frame review, sync audit, and user acceptance."
+  }
+}

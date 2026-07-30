@@ -1,0 +1,3799 @@
+{
+  "status": "pass",
+  "catalog": "/Users/shike/.codex/skills/madem/assets/ip/yolo-motion-v1/catalog.json",
+  "checks": [
+    {
+      "status": "pass",
+      "detail": "catalog schema is 1.0"
+    },
+    {
+      "status": "pass",
+      "detail": "new motion family remains candidate"
+    },
+    {
+      "status": "pass",
+      "detail": "source animation runs at 12fps"
+    },
+    {
+      "status": "pass",
+      "detail": "maximum 1080p display height does not exceed 380px"
+    },
+    {
+      "status": "pass",
+      "detail": "default 1080p display height is 320px"
+    },
+    {
+      "status": "pass",
+      "detail": "lower-left ends before y=820"
+    },
+    {
+      "status": "pass",
+      "detail": "lower-left has positive height"
+    },
+    {
+      "status": "pass",
+      "detail": "lower-right ends before y=820"
+    },
+    {
+      "status": "pass",
+      "detail": "lower-right has positive height"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-verify-source remains candidate"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-verify-source phase ticks are ordered"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-verify-source right declares every outcome"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-verify-source right/not-found totals 25 ticks"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-verify-source right/verified totals 25 ticks"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-verify-source left declares every outcome"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-verify-source left/not-found totals 25 ticks"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-verify-source left/verified totals 25 ticks"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-00.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-00.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-00.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-00.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-01.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-01.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-01.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-01.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-02.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-02.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-02.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-02.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-03.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-03.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-03.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-03.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-04.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-04.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-04.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-04.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-05.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-05.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-05.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-05.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-06.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-06.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-06.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-06.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-07.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-07.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-07.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-07.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-08.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-08.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-08.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-08.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-not-found-09.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-not-found-09.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-not-found-09.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-not-found-09.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-not-found-10.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-not-found-10.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-not-found-10.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-not-found-10.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-verified-09.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-verified-09.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-verified-09.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-verified-09.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-verified-10.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-verified-10.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-verified-10.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-verified-10.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-00.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-00.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-00.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-00.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-01.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-01.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-01.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-01.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-02.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-02.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-02.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-02.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-03.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-03.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-03.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-03.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-04.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-04.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-04.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-04.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-05.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-05.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-05.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-05.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-06.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-06.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-06.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-06.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-07.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-07.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-07.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-07.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-08.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-08.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-08.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-08.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-not-found-09.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-not-found-09.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-not-found-09.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-not-found-09.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-not-found-10.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-not-found-10.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-not-found-10.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-not-found-10.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-verified-09.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-verified-09.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-verified-09.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-verified-09.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-verified-10.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-verified-10.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-verified-10.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-verified-10.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-quiet-observe remains candidate"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-quiet-observe phase ticks are ordered"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-quiet-observe right declares every outcome"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-quiet-observe right/loop totals 16 ticks"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-quiet-observe left declares every outcome"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-quiet-observe left/loop totals 16 ticks"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-chin-think remains candidate"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-chin-think phase ticks are ordered"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-chin-think right declares every outcome"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-chin-think right/loop totals 20 ticks"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-chin-think left declares every outcome"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-chin-think left/loop totals 20 ticks"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-point-tap remains candidate"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-point-tap phase ticks are ordered"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-point-tap right declares every outcome"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-point-tap right/default totals 26 ticks"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-point-tap left declares every outcome"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-point-tap left/default totals 26 ticks"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-catch-card remains candidate"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-catch-card phase ticks are ordered"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-catch-card right declares every outcome"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-catch-card right/default totals 31 ticks"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-catch-card left declares every outcome"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-catch-card left/default totals 31 ticks"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-00.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-00.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-00.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-00.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-00.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-00.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-00.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-00.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-01.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-01.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-01.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-01.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-01.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-01.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-01.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-01.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-02.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-02.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-02.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-02.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-02.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-02.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-02.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-02.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-03.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-03.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-03.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-03.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-03.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-03.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-03.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-03.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-04.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-04.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-04.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-04.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-04.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-04.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-04.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-04.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-05.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-05.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-05.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-05.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-05.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-05.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-05.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-05.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-06.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-06.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-06.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-06.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-06.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-06.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-06.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-06.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-07.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-07.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-07.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-07.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-07.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-07.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-07.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-07.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-00.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-00.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-00.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-00.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-00.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-00.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-00.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-00.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-01.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-01.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-01.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-01.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-01.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-01.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-01.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-01.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-02.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-02.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-02.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-02.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-02.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-02.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-02.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-02.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-03.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-03.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-03.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-03.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-03.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-03.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-03.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-03.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-04.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-04.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-04.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-04.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-04.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-04.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-04.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-04.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-05.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-05.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-05.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-05.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-05.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-05.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-05.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-05.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-06.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-06.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-06.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-06.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-06.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-06.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-06.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-06.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-07.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-07.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-07.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-07.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-07.png prop id is declared"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-07.png prop opacity is valid"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-07.png prop x is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-07.png prop y is in canvas"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-risk-reminder remains candidate"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-risk-reminder phase ticks are ordered"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-risk-reminder right declares every outcome"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-risk-reminder right/default totals 26 ticks"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-risk-reminder left declares every outcome"
+    },
+    {
+      "status": "pass",
+      "detail": "yolo-risk-reminder left/default totals 26 ticks"
+    },
+    {
+      "status": "pass",
+      "detail": "identity/master-right.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "identity/master-right.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "identity/master-right.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "identity/master-right.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "identity/master-right.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "identity/master-right.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "identity/master-left.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "identity/master-left.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "identity/master-left.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "identity/master-left.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "identity/master-left.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "identity/master-left.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "props/magnifier.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "props/magnifier.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "props/magnifier.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "props/magnifier.png size is (512, 512)"
+    },
+    {
+      "status": "pass",
+      "detail": "props/magnifier.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "props/magnifier.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "props/card.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "props/card.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "props/card.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "props/card.png size is (512, 512)"
+    },
+    {
+      "status": "pass",
+      "detail": "props/card.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "props/card.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "props/slot.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "props/slot.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "props/slot.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "props/slot.png size is (512, 512)"
+    },
+    {
+      "status": "pass",
+      "detail": "props/slot.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "props/slot.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-00.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-00.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-00.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-00.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-00.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-00.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-01.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-01.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-01.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-01.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-01.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-01.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-02.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-02.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-02.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-02.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-02.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-02.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-03.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-03.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-03.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-03.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-03.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-03.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-04.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-04.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-04.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-04.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-04.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-04.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-05.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-05.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-05.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-05.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-05.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-05.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-06.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-06.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-06.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-06.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-06.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-06.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-07.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-07.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-07.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-07.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-07.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-07.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-08.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-08.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-08.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-08.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-08.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-08.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-not-found-09.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-not-found-09.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-not-found-09.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-not-found-09.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-not-found-09.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-not-found-09.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-not-found-10.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-not-found-10.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-not-found-10.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-not-found-10.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-not-found-10.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-not-found-10.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-verified-09.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-verified-09.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-verified-09.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-verified-09.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-verified-09.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-verified-09.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-verified-10.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-verified-10.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-verified-10.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-verified-10.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-verified-10.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/right/right-verified-10.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-00.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-00.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-00.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-00.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-00.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-00.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-01.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-01.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-01.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-01.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-01.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-01.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-02.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-02.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-02.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-02.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-02.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-02.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-03.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-03.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-03.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-03.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-03.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-03.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-04.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-04.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-04.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-04.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-04.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-04.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-05.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-05.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-05.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-05.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-05.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-05.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-06.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-06.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-06.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-06.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-06.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-06.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-07.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-07.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-07.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-07.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-07.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-07.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-08.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-08.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-08.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-08.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-08.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-08.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-not-found-09.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-not-found-09.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-not-found-09.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-not-found-09.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-not-found-09.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-not-found-09.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-not-found-10.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-not-found-10.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-not-found-10.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-not-found-10.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-not-found-10.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-not-found-10.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-verified-09.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-verified-09.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-verified-09.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-verified-09.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-verified-09.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-verified-09.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-verified-10.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-verified-10.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-verified-10.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-verified-10.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-verified-10.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/verify-source/keyframes/left/left-verified-10.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-00.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-00.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-00.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-00.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-00.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-00.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-01.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-01.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-01.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-01.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-01.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-01.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-02.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-02.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-02.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-02.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-02.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-02.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-03.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-03.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-03.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-03.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-03.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-03.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-04.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-04.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-04.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-04.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-04.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-04.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-05.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-05.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-05.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-05.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-05.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-05.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-06.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-06.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-06.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-06.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-06.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-06.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-07.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-07.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-07.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-07.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-07.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/right/right-07.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-00.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-00.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-00.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-00.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-00.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-00.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-01.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-01.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-01.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-01.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-01.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-01.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-02.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-02.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-02.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-02.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-02.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-02.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-03.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-03.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-03.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-03.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-03.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-03.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-04.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-04.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-04.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-04.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-04.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-04.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-05.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-05.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-05.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-05.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-05.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-05.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-06.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-06.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-06.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-06.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-06.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-06.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-07.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-07.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-07.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-07.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-07.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/quiet-observe/keyframes/left/left-07.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-00.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-00.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-00.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-00.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-00.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-00.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-01.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-01.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-01.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-01.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-01.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-01.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-02.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-02.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-02.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-02.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-02.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-02.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-03.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-03.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-03.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-03.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-03.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-03.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-04.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-04.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-04.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-04.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-04.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-04.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-05.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-05.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-05.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-05.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-05.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-05.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-06.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-06.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-06.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-06.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-06.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-06.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-07.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-07.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-07.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-07.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-07.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/right/right-07.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-00.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-00.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-00.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-00.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-00.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-00.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-01.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-01.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-01.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-01.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-01.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-01.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-02.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-02.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-02.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-02.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-02.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-02.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-03.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-03.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-03.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-03.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-03.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-03.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-04.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-04.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-04.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-04.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-04.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-04.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-05.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-05.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-05.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-05.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-05.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-05.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-06.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-06.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-06.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-06.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-06.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-06.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-07.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-07.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-07.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-07.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-07.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/chin-think/keyframes/left/left-07.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-00.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-00.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-00.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-00.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-00.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-00.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-01.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-01.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-01.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-01.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-01.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-01.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-02.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-02.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-02.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-02.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-02.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-02.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-03.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-03.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-03.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-03.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-03.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-03.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-04.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-04.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-04.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-04.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-04.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-04.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-05.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-05.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-05.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-05.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-05.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-05.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-06.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-06.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-06.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-06.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-06.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-06.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-07.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-07.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-07.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-07.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-07.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/right/right-07.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-00.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-00.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-00.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-00.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-00.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-00.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-01.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-01.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-01.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-01.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-01.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-01.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-02.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-02.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-02.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-02.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-02.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-02.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-03.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-03.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-03.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-03.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-03.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-03.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-04.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-04.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-04.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-04.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-04.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-04.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-05.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-05.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-05.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-05.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-05.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-05.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-06.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-06.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-06.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-06.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-06.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-06.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-07.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-07.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-07.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-07.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-07.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/point-tap/keyframes/left/left-07.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-00.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-00.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-00.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-00.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-00.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-00.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-01.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-01.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-01.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-01.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-01.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-01.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-02.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-02.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-02.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-02.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-02.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-02.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-03.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-03.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-03.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-03.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-03.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-03.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-04.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-04.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-04.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-04.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-04.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-04.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-05.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-05.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-05.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-05.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-05.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-05.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-06.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-06.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-06.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-06.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-06.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-06.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-07.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-07.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-07.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-07.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-07.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/right/right-07.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-00.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-00.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-00.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-00.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-00.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-00.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-01.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-01.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-01.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-01.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-01.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-01.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-02.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-02.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-02.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-02.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-02.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-02.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-03.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-03.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-03.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-03.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-03.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-03.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-04.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-04.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-04.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-04.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-04.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-04.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-05.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-05.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-05.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-05.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-05.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-05.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-06.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-06.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-06.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-06.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-06.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-06.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-07.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-07.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-07.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-07.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-07.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/catch-card/keyframes/left/left-07.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-00.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-00.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-00.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-00.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-00.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-00.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-01.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-01.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-01.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-01.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-01.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-01.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-02.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-02.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-02.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-02.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-02.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-02.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-03.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-03.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-03.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-03.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-03.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-03.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-04.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-04.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-04.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-04.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-04.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-04.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-05.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-05.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-05.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-05.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-05.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-05.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-06.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-06.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-06.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-06.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-06.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-06.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-07.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-07.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-07.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-07.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-07.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/right/right-07.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-00.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-00.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-00.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-00.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-00.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-00.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-01.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-01.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-01.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-01.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-01.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-01.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-02.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-02.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-02.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-02.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-02.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-02.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-03.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-03.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-03.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-03.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-03.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-03.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-04.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-04.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-04.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-04.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-04.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-04.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-05.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-05.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-05.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-05.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-05.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-05.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-06.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-06.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-06.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-06.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-06.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-06.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-07.png exists"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-07.png SHA-256 matches"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-07.png is RGBA"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-07.png size is (1024, 1024)"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-07.png corners are transparent"
+    },
+    {
+      "status": "pass",
+      "detail": "actions/risk-reminder/keyframes/left/left-07.png has no visible chroma fringe"
+    },
+    {
+      "status": "pass",
+      "detail": "left foot baseline drift is at most 2px"
+    },
+    {
+      "status": "pass",
+      "detail": "right foot baseline drift is at most 2px"
+    }
+  ],
+  "summary": {
+    "checks": 947,
+    "failures": 0,
+    "files": 111
+  }
+}

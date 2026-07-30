@@ -68,13 +68,24 @@ def main() -> None:
     }
     if args.merge_into:
         payload = json.loads(args.merge_into.read_text())
-        payload.update({"audio": str(args.audio.resolve()), "words": words, "pauses": pauses, "segments": segment_records, "transcription": transcription})
+        payload.update(
+            {
+                "schema_version": "1.4",
+                "audio": str(args.audio.resolve()),
+                "words": words,
+                "pauses": pauses,
+                "segments": segment_records,
+                "transcription": transcription,
+            }
+        )
+        payload.setdefault("motion_density", None)
         target = args.merge_into
     else:
         payload = {
-            "schema_version": "1.2", "audio": str(args.audio.resolve()),
+            "schema_version": "1.4", "audio": str(args.audio.resolve()),
             "words": words, "pauses": pauses, "segments": segment_records,
             "visual_actions": [], "prelude_events": [], "sync_events": [],
+            "motion_density": None,
             "transcription": transcription,
         }
         target = args.out

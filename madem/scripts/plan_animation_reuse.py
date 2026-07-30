@@ -59,6 +59,54 @@ PATTERNS = [
         "minimum_hits": 1,
         "reason": "包含可拆为短词或短动作的并列结构",
     },
+    {
+        "id": "icon-swarm-collector",
+        "component": "IconSwarmCollector",
+        "keywords": (
+            "图标",
+            "APP",
+            "应用",
+            "聚合",
+            "吞噬",
+            "吸入",
+            "收纳",
+            "汇入",
+            "文件夹",
+            "曲线",
+        ),
+        "minimum_hits": 2,
+        "reason": "多个产品入口沿路径聚合到文件夹、容器或目标节点",
+    },
+    {
+        "id": "quality-inspection-loop",
+        "component": "QualityInspectionLoop",
+        "keywords": (
+            "自动检查",
+            "检查透明",
+            "字幕安全区",
+            "元素遮挡",
+            "发现问题",
+            "继续修改",
+            "重新渲染",
+            "通过",
+        ),
+        "minimum_hits": 2,
+        "reason": "包含检查、失败、修复、重渲和通过的状态循环",
+    },
+    {
+        "id": "motion-gallery",
+        "component": "MotionGallery",
+        "keywords": ("动效合集", "动画效果", "图表动画", "动态文字", "环形进度", "粒子"),
+        "minimum_hits": 2,
+        "reason": "需要用一组真实微动缩略图证明动画能力",
+    },
+    {
+        "id": "dense-tech-workflow",
+        "component": "TechGridSceneShell",
+        "keywords": ("AI", "Agent", "Codex", "软件", "工作流", "流程执行", "自动执行"),
+        "minimum_hits": 1,
+        "reason": "AI 工具、Agent 或软件工作流适合暗色科技高密度视觉预设",
+    },
 ]
 
 
@@ -66,7 +114,10 @@ def split_units(text: str) -> list[str]:
     units = []
     for block in re.split(r"\n\s*\n", text):
         cleaned = re.sub(r"^\s*(?:[-*]|\d+[.)、])\s*", "", block.strip())
-        if not cleaned or cleaned.startswith("#") or cleaned.startswith("|"):
+        if (
+            not cleaned
+            or cleaned.startswith(("#", ">", "|", "```"))
+        ):
             continue
         units.extend(part.strip() for part in re.split(r"(?<=[。！？；])", cleaned) if part.strip())
     return units

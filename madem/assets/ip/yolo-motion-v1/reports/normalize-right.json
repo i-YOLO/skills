@@ -1,0 +1,137 @@
+{
+  "canvas": [
+    1024,
+    1024
+  ],
+  "subject_height": 900,
+  "anchor": [
+    512,
+    970
+  ],
+  "source_union_bbox": [
+    636,
+    27,
+    1057,
+    891
+  ],
+  "scale": 1.0416666666666667,
+  "frames": [
+    {
+      "file": "right-00.png",
+      "bbox": [
+        292,
+        70,
+        731,
+        970
+      ]
+    },
+    {
+      "file": "right-01.png",
+      "bbox": [
+        292,
+        70,
+        731,
+        970
+      ]
+    },
+    {
+      "file": "right-02.png",
+      "bbox": [
+        292,
+        70,
+        731,
+        970
+      ]
+    },
+    {
+      "file": "right-03.png",
+      "bbox": [
+        292,
+        70,
+        731,
+        970
+      ]
+    },
+    {
+      "file": "right-04.png",
+      "bbox": [
+        292,
+        70,
+        731,
+        970
+      ]
+    },
+    {
+      "file": "right-05.png",
+      "bbox": [
+        292,
+        70,
+        731,
+        970
+      ]
+    },
+    {
+      "file": "right-06.png",
+      "bbox": [
+        292,
+        70,
+        731,
+        970
+      ]
+    },
+    {
+      "file": "right-07.png",
+      "bbox": [
+        292,
+        70,
+        731,
+        970
+      ]
+    },
+    {
+      "file": "right-08.png",
+      "bbox": [
+        292,
+        70,
+        731,
+        970
+      ]
+    },
+    {
+      "file": "right-not-found-09.png",
+      "bbox": [
+        292,
+        70,
+        731,
+        970
+      ]
+    },
+    {
+      "file": "right-not-found-10.png",
+      "bbox": [
+        292,
+        70,
+        731,
+        970
+      ]
+    },
+    {
+      "file": "right-verified-09.png",
+      "bbox": [
+        292,
+        72,
+        731,
+        970
+      ]
+    },
+    {
+      "file": "right-verified-10.png",
+      "bbox": [
+        292,
+        71,
+        731,
+        970
+      ]
+    }
+  ]
+}

@@ -6,7 +6,6 @@ from __future__ import annotations
 import argparse
 import difflib
 import json
-import re
 from bisect import bisect_left
 from dataclasses import asdict, dataclass
 from pathlib import Path
@@ -54,7 +53,11 @@ def normalise(char: str) -> str | None:
 
 def approved_script(path: Path) -> str:
     lines = [line.strip() for line in path.read_text(encoding="utf-8").splitlines()]
-    text = "\n".join(line for line in lines if line and not line.startswith("#"))
+    text = "\n".join(
+        line
+        for line in lines
+        if line and not line.startswith(("#", ">"))
+    )
     if not text:
         raise ValueError("approved script has no spoken text")
     return text
@@ -124,8 +127,16 @@ def clauses(script: str) -> list[tuple[int, int]]:
     return [(left, right) for left, right in result if script[left:right].strip()]
 
 
-def split_display(text: str, start_index: int, max_units: float = 29) -> list[tuple[str, int, int]]:
-    if visible_units(text) <= 31:
+def single_line(text: str) -> str:
+    return " ".join(text.replace("\n", " ").split())
+
+
+def split_display(
+    text: str,
+    start_index: int,
+    max_units: float,
+) -> list[tuple[str, int, int]]:
+    if visible_units(text) <= max_units:
         return [(text, start_index, start_index + len(text))]
     result, current, current_start = [], "", start_index
     for index, char in enumerate(text, start=start_index):
@@ -139,34 +150,22 @@ def split_display(text: str, start_index: int, max_units: float = 29) -> list[tu
     return result
 
 
-def wrap_two_lines(text: str) -> str:
-    if visible_units(text) <= 16:
-        return text
-    tokens = re.findall(r"\s+|[A-Za-z0-9]+|[\u4e00-\u9fff]|[^\s]", text)
-    left, right, width = [], [], 0.0
-    for token in tokens:
-        if token.isspace():
-            (right if right else left).append(token)
-        elif token in PUNCTUATION:
-            (right if right else left).append(token)
-        elif not right and left and width + visible_units(token) > 16:
-            right.append(token)
-        elif right:
-            right.append(token)
-        else:
-            left.append(token)
-            width += visible_units(token)
-    return "".join(left).strip() if not right else f"{''.join(left).strip()}\n{''.join(right).strip()}"
-
-
-def raw_captions(script: str, timing: dict[int, tuple[float, float]]) -> list[CaptionCue]:
+def raw_captions(
+    script: str,
+    timing: dict[int, tuple[float, float]],
+    max_units: float,
+) -> list[CaptionCue]:
     pieces: list[tuple[str, float, float]] = []
     for start, end in clauses(script):
         excerpt = script[start:end]
-        text = excerpt.replace("\n", "").strip()
+        text = single_line(excerpt).strip()
         offset = len(excerpt) - len(excerpt.lstrip())
         actual_start = start + offset
-        for part, part_start, part_end in split_display(text, actual_start):
+        for part, part_start, part_end in split_display(
+            text,
+            actual_start,
+            max_units,
+        ):
             values = [timing[index] for index in range(part_start, part_end) if index in timing]
             if values:
                 pieces.append((part, values[0][0], values[-1][1]))
@@ -182,15 +181,27 @@ def raw_captions(script: str, timing: dict[int, tuple[float, float]]) -> list[Ca
         join = (
             bool(pending)
             and not previous_sentence_end
-            and visible_units(combined) <= 30
+            and visible_units(combined) <= max_units
             and (duration <= 3.6 or (pending_duration < 1.15 and duration <= 4.2))
         )
         if pending and not join:
-            result.append(CaptionCue(wrap_two_lines("".join(item[0] for item in pending)), pending[0][1], pending[-1][2]))
+            result.append(
+                CaptionCue(
+                    single_line("".join(item[0] for item in pending)),
+                    pending[0][1],
+                    pending[-1][2],
+                )
+            )
             pending = []
         pending.append(piece)
     if pending:
-        result.append(CaptionCue(wrap_two_lines("".join(item[0] for item in pending)), pending[0][1], pending[-1][2]))
+        result.append(
+            CaptionCue(
+                single_line("".join(item[0] for item in pending)),
+                pending[0][1],
+                pending[-1][2],
+            )
+        )
     return result
 
 
@@ -234,19 +245,20 @@ def write_outputs(captions: list[CaptionCue], out_dir: Path, prefix: str, report
     srt, ass, remotion = [], [], []
     for number, cue in enumerate(captions, start=1):
         srt.extend([str(number), f"{srt_time(cue.start)} --> {srt_time(cue.end)}", cue.text, ""])
-        escaped = cue.text.replace("\\", r"\\").replace("{", r"\{").replace("}", r"\}").replace("\n", r"\N")
+        escaped = cue.text.replace("\\", r"\\").replace("{", r"\{").replace("}", r"\}")
         ass.append(f"Dialogue: 0,{ass_time(cue.start)},{ass_time(cue.end)},Captions,,0,0,0,,{escaped}")
-        remotion.append({"text": cue.text.replace("\n", " "), "startMs": round(cue.start * 1000), "endMs": round(cue.end * 1000)})
-    header = """[Script Info]
+        remotion.append({"text": cue.text, "startMs": round(cue.start * 1000), "endMs": round(cue.end * 1000)})
+    style = report["style"]
+    header = f"""[Script Info]
 ScriptType: v4.00+
-PlayResX: 1920
-PlayResY: 1080
-WrapStyle: 0
+PlayResX: {style["frame_width"]}
+PlayResY: {style["frame_height"]}
+WrapStyle: 2
 ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
-Style: Captions,PingFang SC Semibold,49,&H00FFFFFF,&H00000000,&H00000000,&H00000000,1,0,0,0,100,100,0,0,1,10,0,2,140,140,86,1
+Style: Captions,PingFang SC Semibold,{style["font_size"]},&H00FFFFFF,&H00000000,&H00000000,&H00000000,1,0,0,0,100,100,0,0,1,{style["stroke_width"]},0,2,{style["margin_left"]},{style["margin_right"]},{style["margin_bottom"]},1
 
 [Events]
 Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
@@ -264,16 +276,57 @@ def main() -> int:
     parser.add_argument("--out", required=True, type=Path)
     parser.add_argument("--fps", type=float, default=60)
     parser.add_argument("--prefix", default="captions")
+    parser.add_argument("--frame-width", type=int, default=1920)
+    parser.add_argument("--frame-height", type=int, default=1080)
+    parser.add_argument("--font-size", type=float, default=49)
+    parser.add_argument("--min-font-size", type=float, default=36)
+    parser.add_argument("--max-width", type=float)
     args = parser.parse_args()
     if args.fps <= 0:
         raise ValueError("--fps must be positive")
+    if args.frame_width <= 0 or args.frame_height <= 0:
+        raise ValueError("frame dimensions must be positive")
+    if args.min_font_size <= 0 or args.font_size < args.min_font_size:
+        raise ValueError("font sizes must be positive and --font-size must be >= --min-font-size")
+    portrait = args.frame_height > args.frame_width
+    reference_height = 1920 if portrait else 1080
+    scale = args.frame_height / reference_height
+    horizontal_margin = (70 if portrait else 140) * scale
+    bottom_margin = 86 * scale
+    max_width = (
+        args.max_width
+        if args.max_width is not None
+        else min(
+            args.frame_width - 2 * horizontal_margin,
+            (940 if portrait else 1540) * scale,
+        )
+    )
+    if max_width <= 0:
+        raise ValueError("caption width is not positive")
+    max_units = (max_width - 40 * scale) / (args.min_font_size * scale)
     script = approved_script(args.script)
     timeline = json.loads(args.timeline.read_text(encoding="utf-8"))
     timing, exact, filled = timing_map(script, list(timeline.get("words") or []))
-    captions = lock_to_frames(raw_captions(script, timing), args.fps)
+    captions = lock_to_frames(raw_captions(script, timing, max_units), args.fps)
     max_lines = max((cue.text.count("\n") + 1 for cue in captions), default=0)
+    estimated_font_sizes = [
+        min(
+            args.font_size,
+            (max_width / scale - 40) / max(1, visible_units(cue.text)),
+        )
+        for cue in captions
+    ]
+    minimum_estimated_font_size = min(estimated_font_sizes, default=args.font_size)
     frame_errors = [abs(value * args.fps - round(value * args.fps)) for cue in captions for value in (cue.start, cue.end)]
-    status = "pass" if exact >= 0.94 and filled >= 0.98 and max_lines <= 2 and max(frame_errors, default=0.0) < 1e-6 else "needs-review"
+    status = (
+        "pass"
+        if exact >= 0.94
+        and filled >= 0.98
+        and max_lines <= 1
+        and minimum_estimated_font_size >= args.min_font_size - 0.01
+        and max(frame_errors, default=0.0) < 1e-6
+        else "needs-review"
+    )
     report = {
         "status": status,
         "text_source": "approved script",
@@ -284,17 +337,22 @@ def main() -> int:
         "caption_frame_rate": args.fps,
         "max_frame_error": round(max(frame_errors, default=0.0), 6),
         "max_lines": max_lines,
+        "minimum_estimated_font_size": round(minimum_estimated_font_size, 3),
         "minimum_hold_seconds": 0.8,
-        "placement": "bottom-center / white text / 10px pure-black outline / no shadow or opaque panel",
+        "placement": "bottom-center / forced single line / white text / 10px pure-black outline / no shadow or opaque panel",
         "style": {
-            "font_size": 49,
+            "frame_width": args.frame_width,
+            "frame_height": args.frame_height,
+            "font_size": args.font_size,
+            "dynamic_min_font_size": args.min_font_size,
             "font_color": "#FFFFFF",
             "stroke_width": 10,
             "stroke_color": "#000000",
             "shadow": 0,
-            "margin_left": 140,
-            "margin_right": 140,
-            "margin_bottom": 86,
+            "margin_left": round(horizontal_margin, 3),
+            "margin_right": round(horizontal_margin, 3),
+            "margin_bottom": round(bottom_margin, 3),
+            "max_width": round(max_width, 3),
         },
         "captions": [asdict(cue) for cue in captions],
     }

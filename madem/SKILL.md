@@ -1,6 +1,6 @@
 ---
 name: madem
-description: 制作、修复和验收程序化口播动画视频。用于把文案、分镜、图片、视频、Logo 或已有 Manim/Remotion 项目制作成静音动画、预览或最终成片；覆盖镜头设计、引擎路由、Remotion/Manim/FFmpeg 组装、逐页质检、局部修复与 H.264 交付。当用户提到“madem”“口播视频动画”“静音动画”“制作科普/教学/产品演示视频”或要修复已有动画成片时使用。
+description: 制作、修复和验收程序化口播动画视频。用于把文案、分镜、图片、视频、Logo 或已有 Manim/Remotion 项目制作成静音动画、预览或最终成片；覆盖 AI/Agent 暗色科技高密度动效、高清透明产品图标、镜头设计、引擎路由、字幕、BGM、逐页质检与 H.264 交付。当用户提到“madem”“口播视频动画”“密集 MG 动画”“AI 产品图标”“静音动画”“制作科普/教学/产品演示视频”或要修复已有动画成片时使用。
 ---
 
 # MADEM：口播动画制作
@@ -15,7 +15,7 @@ description: 制作、修复和验收程序化口播动画视频。用于把文�
 
 有真实口播的发布成片默认烧录字幕并使用 `madem-default-bgm-v3` 背景音乐；只有用户明确要求静音、无字幕或替换音乐时才关闭或覆盖。静音动画、预览版和未完成同步的项目不得添加字幕或 BGM。
 
-默认画布使用纯色浅暖白 `#FAF8F3`，不得添加渐变、纹理、噪点或暗角。字幕默认 `49px` 白字、纯黑 `10px` 描边、无阴影，底边距 `86px`、左右边距 `140px`、最大宽度 `1540px`、最多两行。完整色板、安全区和布局常量见 [references/visual-system.md](references/visual-system.md)。
+普通知识视频默认使用纯色浅暖白 `#FAF8F3`。AI、Agent、Codex 和软件工作流题材自动选择 `madem-ai-tech-dark-v1 + dense-tech-v1`；用户指定风格时覆盖自动路由。字幕默认 `49px` 白字、纯黑 `10px` 描边、无阴影，所有画幅强制单行，可自动缩至 `36px`，仍放不下时按真实词位拆成两条连续字幕。完整规则见 [references/visual-system.md](references/visual-system.md)。
 
 在目标项目目录创建并持续更新以下文件：
 
@@ -52,15 +52,21 @@ description: 制作、修复和验收程序化口播动画视频。用于把文�
 
 识别口播中的排比句式（并列名词、连续动词、重复句式、`A / B / C` 或 `A → B → C`）。将每个并列项拆为独立视觉元素，按口播语序依次入场、点亮或展开；排比句式默认是节奏动效，不把整句作为静态文本同时铺开。收到真实音频后，将这些入场点锚定到对应词语或停顿。
 
-在渲染前建立 `visual_actions`：登记标题、卡片、标签、节点、连线、高亮和 CTA 的场景、元素类型、概念归属、是否需要同步和最短展示时长。一个需要详细解释的概念只指定一个“拥有”场景；前页只可给中性上下文，不得抢先展示后页的完整详解卡片。完整字段和预入场规则见 `$sync-explainer-video` 的 `references/sync-schema.md`。
+在渲染前建立 `visual_actions`：登记标题、卡片、标签、节点、连线、高亮、CTA 和角色动效的场景、元素类型、概念归属、是否需要同步和最短展示时长。一个需要详细解释的概念只指定一个“拥有”场景；前页只可给中性上下文，不得抢先展示后页的完整详解卡片。角色动作沿用 schema 1.3 的 `character-motion`；高密度项目使用向后兼容的 schema 1.4，增加 `motion_density` 和 `attention_level`。完整字段见 [references/job-schema.md](references/job-schema.md) 与 `$sync-explainer-video` 的 `references/sync-schema.md`。
 
 ### 资产优先与版式契约
 
 先复用、后新建。运行 `scripts/plan_animation_reuse.py --script <script.md> --out <pattern-plan.json>`，再阅读 [references/animation-pattern-library.md](references/animation-pattern-library.md)；根据**语义结构**确认候选，不能只按关键词自动套模板。流程、对比、循环、分层、时间轴、飞轮和排比标签优先使用 `assets/remotion-animation-library/PatternLibrary.tsx`；模拟界面、五层系统、产品入口、Agent 分支和权限门优先使用 `KnowledgeVisuals.tsx`。复制所需组件到目标项目，不让成片依赖全局 Skill 路径。
 
-复用品牌、IP、背景或封面前，读取对应 `assets/**/catalog.json`。产品图标只使用 `assets/product-icons` 中透明、归一化版本；YOLO 只使用 `assets/ip/yolo/poses` 中最终透明姿势。AI 知识类封面读取 [references/cover-style.md](references/cover-style.md)，默认分别构图并交付 4:3 与 3:4。
+复用资产前先读取 `assets/registry.json`，按语义、状态和入口定位资产包，再读取对应 `assets/**/catalog.json`。默认只自动选择 `project-proven` 或 `library-approved`；`candidate` 必须有本项目显式采用、技术报告和人工视觉复核。新增或晋升 pack 后运行 `scripts/validate_asset_registry.py`。AI 产品图标使用 `assets/product-icons/v2` 中按 `assetId` 选择的高清透明版本，并阅读 [references/product-icon-pipeline.md](references/product-icon-pipeline.md)；不得按数组下标选图标或自动联网替换已确认品牌图形。YOLO 静态姿势只使用 `assets/ip/yolo/poses`，逐帧动效只使用 `assets/ip/yolo-motion-v1`。将组件与实际使用的资产子集复制进目标项目，不让成片运行时依赖全局 Skill 路径。AI 知识类封面读取 [references/cover-style.md](references/cover-style.md)，默认分别构图并交付 4:3 与 3:4。
 
-只有没有资产能正确表达关系时才设计新动画。新动画至少经过一次真实项目、逐秒/事件帧验收和用户确认后，才能抽成可传入文案、色板与节点数据的组件并加入资产库。
+AI 科技题材先阅读 [references/dense-motion-system.md](references/dense-motion-system.md)，使用 `DenseTechMotion.tsx` 的暗色网格、图标聚合、质量检查循环、六种微动和聚合收尾组件。高密度只表示语义持续推进：同一时刻最多一个主语义入场，状态层补因果，环境层保持低强度。
+
+YOLO 动效默认显示高度 `320px`，建议 `280–340px`，硬上限 `380px`；脚底锚在预留的左下或右下角色槽位，底部不得超过 `y=820`。左右朝向使用独立生成的帧，不做代码镜像；人物和道具分层。约 90 秒视频默认使用 4–6 次，每幕最多一个角色动作，并且只有分镜已经留出角色槽位时才调用。
+
+新建或修复逐帧人物动作前，必须阅读 [references/character-motion-production.md](references/character-motion-production.md)。使用连续姿势母带、阶段交接、共享比例和解剖锚点注册；不得把少量独立姿势按单帧透明轮廓重新居中后，仅靠 60fps 重复伪装成流畅动画。
+
+只有没有资产能正确表达关系时才设计新动画。未完成全部朝向、结果分支、catalog 和验收证据的试做留在项目目录，不进入默认资产选择。完整自包含资产包可先以 `candidate` 进入本 Skill；至少经过一次真实项目、逐秒/事件帧验收和用户确认后，才能晋升为 `project-proven`，跨项目复核后再晋升为 `library-approved`。
 
 带标题、正文和核心图形的页面，先确定几何关系，再调整字号：
 
@@ -114,7 +120,7 @@ python scripts/visual_qc.py --video <silent.mp4> --timeline <timeline.json> --ou
 
 同步与画面审核通过后，阅读 [references/publishing-delivery.md](references/publishing-delivery.md)。使用 `build_captions.py` 以已确认口播稿生成 SRT、ASS、Remotion JSON 和字幕报告；Faster-Whisper 的 `timeline.words` 只提供真实时间，不能把识别错字作为字幕正文。
 
-在 Remotion 项目复制 `assets/remotion-caption-overlay/CaptionOverlay.tsx` 并使用字幕 JSON；非 Remotion 项目使用 ASS 烧录。默认字幕为底部居中、`49px` 白字、纯黑 `10px` 描边、无阴影和黑底面板，最多两行。使用 `extract_review_frames.py --captions <captions.json>` 检查每条字幕的起始、中间和结束帧是否遮挡画面，再以带原始口播音频的字幕版调用 `mix_default_bgm.py`。它会将默认音乐复制到项目内、在人声期间自动避让，并复制视频流而非重编码画面。
+在 Remotion 项目复制 `assets/remotion-caption-overlay/CaptionOverlay.tsx` 并使用字幕 JSON；非 Remotion 项目使用 ASS 烧录。默认字幕为底部居中、强制单行、`49px` 白字、纯黑 `10px` 描边、无阴影和黑底面板，最低字号 `36px`。使用 `extract_review_frames.py --captions <captions.json>` 检查每条字幕的起始、中间和结束帧是否遮挡画面，再以带原始口播音频的字幕版调用 `mix_default_bgm.py`。它会将默认音乐复制到项目内、在人声期间自动避让，并复制视频流而非重编码画面。
 
 默认 BGM 配置为用户提供的 `Instrumental Minimal`，基础音量 `0.238`（约 `−12.5 dB`）、1.2 秒淡入、3 秒淡出、1 秒循环交叉淡化。背景音乐不参与词级同步；替换音乐需要用户明确授权。
 
@@ -130,11 +136,12 @@ python scripts/visual_qc.py --video <silent.mp4> --timeline <timeline.json> --ou
 python scripts/validate_delivery.py \
   --video <final.mp4> --timeline <timeline.json> --audio <voiceover.wav> \
   --visual-qc <visual-qc.json> --sync-report <sync-report.json> \
+  --motion-density-report <motion-density-report.json> \
   --caption-report <captions-report.json> --audio-mix-report <audio-mix-report.json> \
   --reference-video <captioned-voiceover.mp4> \
   --manual-review pass --out <qa-report.json>
 ```
 
-只有同时满足以下条件才标记可交付：可完整解码、规格正确、每秒帧和事件帧已人工视觉复核、无未豁免长静止、无必须修复的视觉缺陷，并且 `$sync-explainer-video` 的严格词位、动作覆盖、预入场、展示时长与概念所有权审计均通过。有口播的默认发布版还必须通过字幕报告、BGM 混音报告和字幕版/最终版视频流一致性检查。
+只有同时满足以下条件才标记可交付：可完整解码、规格正确、每秒帧和事件帧已人工视觉复核、无未豁免长静止、无必须修复的视觉缺陷，并且 `$sync-explainer-video` 的严格词位、动作覆盖、预入场、展示时长与概念所有权审计均通过。使用 `dense-tech-v1` 时必须额外通过 `audit_motion_density.py`。有口播的默认发布版还必须通过单行字幕报告、BGM 混音报告和字幕版/最终版视频流一致性检查。
 
 阅读 [references/qa-protocol.md](references/qa-protocol.md) 后执行验收。不要因为成功导出 MP4 就声称完成交付。

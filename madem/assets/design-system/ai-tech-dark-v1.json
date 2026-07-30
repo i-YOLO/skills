@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "profile_id": "madem-ai-tech-dark-v1",
+  "auto_select_for": ["AI", "Agent", "Codex", "software-workflow"],
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 60,
+    "background": "#06090D",
+    "render_image_format": "png",
+    "draft_only_resolution": [540, 960]
+  },
+  "palette": {
+    "background": "#06090D",
+    "background_secondary": "#0B1118",
+    "grid": "#25313B",
+    "text": "#F7FAFC",
+    "muted": "#9BA8B4",
+    "primary": "#39FF91",
+    "success": "#15D979",
+    "warning": "#FFD938",
+    "blue": "#2B7FFF",
+    "cyan": "#42D9FF",
+    "purple": "#9B6BFF",
+    "pink": "#FF4FD8",
+    "danger": "#FF5D67",
+    "panel": "#101923",
+    "panel_secondary": "#16222E",
+    "border": "#314251"
+  },
+  "layout": {
+    "outer_margin": 48,
+    "title_top_min": 70,
+    "title_top_max": 110,
+    "content_max_y": 1600,
+    "caption_safe_region": {
+      "x_min": 70,
+      "x_max": 1010,
+      "y_min": 1660,
+      "y_max": 1870
+    }
+  },
+  "captions": {
+    "mode": "single-line",
+    "font_size": 49,
+    "minimum_font_size": 36,
+    "font_color": "#FFFFFF",
+    "stroke_color": "#000000",
+    "stroke_width": 10,
+    "bottom_margin": 86,
+    "horizontal_margin": 70,
+    "max_width": 940
+  },
+  "motion_density_profile": "dense-tech-v1"
+}
