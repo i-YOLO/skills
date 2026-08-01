@@ -1,0 +1,11 @@
+Use case: identity-preserve
+Asset type: chronological full-body animation pose strip, stage B of three
+Input images: Image 1 is the exact left-facing YOLO identity master. Image 2 is the approved stage-A strip and is the immediate continuity reference.
+Primary request: Create one wide chronological strip containing exactly eight separate full-body poses of the same character, ordered from left to right, continuing the “gather information and conclude” gesture.
+Scene/backdrop: perfectly flat, uniform solid #ff00ff chroma-key background across the entire image.
+Style/medium: preserve Image 1 identity exactly and match Image 2 rendering exactly.
+Composition/framing: eight evenly spaced complete figures in one horizontal row; no boxes, separators, labels, panels, overlap, or cropping; identical scale and shoe baseline; generous clear space between silhouettes.
+Chronological poses: pose 1 must faithfully reproduce stage-A pose 7; pose 2 must faithfully reproduce stage-A pose 8; 3 both hands continue moving inward with naturally bent elbows; 4 palms rotate from diagonally upward toward diagonally inward; 5 hands enter the area in front of the upper abdomen while still clearly separated; 6 inward motion slows; 7 near-conclusion pose with about one and a half palm widths between the hands; 8 closest-to-center pose with no less than one full palm width between the hands.
+Motion mechanics: continue the same arc and velocity from Image 2; shoulders stay relaxed; lock shoes, pelvis, torso length, scale and head size; hands decelerate smoothly.
+Constraints: preserve the exact left-facing orientation; independently draw the left-facing action, never mirror a right-facing strip; poses 1 and 2 are the overlap handoff and must match Image 2 poses 7 and 8 in identity, scale, baseline, hand positions and action direction; palms never touch; hands never stack vertically; no clap; no prayer; no fist bump; no invisible object; no props; no text; no symbols; no shadow; no ground plane; no reflections; no gradient; no texture; no motion blur; no speed lines; no afterimages; no watermark. Do not use #ff00ff anywhere inside the character.
+Output intent: production chroma-key pose mother strip for later frame extraction.

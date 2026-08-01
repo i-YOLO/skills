@@ -1,0 +1,697 @@
+{
+  "schema_version": "1.0",
+  "asset_id": "yolo-question-shrug",
+  "role": "question-shrug",
+  "status": "candidate",
+  "playback_mode": "one-shot-with-settled-hold",
+  "outcomes": [
+    "default"
+  ],
+  "suitable_for": [
+    "question",
+    "uncertainty",
+    "waiting for explanation"
+  ],
+  "not_suitable_for": [
+    "surrender",
+    "risk blocking",
+    "anger"
+  ],
+  "source_fps": 12,
+  "output_preview_fps": 60,
+  "canvas": [
+    1024,
+    1024
+  ],
+  "foot_anchor": [
+    512,
+    970
+  ],
+  "default_display_height_1080p": 320,
+  "phases": {
+    "prepare_frames": [
+      0,
+      5
+    ],
+    "key_action_frames": [
+      6,
+      14
+    ],
+    "outcome_frames": [
+      15,
+      18
+    ],
+    "settled_frame": 19,
+    "settled_tick": 23,
+    "total_ticks": 35
+  },
+  "facings": {
+    "right": {
+      "common": [
+        {
+          "file": "keyframes/right/right-00.png",
+          "ticks": 2,
+          "sha256": "f9bd5681a39059107349a9040eadff1b39d9fd3a53bce2df4d8e68e1b04c89d0",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            294,
+            70,
+            703,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/right/right-01.png",
+          "ticks": 1,
+          "sha256": "811372e4cc94a50d8394dc72c98109f1bcaaa945f8dc8612e138a72771faa284",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            290,
+            77,
+            698,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/right/right-02.png",
+          "ticks": 1,
+          "sha256": "47566c8c574a54c0b6999201e2dd29d4eb5566e20a91de1d485e243e8ad727be",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            280,
+            90,
+            667,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/right/right-03.png",
+          "ticks": 1,
+          "sha256": "eb0ba5edcead85a6084d13a1a42a3cf315819e4450aba77a5b577e4cccdee3ee",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            291,
+            83,
+            689,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/right/right-04.png",
+          "ticks": 1,
+          "sha256": "b1925cdcd09cb9e27613749307134c54771abfbc3ec8e67b0bf15e7edc922f91",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            306,
+            90,
+            695,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/right/right-05.png",
+          "ticks": 1,
+          "sha256": "01a2bff621b559b3634cac9bec2f735ff6cc5904c20fe2dd3215a15a165cdeee",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            304,
+            90,
+            691,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/right/right-06.png",
+          "ticks": 1,
+          "sha256": "ab9b61cd8bcb992a27bab498b78cc52cc0ab56a0f4905b6cbe6950f2fdfedd8f",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            316,
+            105,
+            705,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/right/right-07.png",
+          "ticks": 2,
+          "sha256": "4675bf93ed4a24765b3b67d8d7e486ebcda7f6eb37f7cda7e20e021c206bc595",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            293,
+            111,
+            704,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/right/right-08.png",
+          "ticks": 1,
+          "sha256": "ed35525ffb63d4433bb54cdb59dd8923b2f629f1c6207c81aa574649d5feec39",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            313,
+            104,
+            684,
+            973
+          ]
+        },
+        {
+          "file": "keyframes/right/right-09.png",
+          "ticks": 1,
+          "sha256": "2ccd7b01407f72140398e494e56f4bafab968032aff9a816435f2649a31b8ca5",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            304,
+            104,
+            693,
+            973
+          ]
+        },
+        {
+          "file": "keyframes/right/right-10.png",
+          "ticks": 1,
+          "sha256": "6b5c4a45b8f574749d310cce6a6a62c26309bf130ef7acb3ba30c12e1b56da29",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            311,
+            101,
+            696,
+            973
+          ]
+        },
+        {
+          "file": "keyframes/right/right-11.png",
+          "ticks": 1,
+          "sha256": "5c41253d737cb633c201cb17718f182faa474d411e63a020f814f08d0a914fbf",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            316,
+            104,
+            683,
+            973
+          ]
+        },
+        {
+          "file": "keyframes/right/right-12.png",
+          "ticks": 1,
+          "sha256": "4d3365a1ffc407fe8cdaa83b23ec1a4d4f25677511c7f4db40b8f53f9cd4b136",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            318,
+            114,
+            679,
+            973
+          ]
+        },
+        {
+          "file": "keyframes/right/right-13.png",
+          "ticks": 2,
+          "sha256": "a5643c2114704762b7552fb8e40647fe4dafdc22878d1c40323a7f5a425fdade",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            310,
+            115,
+            675,
+            973
+          ]
+        },
+        {
+          "file": "keyframes/right/right-14.png",
+          "ticks": 1,
+          "sha256": "81e4b58b53b9c7e69d1059aa19e5531524b241b4e89b2e006421693e2f65a98a",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            326,
+            111,
+            682,
+            972
+          ]
+        },
+        {
+          "file": "keyframes/right/right-15.png",
+          "ticks": 1,
+          "sha256": "ad394655d0392d278df806f6baf61f9c9a9cd4f3deb9059efa48b530754e3b27",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            322,
+            113,
+            683,
+            972
+          ]
+        },
+        {
+          "file": "keyframes/right/right-16.png",
+          "ticks": 1,
+          "sha256": "b753c55d2048dda6c3155bd72aec2f8e4394df786af0cc12127bd556c37d2444",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            319,
+            109,
+            679,
+            972
+          ]
+        },
+        {
+          "file": "keyframes/right/right-17.png",
+          "ticks": 1,
+          "sha256": "f1f87b36427db3086bdc0618ea7a0e02daaf7bd23faae2a844609c9c0818dbb2",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            318,
+            109,
+            679,
+            972
+          ]
+        },
+        {
+          "file": "keyframes/right/right-18.png",
+          "ticks": 2,
+          "sha256": "e256eafc3847843612661f63bb0f6f5a5cfc4bab24d5b43b4137b39ac7390704",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            321,
+            113,
+            671,
+            972
+          ]
+        },
+        {
+          "file": "keyframes/right/right-19.png",
+          "ticks": 12,
+          "sha256": "df3905c61951a6d6bd26e9fe200a292010ab047854125b55dcbd1126bcdf018e",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            316,
+            114,
+            670,
+            972
+          ]
+        }
+      ],
+      "branches": {
+        "default": []
+      },
+      "occupied_rect_1080p": [
+        188,
+        498,
+        339,
+        819
+      ]
+    },
+    "left": {
+      "common": [
+        {
+          "file": "keyframes/left/left-00.png",
+          "ticks": 2,
+          "sha256": "3f01d77b6eaef32eba05b18b7821a25534d1ba050e179f3e19e473b1c13fbbf3",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            332,
+            70,
+            752,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/left/left-01.png",
+          "ticks": 1,
+          "sha256": "5b55a9b6c06971d4f64a30e25596233a8aef8b9381c62bf34ffad336e69bfb4a",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            336,
+            72,
+            746,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/left/left-02.png",
+          "ticks": 1,
+          "sha256": "654a5114d2d6bbc01889f29f3358a43ae41494ef65255ab186f39b92ed7f74be",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            331,
+            77,
+            731,
+            971
+          ]
+        },
+        {
+          "file": "keyframes/left/left-03.png",
+          "ticks": 1,
+          "sha256": "a640ce31533c298e335796e98dab0e86fbead2360e12073ce8bf9cb94edfb214",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            344,
+            75,
+            741,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/left/left-04.png",
+          "ticks": 1,
+          "sha256": "7d51d20353195896f73ad22f1ef9aba0339934f6956fdeffd12cf3491ea0dfb4",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            344,
+            75,
+            748,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/left/left-05.png",
+          "ticks": 1,
+          "sha256": "705311d3911cc3040bab70b2db61931238a7f690027781b0e5d408e1382bd437",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            341,
+            72,
+            751,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/left/left-06.png",
+          "ticks": 1,
+          "sha256": "f545503a84eaf9a193adbfd26701e4904f7b5291eeaba2a319a87ce66e54f9f4",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            329,
+            88,
+            741,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/left/left-07.png",
+          "ticks": 2,
+          "sha256": "629469181b443f36861b4d62b71e9d7750ec46290af661f840837d50a55a1b81",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            332,
+            92,
+            740,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/left/left-08.png",
+          "ticks": 1,
+          "sha256": "cd949694d50d3e66f8dca76bed55faa2305c76f305767b4e24fd78a5a15d429a",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            344,
+            87,
+            716,
+            973
+          ]
+        },
+        {
+          "file": "keyframes/left/left-09.png",
+          "ticks": 1,
+          "sha256": "9fdbe3c133ee8391e5c76e4673ea12ec4fdec6f7bef8dcb95abea35d9aeca963",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            346,
+            91,
+            719,
+            973
+          ]
+        },
+        {
+          "file": "keyframes/left/left-10.png",
+          "ticks": 1,
+          "sha256": "ae12d2a3b950c2ec2af8697d29a8bd2e99ea3d2a72acdd9c988045177b47b4b8",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            323,
+            87,
+            719,
+            973
+          ]
+        },
+        {
+          "file": "keyframes/left/left-11.png",
+          "ticks": 1,
+          "sha256": "9b5c68867376f94e3ce89bc4d931a24512806e617757c912cf0ed55a666741bc",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            337,
+            91,
+            715,
+            973
+          ]
+        },
+        {
+          "file": "keyframes/left/left-12.png",
+          "ticks": 1,
+          "sha256": "51a039d1a32b6b842c6e7a9100a5aa7b6e5e4d346d46b0c213234124b5ba43e9",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            360,
+            92,
+            712,
+            973
+          ]
+        },
+        {
+          "file": "keyframes/left/left-13.png",
+          "ticks": 2,
+          "sha256": "cee0abcd2e6cb01e70fc47b7ebb903521404c5336ea967a8cbf3496f29f23d6a",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            360,
+            92,
+            711,
+            974
+          ]
+        },
+        {
+          "file": "keyframes/left/left-14.png",
+          "ticks": 1,
+          "sha256": "dc93c86fd3f3d9cd96304dd47825b4e1f0bbc9d45630b07e6ef651a5f081e706",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            353,
+            87,
+            717,
+            974
+          ]
+        },
+        {
+          "file": "keyframes/left/left-15.png",
+          "ticks": 1,
+          "sha256": "44b0f1733ea2558a8922c502001810a21fba8d61a4afc22d54f9b604555a58ca",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            368,
+            87,
+            720,
+            973
+          ]
+        },
+        {
+          "file": "keyframes/left/left-16.png",
+          "ticks": 1,
+          "sha256": "8dece7d7213827018f9df8a95a6dbe5a9629b302f655ade71fe9132519e4dcdf",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            364,
+            88,
+            712,
+            974
+          ]
+        },
+        {
+          "file": "keyframes/left/left-17.png",
+          "ticks": 1,
+          "sha256": "3cb6837f61c867a4a8a2a72a26e1308a78e12a46f8988bbea167149374793907",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            349,
+            87,
+            716,
+            973
+          ]
+        },
+        {
+          "file": "keyframes/left/left-18.png",
+          "ticks": 2,
+          "sha256": "6024446e577f6d24cd1fd61cbd19e10526b25e27a5ef4d3b6e90986b2b62210d",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            354,
+            91,
+            716,
+            973
+          ]
+        },
+        {
+          "file": "keyframes/left/left-19.png",
+          "ticks": 12,
+          "sha256": "55c240c65c80f478d63b5706669560b45d173d2468d03afae17cf0670e677365",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            357,
+            89,
+            709,
+            973
+          ]
+        }
+      ],
+      "branches": {
+        "default": []
+      },
+      "occupied_rect_1080p": [
+        1583,
+        498,
+        1735,
+        819
+      ]
+    }
+  },
+  "artifacts": {
+    "right": {
+      "contact_sheet": "previews/question-shrug-right-default-contact-sheet.png",
+      "size_review": "previews/question-shrug-right-default-size-review.png",
+      "video": "previews/question-shrug-right-default-60fps.mp4"
+    },
+    "left": {
+      "contact_sheet": "previews/question-shrug-left-default-contact-sheet.png",
+      "size_review": "previews/question-shrug-left-default-size-review.png",
+      "video": "previews/question-shrug-left-default-60fps.mp4"
+    },
+    "pair": {
+      "video": "previews/question-shrug-pair-default-60fps.mp4"
+    }
+  },
+  "evidence": {
+    "generation_method": "built-in image generation with continuous pose strips, chroma-key extraction, strip overlap, shared scale, and anatomical anchor registration",
+    "technical_report": "reports/technical-validation.json",
+    "manual_visual_review_report": "reports/manual-visual-review.md",
+    "project_validation": null
+  }
+}

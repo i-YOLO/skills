@@ -1,0 +1,697 @@
+{
+  "schema_version": "1.0",
+  "asset_id": "yolo-gather-conclude",
+  "role": "gather-conclude",
+  "status": "candidate",
+  "playback_mode": "one-shot-with-settled-hold",
+  "outcomes": [
+    "default"
+  ],
+  "suitable_for": [
+    "summary",
+    "synthesis",
+    "bringing points together"
+  ],
+  "not_suitable_for": [
+    "applause",
+    "prayer",
+    "object handling"
+  ],
+  "source_fps": 12,
+  "output_preview_fps": 60,
+  "canvas": [
+    1024,
+    1024
+  ],
+  "foot_anchor": [
+    512,
+    970
+  ],
+  "default_display_height_1080p": 320,
+  "phases": {
+    "prepare_frames": [
+      0,
+      5
+    ],
+    "key_action_frames": [
+      6,
+      14
+    ],
+    "outcome_frames": [
+      15,
+      18
+    ],
+    "settled_frame": 19,
+    "settled_tick": 23,
+    "total_ticks": 35
+  },
+  "facings": {
+    "right": {
+      "common": [
+        {
+          "file": "keyframes/right/right-00.png",
+          "ticks": 2,
+          "sha256": "5191bd3ad02f2f9d87b8d11303e7a7d4ffb2e45992b31b9933f40bac15dab66d",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            290,
+            85,
+            706,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/right/right-01.png",
+          "ticks": 1,
+          "sha256": "e40dfef41c77fdbf168c67eda17f3d02c946cc6f76a37ce61c15679799caf880",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            288,
+            85,
+            704,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/right/right-02.png",
+          "ticks": 1,
+          "sha256": "8719454293b1d96f343eeb484a93be76ceb282b343daa6b0d9172ca42f57bfa6",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            290,
+            85,
+            706,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/right/right-03.png",
+          "ticks": 1,
+          "sha256": "620211ef54815bde7b844445412578b5a34784cf2ff08f14e54c4b8b713131f3",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            291,
+            85,
+            711,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/right/right-04.png",
+          "ticks": 1,
+          "sha256": "6a5625205d27e70f891334cdfbacf49a8779027265f23121f54154b841d8965b",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            285,
+            87,
+            719,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/right/right-05.png",
+          "ticks": 1,
+          "sha256": "0226448de27178d8d64869c8df4e7c0421e1cfc19f7dfbf65deb1212480aa315",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            289,
+            85,
+            730,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/right/right-06.png",
+          "ticks": 1,
+          "sha256": "ad2ec3d8561576e16472976f81e3ce523aa03a45da3f5f1ffffb9547df4fefc8",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            289,
+            87,
+            730,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/right/right-07.png",
+          "ticks": 2,
+          "sha256": "d9765d83144c7db19f6e4ee83e5d5e45cf46f4f8e06eda4d485684908a2df34b",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            287,
+            85,
+            705,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/right/right-08.png",
+          "ticks": 1,
+          "sha256": "64c4ff138c4e884c7f5ad3aa85e8e771501321f613ad972c361e086b7dca6269",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            290,
+            82,
+            712,
+            976
+          ]
+        },
+        {
+          "file": "keyframes/right/right-09.png",
+          "ticks": 1,
+          "sha256": "129ad31c71a95f3b36614c8f3da892f7669ee11643920bc30558b0e604178c09",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            289,
+            82,
+            711,
+            976
+          ]
+        },
+        {
+          "file": "keyframes/right/right-10.png",
+          "ticks": 1,
+          "sha256": "3474c0e3569851cd83ec382f80cb59f2bb4384ae1c12ca2c4b2d6e41e26f1fbb",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            288,
+            82,
+            712,
+            976
+          ]
+        },
+        {
+          "file": "keyframes/right/right-11.png",
+          "ticks": 1,
+          "sha256": "3361b91e3e9181156fdeaa2b340cb19338118586c1e2fbcf73f27f08cb95d2cf",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            288,
+            82,
+            712,
+            974
+          ]
+        },
+        {
+          "file": "keyframes/right/right-12.png",
+          "ticks": 1,
+          "sha256": "e40c9e5e40d20a9faf1345027da86ba39ecc9776ee2f4a82be264c47ab4f3749",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            290,
+            82,
+            712,
+            974
+          ]
+        },
+        {
+          "file": "keyframes/right/right-13.png",
+          "ticks": 2,
+          "sha256": "495b967daf7aa1006bb32bdd5cd1893668a3773ac4abd6e76c05e0e22d7eefcf",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            292,
+            86,
+            712,
+            976
+          ]
+        },
+        {
+          "file": "keyframes/right/right-14.png",
+          "ticks": 1,
+          "sha256": "03a4b728046da67d61e639b854ea96afd8024d18fb72a620b5a9bdf58cd925b7",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            288,
+            76,
+            714,
+            976
+          ]
+        },
+        {
+          "file": "keyframes/right/right-15.png",
+          "ticks": 1,
+          "sha256": "806688316a4fe8358e2308094b2ddb43a09244fa62e2bf1678bb61f2d3ab3b98",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            292,
+            86,
+            726,
+            976
+          ]
+        },
+        {
+          "file": "keyframes/right/right-16.png",
+          "ticks": 1,
+          "sha256": "3a2bb25970d53198c3390d9bdd4d839a663ee9e82827c8dc408b5c7b20304440",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            294,
+            76,
+            722,
+            976
+          ]
+        },
+        {
+          "file": "keyframes/right/right-17.png",
+          "ticks": 1,
+          "sha256": "1229e26b8d0a468eef412e9d48b032dadc5c94e8caeec88b2b2356dbbb6448b8",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            288,
+            76,
+            716,
+            976
+          ]
+        },
+        {
+          "file": "keyframes/right/right-18.png",
+          "ticks": 2,
+          "sha256": "ded9bb771e8b5b599e23629c08184d8c4ea02e675ad1e82cc9f2225f0e627d4c",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            288,
+            76,
+            714,
+            976
+          ]
+        },
+        {
+          "file": "keyframes/right/right-19.png",
+          "ticks": 12,
+          "sha256": "cc25bb06ef3dd3aa29e6159918436b917ad5e127749734e8522cb36583e299e4",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            284,
+            76,
+            712,
+            976
+          ]
+        }
+      ],
+      "branches": {
+        "default": []
+      },
+      "occupied_rect_1080p": [
+        189,
+        500,
+        348,
+        820
+      ]
+    },
+    "left": {
+      "common": [
+        {
+          "file": "keyframes/left/left-00.png",
+          "ticks": 2,
+          "sha256": "f0cb9986f0329df67fcd0de5d32128f08c9bf01a50415fd601e73673b55e97c5",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            338,
+            70,
+            732,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/left/left-01.png",
+          "ticks": 1,
+          "sha256": "473a6beaf181ce1a1548b8338898aeb2e21541e98ba70066578b2ad6f1c6664e",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            340,
+            70,
+            725,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/left/left-02.png",
+          "ticks": 1,
+          "sha256": "9f5c745666846b139d91d9f286b66d872e321ce31afcca7e8595156959353666",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            346,
+            72,
+            724,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/left/left-03.png",
+          "ticks": 1,
+          "sha256": "1057ba52d12c71ddda93f9855d9ba457daf2237f82695383347a54871ba45214",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            331,
+            77,
+            722,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/left/left-04.png",
+          "ticks": 1,
+          "sha256": "9f9b94dc621e81271829a1e08c657602b6df0ff68c8b4a39c7f0c62811912680",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            321,
+            81,
+            715,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/left/left-05.png",
+          "ticks": 1,
+          "sha256": "03b2796f7c3979be657c1f195d4df43bf7d4d4d6146742b0f8edf1cbd17532c7",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            296,
+            81,
+            712,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/left/left-06.png",
+          "ticks": 1,
+          "sha256": "bf68f43c2f8c93064701a39360b706f0ae3c75bbc09f556a74104de2ddef8d54",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            269,
+            83,
+            742,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/left/left-07.png",
+          "ticks": 2,
+          "sha256": "063038f5fb77eaf54f7599c692ba83a460d77ea0187cb37fe34721d71aa5d007",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            348,
+            83,
+            712,
+            970
+          ]
+        },
+        {
+          "file": "keyframes/left/left-08.png",
+          "ticks": 1,
+          "sha256": "3f2af6133c5b5f940fa63a7a90d3620df1a71d3ce76a46506b7c16235433c3d4",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            331,
+            87,
+            720,
+            974
+          ]
+        },
+        {
+          "file": "keyframes/left/left-09.png",
+          "ticks": 1,
+          "sha256": "c77bc3630295545e3be9fd105e7790d2cec31021e4e80e261ccf976cb94dbdfb",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            348,
+            90,
+            723,
+            974
+          ]
+        },
+        {
+          "file": "keyframes/left/left-10.png",
+          "ticks": 1,
+          "sha256": "bb98022db47d0ece33d45ba2acde49ecafc9f95f2a3141194290927bb1b722a7",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            352,
+            88,
+            725,
+            974
+          ]
+        },
+        {
+          "file": "keyframes/left/left-11.png",
+          "ticks": 1,
+          "sha256": "0f08d4ca3a1e4a721d84f5d3848ba2095e7bdf1e44fa8452967a45b8d8cecc0d",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            349,
+            87,
+            724,
+            973
+          ]
+        },
+        {
+          "file": "keyframes/left/left-12.png",
+          "ticks": 1,
+          "sha256": "9a03e73c0a455f09d286d1e9986724bd8b1471f092a64a66e725a1f2d896ba81",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            347,
+            87,
+            723,
+            974
+          ]
+        },
+        {
+          "file": "keyframes/left/left-13.png",
+          "ticks": 2,
+          "sha256": "69cd8de327d6f1f617bdbbfa532283207f5bd8b37f62a4283c933800555cbd17",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            347,
+            93,
+            718,
+            975
+          ]
+        },
+        {
+          "file": "keyframes/left/left-14.png",
+          "ticks": 1,
+          "sha256": "52c1d9b90f6614d96495b4f0c4139ef0c977205800abd475f4b77f6564f43150",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            354,
+            86,
+            720,
+            973
+          ]
+        },
+        {
+          "file": "keyframes/left/left-15.png",
+          "ticks": 1,
+          "sha256": "e9f5c74d08c191d4934c657a71be95ec69c0db7977ef67db197d71d30ce787cd",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            353,
+            91,
+            715,
+            975
+          ]
+        },
+        {
+          "file": "keyframes/left/left-16.png",
+          "ticks": 1,
+          "sha256": "0ce7d5d5bfa861d5bf25d521644d2682d5ea98e3f1d77ae60365ec7c0e22fb9a",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            353,
+            85,
+            719,
+            974
+          ]
+        },
+        {
+          "file": "keyframes/left/left-17.png",
+          "ticks": 1,
+          "sha256": "ec92d6fbf858daf21893fa2c47208af30b51d44c4728ab76bf678618eead0826",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            352,
+            82,
+            718,
+            973
+          ]
+        },
+        {
+          "file": "keyframes/left/left-18.png",
+          "ticks": 2,
+          "sha256": "1b9e6780c30d3ab25ddd7e857da67fd24bf50ae12b9265a2222f834d0e056734",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            351,
+            82,
+            719,
+            973
+          ]
+        },
+        {
+          "file": "keyframes/left/left-19.png",
+          "ticks": 12,
+          "sha256": "198dab5641160e966e4bbfbfb29b3a267b63b5f2d274501de1b053c909760823",
+          "foot_anchor": [
+            512.0,
+            970.0
+          ],
+          "bbox": [
+            347,
+            80,
+            713,
+            975
+          ]
+        }
+      ],
+      "branches": {
+        "default": []
+      },
+      "occupied_rect_1080p": [
+        1564,
+        498,
+        1732,
+        820
+      ]
+    }
+  },
+  "artifacts": {
+    "right": {
+      "contact_sheet": "previews/gather-conclude-right-default-contact-sheet.png",
+      "size_review": "previews/gather-conclude-right-default-size-review.png",
+      "video": "previews/gather-conclude-right-default-60fps.mp4"
+    },
+    "left": {
+      "contact_sheet": "previews/gather-conclude-left-default-contact-sheet.png",
+      "size_review": "previews/gather-conclude-left-default-size-review.png",
+      "video": "previews/gather-conclude-left-default-60fps.mp4"
+    },
+    "pair": {
+      "video": "previews/gather-conclude-pair-default-60fps.mp4"
+    }
+  },
+  "evidence": {
+    "generation_method": "built-in image generation with continuous pose strips, chroma-key extraction, strip overlap, shared scale, and anatomical anchor registration",
+    "technical_report": "reports/technical-validation.json",
+    "manual_visual_review_report": "reports/manual-visual-review.md",
+    "project_validation": null
+  }
+}

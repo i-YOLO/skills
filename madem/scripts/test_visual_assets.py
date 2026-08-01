@@ -126,6 +126,14 @@ class VisualAssetContractTest(unittest.TestCase):
                 "yolo-point-tap",
                 "yolo-catch-card",
                 "yolo-risk-reminder",
+                "yolo-inspect-react",
+                "yolo-nod-confirm",
+                "yolo-deny-shake",
+                "yolo-present-reveal",
+                "yolo-welcome-wave",
+                "yolo-gather-conclude",
+                "yolo-question-shrug",
+                "yolo-success-celebrate",
             },
         )
         self.assertEqual(set(catalog["props"]), {"magnifier", "card", "slot"})
@@ -148,6 +156,28 @@ class VisualAssetContractTest(unittest.TestCase):
                     self.assertGreaterEqual(len(entries), 8)
                     if motion["playback_mode"] != "loop":
                         self.assertGreaterEqual(entries[-1]["ticks"], catalog["source_fps"])
+                    for entry in entries:
+                        path = root / entry["file"]
+                        self.assertEqual(
+                            hashlib.sha256(path.read_bytes()).hexdigest(),
+                            entry["sha256"],
+                        )
+                        with Image.open(path) as image:
+                            self.assertEqual(image.mode, "RGBA")
+                            orange_pixels = sum(
+                                1
+                                for red, green, blue, alpha in image.getdata()
+                                if alpha > 180
+                                and red > 190
+                                and 45 < green < 190
+                                and blue < 120
+                                and red - green > 55
+                            )
+                        self.assertGreaterEqual(
+                            orange_pixels,
+                            1000,
+                            f"shoe-orange-contract: {entry['file']}",
+                        )
         for report in catalog["validation_reports"].values():
             self.assertTrue((root / report).exists())
 

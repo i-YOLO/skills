@@ -1,0 +1,11 @@
+Use case: stylized-concept
+Asset type: readable small-size left-facing doubtful-result pose strip
+Input images: Image 1 is the exact left-facing YOLO identity; Image 2 is the left-common-b strip and defines the shared upright branching pose
+Primary request: create one extra-wide horizontal strip with exactly 8 ordered, separated, complete full-body poses transitioning from upright inspection into one clearly readable but restrained doubtful head shake, with the torso fixed
+Character invariants: preserve the exact left-facing YOLO identity, hairstyle asymmetry, large navy rectangular glasses, pale face, blue jacket, white shirt, navy trousers, orange sneakers, clean filled illustration, navy outlines and proportions
+Motion progression left to right: poses 1 and 2 faithfully reproduce the last two poses of Image 2; pose 3 eyebrows visibly angle into concern and the smile becomes a small straight mouth; pose 4 head rotates about 5 degrees toward one side; pose 5 passes through center; pose 6 rotates about 5 degrees toward the other side; pose 7 returns close to center with a tiny rebound; pose 8 settles upright with concerned eyebrows and straight mouth still visible
+Composition: exactly 8 isolated complete full-body figures in one horizontal row, identical scale and shoe baseline, shoulders and hips at the same height, generous gaps, no overlap, no crop, no labels
+Scene/backdrop: perfectly flat solid #ff00ff chroma-key background
+Constraints: glasses and head direction visibly move side-center-side-center; one head shake only; torso, shoulders, pelvis and shoes remain fixed; maximum head angle 6 degrees; expression thoughtful and doubtful, not angry or sad; hands empty
+Avoid: neutral unchanged expression, whole-body movement, bowing, shrinking silhouette, crossed arms, props, magnifier, cards, question marks, text, symbols, shadows, gradients, glow, motion blur, duplicate limbs, identity or clothing changes, #ff00ff in the character
+

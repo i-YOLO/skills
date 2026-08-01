@@ -1,0 +1,28 @@
+{
+  "status": "pass",
+  "asset_status": "candidate",
+  "reviewed_at": "2026-08-01",
+  "review_method": "contact sheets, 280/320/380px size reviews, 60fps previews, and repaired transition checks",
+  "actions": {
+    "inspect-react": "pass",
+    "nod-confirm": "pass",
+    "deny-shake": "pass",
+    "present-reveal": "pass",
+    "welcome-wave": "pass",
+    "gather-conclude": "pass",
+    "question-shrug": "pass",
+    "success-celebrate": "pass"
+  },
+  "global_checks": {
+    "left_right_facing": "pass",
+    "continuous_mother_strip": "pass",
+    "shoe_color_stability": "pass",
+    "settled_hold": "pass",
+    "visible_transition_artifacts": "pass"
+  },
+  "notes": [
+    "deny-shake A/B junction was repaired to include center crossing and reverse-side extreme",
+    "welcome-wave right-facing scale drift was repaired at the mother-strip level",
+    "left/right production scale is normalized once per facing, never per frame"
+  ]
+}

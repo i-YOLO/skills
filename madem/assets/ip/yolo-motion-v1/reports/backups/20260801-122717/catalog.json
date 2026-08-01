@@ -1,0 +1,1451 @@
+{
+  "schema_version": "1.0",
+  "asset_family": "yolo-motion-v1",
+  "style_profile": "yolo-clean-fill-motion-v1",
+  "status": "candidate",
+  "source_fps": 12,
+  "production": {
+    "canvas": [
+      1024,
+      1024
+    ],
+    "subject_height_px": 900,
+    "foot_anchor": [
+      512,
+      970
+    ],
+    "output_video_fps": 60,
+    "default_display_height_1080p": 320,
+    "recommended_display_height_1080p": [
+      280,
+      340
+    ],
+    "max_display_height_1080p": 380,
+    "content_max_y_1080p": 820,
+    "caption_safe_region_1080p": {
+      "x_min": 140,
+      "x_max": 1780,
+      "y_min": 860,
+      "y_max": 1040
+    },
+    "reserved_slots_1080p": {
+      "lower-left": {
+        "x_min": 80,
+        "x_max": 460,
+        "y_min": 440,
+        "y_max": 820
+      },
+      "lower-right": {
+        "x_min": 1460,
+        "x_max": 1840,
+        "y_min": 440,
+        "y_max": 820
+      }
+    },
+    "usage_density_per_90_seconds": [
+      4,
+      6
+    ],
+    "max_character_motions_per_scene": 1
+  },
+  "identity": [
+    {
+      "facing": "right",
+      "file": "identity/master-right.png",
+      "sha256": "23712f6fe97b49207ff09a3defd4634288a39b1108391ee1cd7868ae93f9e2d0"
+    },
+    {
+      "facing": "left",
+      "file": "identity/master-left.png",
+      "sha256": "5c8c815c88a6667930abf18bffb5d93eccba9ddfe366b870c9ad16d4f066064c"
+    }
+  ],
+  "props": {
+    "magnifier": {
+      "file": "props/magnifier.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "logical_width": 240,
+      "grip_anchor": {
+        "right": [
+          0.69,
+          0.81
+        ],
+        "left": [
+          0.31,
+          0.81
+        ]
+      },
+      "mirror_for_left": true,
+      "sha256": "38af82876f5072ac574b470d21ccbd70c446fccb84c6312d94c3b329ec002c79"
+    },
+    "card": {
+      "file": "props/card.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "logical_width": 180,
+      "grip_anchor": {
+        "right": [
+          0.5,
+          0.5
+        ],
+        "left": [
+          0.5,
+          0.5
+        ]
+      },
+      "mirror_for_left": false,
+      "sha256": "a420660e5bbfce0cedb3d45ac8ecc174ad38c59a4c826f556a243a4558308675"
+    },
+    "slot": {
+      "file": "props/slot.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "logical_width": 320,
+      "grip_anchor": {
+        "right": [
+          0.5,
+          0.53
+        ],
+        "left": [
+          0.5,
+          0.53
+        ]
+      },
+      "mirror_for_left": false,
+      "sha256": "c7b8307ef0472c43c9fda7a19c729fbaa4a4faebb5a43b816041e74a4e015e0d"
+    }
+  },
+  "motions": [
+    {
+      "asset_id": "yolo-verify-source",
+      "role": "verify-source",
+      "status": "candidate",
+      "playback_mode": "one-shot-with-settled-hold",
+      "outcomes": [
+        "not-found",
+        "verified"
+      ],
+      "suitable_for": [
+        "source verification",
+        "fact checking",
+        "review and approval",
+        "claim validation"
+      ],
+      "not_suitable_for": [
+        "persistent decorative looping",
+        "large hero gestures",
+        "scenes without a reserved character slot"
+      ],
+      "phases": {
+        "anticipation_tick": 2,
+        "inspect_tick": 7,
+        "scan_end_tick": 9,
+        "outcome_tick": 11,
+        "settled_tick": 13,
+        "total_ticks": 25
+      },
+      "facings": {
+        "right": {
+          "common": [
+            {
+              "file": "actions/verify-source/keyframes/right/right-00.png",
+              "ticks": 2,
+              "prop": {
+                "x": 676,
+                "y": 547,
+                "rotation": 18,
+                "opacity": 0
+              },
+              "sha256": "23712f6fe97b49207ff09a3defd4634288a39b1108391ee1cd7868ae93f9e2d0"
+            },
+            {
+              "file": "actions/verify-source/keyframes/right/right-01.png",
+              "ticks": 1,
+              "prop": {
+                "x": 676,
+                "y": 547,
+                "rotation": 18,
+                "opacity": 0
+              },
+              "sha256": "96f60143e29c2fbb8b8ca0d7da0fd28dca585f4d1aabebc052532d3a54e2d8fe"
+            },
+            {
+              "file": "actions/verify-source/keyframes/right/right-02.png",
+              "ticks": 1,
+              "prop": {
+                "x": 675,
+                "y": 542,
+                "rotation": 15,
+                "opacity": 0.35
+              },
+              "sha256": "a028db00b1be8b60914f11128265de874630e4420c5a98c41f20c0aa2b8ee76a"
+            },
+            {
+              "file": "actions/verify-source/keyframes/right/right-03.png",
+              "ticks": 1,
+              "prop": {
+                "x": 645,
+                "y": 490,
+                "rotation": 10,
+                "opacity": 0.65
+              },
+              "sha256": "1c27ec84727da340ae1ac7ac15978b7f55da0ea4c319674b634ceb291001e3e0"
+            },
+            {
+              "file": "actions/verify-source/keyframes/right/right-04.png",
+              "ticks": 1,
+              "prop": {
+                "x": 643,
+                "y": 473,
+                "rotation": 6,
+                "opacity": 1
+              },
+              "sha256": "019ee10ac628ccbd85ac80e58bc4dd4dd86b89b654fd121d477a23c455a55f7d"
+            },
+            {
+              "file": "actions/verify-source/keyframes/right/right-05.png",
+              "ticks": 1,
+              "prop": {
+                "x": 669,
+                "y": 427,
+                "rotation": 2,
+                "opacity": 1
+              },
+              "sha256": "aa9e70028a288df25f5b2ba5b8d53f6334e86bed55ec47588f286fc7cbe80cf1"
+            },
+            {
+              "file": "actions/verify-source/keyframes/right/right-06.png",
+              "ticks": 1,
+              "prop": {
+                "x": 667,
+                "y": 396,
+                "rotation": -2,
+                "opacity": 1
+              },
+              "sha256": "c9d7cbf7d876994e393b55761ba3d4dc17c3bcf1ada7212980221d2f18fd87d0"
+            },
+            {
+              "file": "actions/verify-source/keyframes/right/right-07.png",
+              "ticks": 1,
+              "prop": {
+                "x": 668,
+                "y": 396,
+                "rotation": -4,
+                "opacity": 1
+              },
+              "sha256": "15aebf0d21a8664d032df212e974b9ab045b85de5b884ada13f75044cd1abf22"
+            },
+            {
+              "file": "actions/verify-source/keyframes/right/right-08.png",
+              "ticks": 2,
+              "prop": {
+                "x": 671,
+                "y": 396,
+                "rotation": -6,
+                "opacity": 1
+              },
+              "sha256": "32b57a249cfa3249d2bc2380e409808fec82b723fdc83f7df2bee48c23bd53db"
+            }
+          ],
+          "branches": {
+            "not-found": [
+              {
+                "file": "actions/verify-source/keyframes/right/right-not-found-09.png",
+                "ticks": 2,
+                "prop": {
+                  "x": 643,
+                  "y": 448,
+                  "rotation": 6,
+                  "opacity": 1
+                },
+                "sha256": "a00dc25169c6e6259c31fa7fa4e5633077cada621641ea66f1f0d2e4ff754717"
+              },
+              {
+                "file": "actions/verify-source/keyframes/right/right-not-found-10.png",
+                "ticks": 12,
+                "prop": {
+                  "x": 644,
+                  "y": 457,
+                  "rotation": 10,
+                  "opacity": 1
+                },
+                "sha256": "39669a16fa45e0c628f37ba8d74764eec83775ef979f35ebc6f0425a5a08620a"
+              }
+            ],
+            "verified": [
+              {
+                "file": "actions/verify-source/keyframes/right/right-verified-09.png",
+                "ticks": 2,
+                "prop": {
+                  "x": 643,
+                  "y": 469,
+                  "rotation": 5,
+                  "opacity": 1
+                },
+                "sha256": "6a0dda842f85f03515dc0111309bad4be02b919b805377b98e64a8a497478a9d"
+              },
+              {
+                "file": "actions/verify-source/keyframes/right/right-verified-10.png",
+                "ticks": 12,
+                "prop": {
+                  "x": 638,
+                  "y": 461,
+                  "rotation": 8,
+                  "opacity": 1
+                },
+                "sha256": "64a8d633ade297960df5afc9380fd3c0fc0a227f19a96d7f699381f16e0318a4"
+              }
+            ]
+          }
+        },
+        "left": {
+          "common": [
+            {
+              "file": "actions/verify-source/keyframes/left/left-00.png",
+              "ticks": 2,
+              "prop": {
+                "x": 355,
+                "y": 564,
+                "rotation": -18,
+                "opacity": 0
+              },
+              "sha256": "5c8c815c88a6667930abf18bffb5d93eccba9ddfe366b870c9ad16d4f066064c"
+            },
+            {
+              "file": "actions/verify-source/keyframes/left/left-01.png",
+              "ticks": 1,
+              "prop": {
+                "x": 355,
+                "y": 564,
+                "rotation": -18,
+                "opacity": 0
+              },
+              "sha256": "6f324b574ea258cfa219ab3b8233784882ff42d3adfcbaa7e317f5b3ca5cb54d"
+            },
+            {
+              "file": "actions/verify-source/keyframes/left/left-02.png",
+              "ticks": 1,
+              "prop": {
+                "x": 353,
+                "y": 532,
+                "rotation": -15,
+                "opacity": 0.35
+              },
+              "sha256": "78eca0069c430c2fe3eb6b66dab6abedf706344d52e3daa2c5e307df635aa49d"
+            },
+            {
+              "file": "actions/verify-source/keyframes/left/left-03.png",
+              "ticks": 1,
+              "prop": {
+                "x": 358,
+                "y": 532,
+                "rotation": -10,
+                "opacity": 0.65
+              },
+              "sha256": "06699cce471ecf020946b78e6eaf1dc9de5151d437f5612561200e25ec51bb14"
+            },
+            {
+              "file": "actions/verify-source/keyframes/left/left-04.png",
+              "ticks": 1,
+              "prop": {
+                "x": 358,
+                "y": 421,
+                "rotation": -6,
+                "opacity": 1
+              },
+              "sha256": "a895562daffd1ebf7952e982eaeef331cdbf534c89f733bb547b1a34f2c8b340"
+            },
+            {
+              "file": "actions/verify-source/keyframes/left/left-05.png",
+              "ticks": 1,
+              "prop": {
+                "x": 347,
+                "y": 405,
+                "rotation": -2,
+                "opacity": 1
+              },
+              "sha256": "25adae6daf3ed2f08c29a30a274c1ba9ca927f183cb9da6212e6485f1882f2bb"
+            },
+            {
+              "file": "actions/verify-source/keyframes/left/left-06.png",
+              "ticks": 1,
+              "prop": {
+                "x": 358,
+                "y": 362,
+                "rotation": 2,
+                "opacity": 1
+              },
+              "sha256": "b9a15daa0d7ac5b3b7661832ce7cb95efad54c11aa44780597ac09df7d88c766"
+            },
+            {
+              "file": "actions/verify-source/keyframes/left/left-07.png",
+              "ticks": 1,
+              "prop": {
+                "x": 326,
+                "y": 394,
+                "rotation": 4,
+                "opacity": 1
+              },
+              "sha256": "75addb9661a49019418f5313c1efc37ca4c389fb191ee8d520b4f2b609b3cd97"
+            },
+            {
+              "file": "actions/verify-source/keyframes/left/left-08.png",
+              "ticks": 2,
+              "prop": {
+                "x": 326,
+                "y": 362,
+                "rotation": 6,
+                "opacity": 1
+              },
+              "sha256": "78af6127f20242108cc850e696b8858351b79d34fb8fe53e51013c641f1987f9"
+            }
+          ],
+          "branches": {
+            "not-found": [
+              {
+                "file": "actions/verify-source/keyframes/left/left-not-found-09.png",
+                "ticks": 2,
+                "prop": {
+                  "x": 337,
+                  "y": 445,
+                  "rotation": -6,
+                  "opacity": 0.5
+                },
+                "sha256": "5d645783e1af5c240a68add7f0d0724e3888d84ae9a5949531fd51f0a8e13248"
+              },
+              {
+                "file": "actions/verify-source/keyframes/left/left-not-found-10.png",
+                "ticks": 12,
+                "prop": {
+                  "x": 337,
+                  "y": 462,
+                  "rotation": -10,
+                  "opacity": 0
+                },
+                "sha256": "5e097a1d52652adf3b46530f8ef8ddc4b804f3b7323a5722e0e527ece38fe9a1"
+              }
+            ],
+            "verified": [
+              {
+                "file": "actions/verify-source/keyframes/left/left-verified-09.png",
+                "ticks": 2,
+                "prop": {
+                  "x": 337,
+                  "y": 479,
+                  "rotation": -5,
+                  "opacity": 1
+                },
+                "sha256": "10191f4d3fbabd18240b3e4d4e78bae2b6b6b8a3feebeffc3783618c56dbbf79"
+              },
+              {
+                "file": "actions/verify-source/keyframes/left/left-verified-10.png",
+                "ticks": 12,
+                "prop": {
+                  "x": 337,
+                  "y": 462,
+                  "rotation": -8,
+                  "opacity": 1
+                },
+                "sha256": "eefb49c62ed5744a74c139642f7d331fa849179ea5b99e1f5d81dd9433827393"
+              }
+            ]
+          }
+        }
+      },
+      "evidence": {
+        "generation_method": "built-in image generation with per-frame chroma-key extraction",
+        "manual_visual_review": "pass",
+        "manual_visual_review_report": "reports/manual-visual-review.json",
+        "project_validation": null
+      }
+    },
+    {
+      "asset_id": "yolo-quiet-observe",
+      "role": "quiet-observe",
+      "status": "candidate",
+      "playback_mode": "loop",
+      "outcomes": [
+        "loop"
+      ],
+      "suitable_for": [
+        "listening",
+        "quiet observation",
+        "light idle presence"
+      ],
+      "not_suitable_for": [
+        "semantic result emphasis",
+        "risk warning"
+      ],
+      "loop_range_ticks": [
+        0,
+        16
+      ],
+      "settled_frame_index": 7,
+      "phases": {
+        "anticipation_tick": 2,
+        "inspect_tick": 6,
+        "scan_end_tick": 10,
+        "outcome_tick": 12,
+        "settled_tick": 14,
+        "total_ticks": 16
+      },
+      "facings": {
+        "right": {
+          "common": [
+            {
+              "file": "actions/quiet-observe/keyframes/right/right-00.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "0dae010fd8d9b00ceae89e454ef4661fb6d4084e2e53d9e11d09516d4b1be92c"
+            },
+            {
+              "file": "actions/quiet-observe/keyframes/right/right-01.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "e2e4c46b247b89c0fc3a7fdb62ea84f5876d28c252bf644f886a1adebe296b88"
+            },
+            {
+              "file": "actions/quiet-observe/keyframes/right/right-02.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "aea9d22792b5ecb577626145b0ebec486e9eed9b9007240715f5543f2ff1c7df"
+            },
+            {
+              "file": "actions/quiet-observe/keyframes/right/right-03.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "27c494618eaa6d68d0b100537fc5a6f7e1f717b6ce7a35956874d80765917c9c"
+            },
+            {
+              "file": "actions/quiet-observe/keyframes/right/right-04.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "d80e55ecc268e6813002884ac5e8f2f02995000f354c3188b710773fa63b7028"
+            },
+            {
+              "file": "actions/quiet-observe/keyframes/right/right-05.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "acd96ff7b59b353256cd5997abf2b334a7451e0b0082130db09456e783276bba"
+            },
+            {
+              "file": "actions/quiet-observe/keyframes/right/right-06.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "d8c1f22f29303ed843972399f4c1ea97f85494096f8a62d1d1e247da18501013"
+            },
+            {
+              "file": "actions/quiet-observe/keyframes/right/right-07.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "0dae010fd8d9b00ceae89e454ef4661fb6d4084e2e53d9e11d09516d4b1be92c"
+            }
+          ],
+          "branches": {
+            "loop": []
+          }
+        },
+        "left": {
+          "common": [
+            {
+              "file": "actions/quiet-observe/keyframes/left/left-00.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "2022a7085627bb8577a33b985a6dca14be7c65ba60ecacecaac45eda0235239e"
+            },
+            {
+              "file": "actions/quiet-observe/keyframes/left/left-01.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "0dc673999f4f507d07ce5308802382c80d81a24e8dd54146e2ad9e07fb009d5a"
+            },
+            {
+              "file": "actions/quiet-observe/keyframes/left/left-02.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "ceeabd9241f85115e8e23a3146bfd9397126d7e9b37f997cef7abe79dc1efe58"
+            },
+            {
+              "file": "actions/quiet-observe/keyframes/left/left-03.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "cb9f068d0fd972f6dba7d22a4acbae66d827d4f4ea3eea8afebbd3126864c391"
+            },
+            {
+              "file": "actions/quiet-observe/keyframes/left/left-04.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "1d3082f86cb07c62856902c087a6bdf19ca688e3ec3cbc83e490361591c0dee3"
+            },
+            {
+              "file": "actions/quiet-observe/keyframes/left/left-05.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "7551b80fa264fc7c9256ea7a134c19984734d4b18d0d93882d4c394ef4c00532"
+            },
+            {
+              "file": "actions/quiet-observe/keyframes/left/left-06.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "bd46af7e7568250062ba5d0e2e38f654a4e9e4652daccf565fdfa90a008acf00"
+            },
+            {
+              "file": "actions/quiet-observe/keyframes/left/left-07.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "2022a7085627bb8577a33b985a6dca14be7c65ba60ecacecaac45eda0235239e"
+            }
+          ],
+          "branches": {
+            "loop": []
+          }
+        }
+      },
+      "evidence": {
+        "generation_method": "built-in image generation with per-frame chroma-key extraction",
+        "manual_visual_review": "pass",
+        "manual_visual_review_report": "reports/manual-visual-review.json",
+        "project_validation": null
+      }
+    },
+    {
+      "asset_id": "yolo-chin-think",
+      "role": "chin-think",
+      "status": "candidate",
+      "playback_mode": "loop",
+      "outcomes": [
+        "loop"
+      ],
+      "suitable_for": [
+        "reasoning",
+        "comparison",
+        "question framing"
+      ],
+      "not_suitable_for": [
+        "final approval",
+        "urgent warning"
+      ],
+      "loop_range_ticks": [
+        0,
+        20
+      ],
+      "settled_frame_index": 7,
+      "phases": {
+        "anticipation_tick": 2,
+        "inspect_tick": 6,
+        "scan_end_tick": 12,
+        "outcome_tick": 15,
+        "settled_tick": 17,
+        "total_ticks": 20
+      },
+      "facings": {
+        "right": {
+          "common": [
+            {
+              "file": "actions/chin-think/keyframes/right/right-00.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "b98b5c0b1d0fa04d8d8c55e13805d25fb161bad05f48414728f9328712688b6c"
+            },
+            {
+              "file": "actions/chin-think/keyframes/right/right-01.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "fe3fa453817d8a95b2bd4a1b2587376402f2dbb2aae22dcec378b7c93689b58a"
+            },
+            {
+              "file": "actions/chin-think/keyframes/right/right-02.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "2e3a99c89de76734924f3902d878f172c3fb8ef28a414cfb10de56425b30df39"
+            },
+            {
+              "file": "actions/chin-think/keyframes/right/right-03.png",
+              "ticks": 3,
+              "props": [],
+              "sha256": "5e6335a5ee88bbfb49b7580f1ae752d06531e61aea5c70e373095c753de494eb"
+            },
+            {
+              "file": "actions/chin-think/keyframes/right/right-04.png",
+              "ticks": 3,
+              "props": [],
+              "sha256": "7ab7c545e8b87ecdd0ed50539f2b74b3795778eaa49856fc79e61149f4ec0692"
+            },
+            {
+              "file": "actions/chin-think/keyframes/right/right-05.png",
+              "ticks": 3,
+              "props": [],
+              "sha256": "1a3babab6bd6e104678b62b11da766001687eac62acebd91a2a8a93172797ecd"
+            },
+            {
+              "file": "actions/chin-think/keyframes/right/right-06.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "969d144c21757ac8b532eaf5e7db426af1ae9fcfa9631b38a5214a94a7db0a80"
+            },
+            {
+              "file": "actions/chin-think/keyframes/right/right-07.png",
+              "ticks": 3,
+              "props": [],
+              "sha256": "b98b5c0b1d0fa04d8d8c55e13805d25fb161bad05f48414728f9328712688b6c"
+            }
+          ],
+          "branches": {
+            "loop": []
+          }
+        },
+        "left": {
+          "common": [
+            {
+              "file": "actions/chin-think/keyframes/left/left-00.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "08b832386e837358b120cfe34d04fdf6c81069cef8bfda5fedbea2abce39ef2e"
+            },
+            {
+              "file": "actions/chin-think/keyframes/left/left-01.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "31ead5705b68fe6da5f414c5498a8f0e8547cd88a2d6a837c127b9d9c553fad3"
+            },
+            {
+              "file": "actions/chin-think/keyframes/left/left-02.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "49c6573c544b09b85328b7781f7cff9d3564afb322aaae7baf0f5543064c05d5"
+            },
+            {
+              "file": "actions/chin-think/keyframes/left/left-03.png",
+              "ticks": 3,
+              "props": [],
+              "sha256": "c9f83e200a6ec85ea88cbafbf5d52c7a1a1d5e1a269810db94c0cf6d2520c2d4"
+            },
+            {
+              "file": "actions/chin-think/keyframes/left/left-04.png",
+              "ticks": 3,
+              "props": [],
+              "sha256": "e3e8eb26b7018eefdab710c8a7916b43279ca7c40c64b5c9bee957887abd0558"
+            },
+            {
+              "file": "actions/chin-think/keyframes/left/left-05.png",
+              "ticks": 3,
+              "props": [],
+              "sha256": "a939c3ba5fed52d6bb0169d0b4b8883c3e2cedd00bad59961cb711de6fcd3c0c"
+            },
+            {
+              "file": "actions/chin-think/keyframes/left/left-06.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "f380e58a19cae8557fe97c960767bda7c9272754c2149fb3eaa85e44ecdc351f"
+            },
+            {
+              "file": "actions/chin-think/keyframes/left/left-07.png",
+              "ticks": 3,
+              "props": [],
+              "sha256": "08b832386e837358b120cfe34d04fdf6c81069cef8bfda5fedbea2abce39ef2e"
+            }
+          ],
+          "branches": {
+            "loop": []
+          }
+        }
+      },
+      "evidence": {
+        "generation_method": "built-in image generation with per-frame chroma-key extraction",
+        "manual_visual_review": "pass",
+        "manual_visual_review_report": "reports/manual-visual-review.json",
+        "project_validation": null
+      }
+    },
+    {
+      "asset_id": "yolo-point-tap",
+      "role": "point-tap",
+      "status": "candidate",
+      "playback_mode": "one-shot-with-settled-hold",
+      "outcomes": [
+        "default"
+      ],
+      "suitable_for": [
+        "pointing to a card",
+        "light UI tap",
+        "keyword emphasis"
+      ],
+      "not_suitable_for": [
+        "large hero gestures",
+        "multiple simultaneous targets"
+      ],
+      "loop_range_ticks": null,
+      "settled_frame_index": 7,
+      "phases": {
+        "anticipation_tick": 2,
+        "inspect_tick": 6,
+        "scan_end_tick": 8,
+        "outcome_tick": 10,
+        "settled_tick": 14,
+        "total_ticks": 26
+      },
+      "facings": {
+        "right": {
+          "common": [
+            {
+              "file": "actions/point-tap/keyframes/right/right-00.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "ad4895cd3a96e54897a0f7865f57b8f4ab23d3a949193bc8e27bce7e85865b74"
+            },
+            {
+              "file": "actions/point-tap/keyframes/right/right-01.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "c2f4449c9c100a6c1cda567f72a9f55e91ecb9eec49bf7871ff193daafa62014"
+            },
+            {
+              "file": "actions/point-tap/keyframes/right/right-02.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "88ec9268f0548e3ce92aa85ad11f463fa6b596263569f61e46304c48e74386b2"
+            },
+            {
+              "file": "actions/point-tap/keyframes/right/right-03.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "0f52a5a624cf10dd7967967be22bafdf2c7669069191d2e70a1ec31200c9d002"
+            },
+            {
+              "file": "actions/point-tap/keyframes/right/right-04.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "79a5ac259988a48006d3a3b4755564b18b903978d0464abd84457b5cb3ae9b47"
+            },
+            {
+              "file": "actions/point-tap/keyframes/right/right-05.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "4de96998b4b81b119fa0f0d7a9c3b05da4691e31c31969aea362a68995fc131b"
+            },
+            {
+              "file": "actions/point-tap/keyframes/right/right-06.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "2702ac041c9091c18b675bf254942dc663c46d79622b08e99f01db8233176478"
+            },
+            {
+              "file": "actions/point-tap/keyframes/right/right-07.png",
+              "ticks": 12,
+              "props": [],
+              "sha256": "5e6849796c830f835f1248620c588f59ffafb793e64df8bfd9284e7150a17ee9"
+            }
+          ],
+          "branches": {
+            "default": []
+          }
+        },
+        "left": {
+          "common": [
+            {
+              "file": "actions/point-tap/keyframes/left/left-00.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "cc1a4d591e0c8541c92a254d9c6770eec9dbd5f5bb76a9644c27bc990fa3c950"
+            },
+            {
+              "file": "actions/point-tap/keyframes/left/left-01.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "f5819d18b0d720918506a2dc31d973cfa680440e4afe9a2233a8dbdf666fa9bd"
+            },
+            {
+              "file": "actions/point-tap/keyframes/left/left-02.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "1a96eb1276bb3eba00c6f36f3c53a4c666b6e3ab614c3621dd6915985282e114"
+            },
+            {
+              "file": "actions/point-tap/keyframes/left/left-03.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "a8eb096e4ece637e70301801c9ab0bcecf448f97015572fe97fa188f468bf6c1"
+            },
+            {
+              "file": "actions/point-tap/keyframes/left/left-04.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "99233143d3d3d55f8012e94c0f525a72858741df2e3cb6fd38946406126ac23b"
+            },
+            {
+              "file": "actions/point-tap/keyframes/left/left-05.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "43c5a99e4b9c72c6eef13e76c145434d86adb7d51c2838ef60d66e79adb644cb"
+            },
+            {
+              "file": "actions/point-tap/keyframes/left/left-06.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "ec9b1728d8b792938004f79fee922c230cb5ef26614b874a153c7061e720bca2"
+            },
+            {
+              "file": "actions/point-tap/keyframes/left/left-07.png",
+              "ticks": 12,
+              "props": [],
+              "sha256": "7fb1fbf22b63d994625cdb0fa760d5cbfcb7e3739d7c538d0ac62a80f81344ba"
+            }
+          ],
+          "branches": {
+            "default": []
+          }
+        }
+      },
+      "evidence": {
+        "generation_method": "built-in image generation with per-frame chroma-key extraction",
+        "manual_visual_review": "pass",
+        "manual_visual_review_report": "reports/manual-visual-review.json",
+        "project_validation": null
+      }
+    },
+    {
+      "asset_id": "yolo-catch-card",
+      "role": "catch-card-slot",
+      "status": "candidate",
+      "playback_mode": "one-shot-with-settled-hold",
+      "outcomes": [
+        "default"
+      ],
+      "suitable_for": [
+        "receiving information",
+        "filing a card",
+        "moving an item into a system"
+      ],
+      "not_suitable_for": [
+        "background decoration",
+        "scenes without prop clearance"
+      ],
+      "loop_range_ticks": null,
+      "settled_frame_index": 7,
+      "phases": {
+        "anticipation_tick": 2,
+        "inspect_tick": 7,
+        "scan_end_tick": 10,
+        "outcome_tick": 13,
+        "settled_tick": 19,
+        "total_ticks": 31
+      },
+      "facings": {
+        "right": {
+          "common": [
+            {
+              "file": "actions/catch-card/keyframes/right/right-00.png",
+              "ticks": 2,
+              "props": [
+                {
+                  "id": "slot",
+                  "x": 700,
+                  "y": 760,
+                  "rotation": 0,
+                  "opacity": 0.65
+                },
+                {
+                  "id": "card",
+                  "x": 720,
+                  "y": 180,
+                  "rotation": -8,
+                  "opacity": 0.0
+                }
+              ],
+              "sha256": "dd4af1298e6809c6a19564ce158e14d4c8c6486ca4fa420eb80c2549c6532197"
+            },
+            {
+              "file": "actions/catch-card/keyframes/right/right-01.png",
+              "ticks": 2,
+              "props": [
+                {
+                  "id": "slot",
+                  "x": 700,
+                  "y": 760,
+                  "rotation": 0,
+                  "opacity": 1.0
+                },
+                {
+                  "id": "card",
+                  "x": 720,
+                  "y": 260,
+                  "rotation": -6,
+                  "opacity": 0.6
+                }
+              ],
+              "sha256": "35f59f89b4c819d95e25808df8c76ad11d79cc171c49af316017ce367a43d6fe"
+            },
+            {
+              "file": "actions/catch-card/keyframes/right/right-02.png",
+              "ticks": 3,
+              "props": [
+                {
+                  "id": "slot",
+                  "x": 700,
+                  "y": 760,
+                  "rotation": 0,
+                  "opacity": 1.0
+                },
+                {
+                  "id": "card",
+                  "x": 690,
+                  "y": 370,
+                  "rotation": -4,
+                  "opacity": 1.0
+                }
+              ],
+              "sha256": "9345da4312feb799076e7b63cb754dc4a87a311a9356cb38c327944e55589bf0"
+            },
+            {
+              "file": "actions/catch-card/keyframes/right/right-03.png",
+              "ticks": 3,
+              "props": [
+                {
+                  "id": "slot",
+                  "x": 700,
+                  "y": 760,
+                  "rotation": 0,
+                  "opacity": 1.0
+                },
+                {
+                  "id": "card",
+                  "x": 650,
+                  "y": 470,
+                  "rotation": 0,
+                  "opacity": 1.0
+                }
+              ],
+              "sha256": "2a96f8c1bf9ed12bc75bfaa3bc2957901dc9c14abb48a18b394220d1397e4e79"
+            },
+            {
+              "file": "actions/catch-card/keyframes/right/right-04.png",
+              "ticks": 3,
+              "props": [
+                {
+                  "id": "slot",
+                  "x": 700,
+                  "y": 760,
+                  "rotation": 0,
+                  "opacity": 1.0
+                },
+                {
+                  "id": "card",
+                  "x": 615,
+                  "y": 520,
+                  "rotation": 0,
+                  "opacity": 1.0
+                }
+              ],
+              "sha256": "764c3f16bfbec2f6d761f8cb44b6301e2e9ee705b333d9a8a04bbbe48372caba"
+            },
+            {
+              "file": "actions/catch-card/keyframes/right/right-05.png",
+              "ticks": 3,
+              "props": [
+                {
+                  "id": "slot",
+                  "x": 700,
+                  "y": 760,
+                  "rotation": 0,
+                  "opacity": 1.0
+                },
+                {
+                  "id": "card",
+                  "x": 650,
+                  "y": 630,
+                  "rotation": 4,
+                  "opacity": 1.0
+                }
+              ],
+              "sha256": "ed1b9afaea60143e1faa3753dfc4e9fa7effaff359184736e6b599d2ee3f8651"
+            },
+            {
+              "file": "actions/catch-card/keyframes/right/right-06.png",
+              "ticks": 3,
+              "props": [
+                {
+                  "id": "slot",
+                  "x": 700,
+                  "y": 760,
+                  "rotation": 0,
+                  "opacity": 1.0
+                },
+                {
+                  "id": "card",
+                  "x": 690,
+                  "y": 720,
+                  "rotation": 8,
+                  "opacity": 0.9
+                }
+              ],
+              "sha256": "df36cc10218f0a8f0f6457453275c59d553ee5eafd7fbebcf7178eab2fc8d007"
+            },
+            {
+              "file": "actions/catch-card/keyframes/right/right-07.png",
+              "ticks": 12,
+              "props": [
+                {
+                  "id": "slot",
+                  "x": 700,
+                  "y": 760,
+                  "rotation": 0,
+                  "opacity": 1.0
+                },
+                {
+                  "id": "card",
+                  "x": 700,
+                  "y": 760,
+                  "rotation": 0,
+                  "opacity": 0.0
+                }
+              ],
+              "sha256": "6ff39df6bcad60c9fe821fa2cce330f202f4009f17315c70c76ce560d7a7b6b6"
+            }
+          ],
+          "branches": {
+            "default": []
+          }
+        },
+        "left": {
+          "common": [
+            {
+              "file": "actions/catch-card/keyframes/left/left-00.png",
+              "ticks": 2,
+              "props": [
+                {
+                  "id": "slot",
+                  "x": 324,
+                  "y": 760,
+                  "rotation": 0,
+                  "opacity": 0.65
+                },
+                {
+                  "id": "card",
+                  "x": 304,
+                  "y": 180,
+                  "rotation": 8,
+                  "opacity": 0.0
+                }
+              ],
+              "sha256": "3fa4868457e2e6a6981b03b06596afc9d950b2be4a726c7784785c8524a6c13d"
+            },
+            {
+              "file": "actions/catch-card/keyframes/left/left-01.png",
+              "ticks": 2,
+              "props": [
+                {
+                  "id": "slot",
+                  "x": 324,
+                  "y": 760,
+                  "rotation": 0,
+                  "opacity": 1.0
+                },
+                {
+                  "id": "card",
+                  "x": 304,
+                  "y": 260,
+                  "rotation": 6,
+                  "opacity": 0.6
+                }
+              ],
+              "sha256": "4a0015242d159df10fd8de55664344d1c62708363f98957ce8b0f67314d91603"
+            },
+            {
+              "file": "actions/catch-card/keyframes/left/left-02.png",
+              "ticks": 3,
+              "props": [
+                {
+                  "id": "slot",
+                  "x": 324,
+                  "y": 760,
+                  "rotation": 0,
+                  "opacity": 1.0
+                },
+                {
+                  "id": "card",
+                  "x": 334,
+                  "y": 370,
+                  "rotation": 4,
+                  "opacity": 1.0
+                }
+              ],
+              "sha256": "49a79ba7f5f4e59108291539b99d7404fb6397e6a8a66cfd48d7ac6b9be7a132"
+            },
+            {
+              "file": "actions/catch-card/keyframes/left/left-03.png",
+              "ticks": 3,
+              "props": [
+                {
+                  "id": "slot",
+                  "x": 324,
+                  "y": 760,
+                  "rotation": 0,
+                  "opacity": 1.0
+                },
+                {
+                  "id": "card",
+                  "x": 374,
+                  "y": 470,
+                  "rotation": 0,
+                  "opacity": 1.0
+                }
+              ],
+              "sha256": "96c12c0792aa5c347be7eb569c8ad6e4c0c4fa1fcd8ada3f400c7677a17025a0"
+            },
+            {
+              "file": "actions/catch-card/keyframes/left/left-04.png",
+              "ticks": 3,
+              "props": [
+                {
+                  "id": "slot",
+                  "x": 324,
+                  "y": 760,
+                  "rotation": 0,
+                  "opacity": 1.0
+                },
+                {
+                  "id": "card",
+                  "x": 409,
+                  "y": 520,
+                  "rotation": 0,
+                  "opacity": 1.0
+                }
+              ],
+              "sha256": "dccf1a1e2099205d51659be5dfc7259786c0f5131f864a306de5ea8ca9b819e5"
+            },
+            {
+              "file": "actions/catch-card/keyframes/left/left-05.png",
+              "ticks": 3,
+              "props": [
+                {
+                  "id": "slot",
+                  "x": 324,
+                  "y": 760,
+                  "rotation": 0,
+                  "opacity": 1.0
+                },
+                {
+                  "id": "card",
+                  "x": 374,
+                  "y": 630,
+                  "rotation": -4,
+                  "opacity": 1.0
+                }
+              ],
+              "sha256": "2801578b4c36ca83e2db1cc9a72053fa15b79d54b3a960086a6aa858b6d03039"
+            },
+            {
+              "file": "actions/catch-card/keyframes/left/left-06.png",
+              "ticks": 3,
+              "props": [
+                {
+                  "id": "slot",
+                  "x": 324,
+                  "y": 760,
+                  "rotation": 0,
+                  "opacity": 1.0
+                },
+                {
+                  "id": "card",
+                  "x": 334,
+                  "y": 720,
+                  "rotation": -8,
+                  "opacity": 0.9
+                }
+              ],
+              "sha256": "a8db0dd2c916b86cb9da7732c704267fee9ea7194861193c357fc38e9a17bd66"
+            },
+            {
+              "file": "actions/catch-card/keyframes/left/left-07.png",
+              "ticks": 12,
+              "props": [
+                {
+                  "id": "slot",
+                  "x": 324,
+                  "y": 760,
+                  "rotation": 0,
+                  "opacity": 1.0
+                },
+                {
+                  "id": "card",
+                  "x": 324,
+                  "y": 760,
+                  "rotation": 0,
+                  "opacity": 0.0
+                }
+              ],
+              "sha256": "22ce31f5c64d54113982f7b2ead3cfa0bcebfcce52667c976e25b717683c2b09"
+            }
+          ],
+          "branches": {
+            "default": []
+          }
+        }
+      },
+      "evidence": {
+        "generation_method": "built-in image generation with per-frame chroma-key extraction",
+        "manual_visual_review": "pass",
+        "manual_visual_review_report": "reports/manual-visual-review.json",
+        "project_validation": null
+      }
+    },
+    {
+      "asset_id": "yolo-risk-reminder",
+      "role": "palm-risk-reminder",
+      "status": "candidate",
+      "playback_mode": "one-shot-with-settled-hold",
+      "outcomes": [
+        "default"
+      ],
+      "suitable_for": [
+        "risk reminder",
+        "permission boundary",
+        "human confirmation"
+      ],
+      "not_suitable_for": [
+        "alarm or panic",
+        "celebration"
+      ],
+      "loop_range_ticks": null,
+      "settled_frame_index": 7,
+      "phases": {
+        "anticipation_tick": 2,
+        "inspect_tick": 6,
+        "scan_end_tick": 8,
+        "outcome_tick": 10,
+        "settled_tick": 14,
+        "total_ticks": 26
+      },
+      "facings": {
+        "right": {
+          "common": [
+            {
+              "file": "actions/risk-reminder/keyframes/right/right-00.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "58aecdb5cba0b343ffc7168f2fe14e8b007d299f5a7f84be863a03905ff2f329"
+            },
+            {
+              "file": "actions/risk-reminder/keyframes/right/right-01.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "3c567a39d50afc233379358f6fa782daa5456c3415d50d172ed218a29e7bcb03"
+            },
+            {
+              "file": "actions/risk-reminder/keyframes/right/right-02.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "652c80067070b1e159cfd7d927651fd7c80fe0e893b27259bacd4e03915b6f7f"
+            },
+            {
+              "file": "actions/risk-reminder/keyframes/right/right-03.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "73e5a2d0d0af738f2dd293a48a0779cc2068930df579fe564a04123c6ae81af3"
+            },
+            {
+              "file": "actions/risk-reminder/keyframes/right/right-04.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "a7dafda5948bd1c30860adc621e95ebfba9b75d126cdd3ff3211d370724a8964"
+            },
+            {
+              "file": "actions/risk-reminder/keyframes/right/right-05.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "51a1f695d506a69e915f086197978e6dfe03d776720da1885a8cf65196ecec09"
+            },
+            {
+              "file": "actions/risk-reminder/keyframes/right/right-06.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "9e4960c465e77542b4029c51c75ae90d1bb669816ea782b6feb3fd3ad043dc76"
+            },
+            {
+              "file": "actions/risk-reminder/keyframes/right/right-07.png",
+              "ticks": 12,
+              "props": [],
+              "sha256": "e7221569326d9f5169185bc994f76a323183466bd3100489d66062f541766c00"
+            }
+          ],
+          "branches": {
+            "default": []
+          }
+        },
+        "left": {
+          "common": [
+            {
+              "file": "actions/risk-reminder/keyframes/left/left-00.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "71e768fc52bdbac1a446b9378fe0844371e9c8a951e98dbee907911a784815fb"
+            },
+            {
+              "file": "actions/risk-reminder/keyframes/left/left-01.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "de1d9653f4fee8fb488c2d796fcd21254d76dabf6a05905af599d8ee4107084d"
+            },
+            {
+              "file": "actions/risk-reminder/keyframes/left/left-02.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "90a4b8f22b414d28839dcb957460ba9cfc21011d1dde0b2ca24f2fc6f6560688"
+            },
+            {
+              "file": "actions/risk-reminder/keyframes/left/left-03.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "59f72e42f73389380a065caa5424389f1b9facb50dbf0e97e1b82d78b32f0289"
+            },
+            {
+              "file": "actions/risk-reminder/keyframes/left/left-04.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "dcaa7c0f0c525356f8bffe1823b8273ff8ea49752c13a7d74b524197c8670063"
+            },
+            {
+              "file": "actions/risk-reminder/keyframes/left/left-05.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "c5279a840f2761f95e96966cb36414787e1e475d24aaad737cb5f2137cbb80f9"
+            },
+            {
+              "file": "actions/risk-reminder/keyframes/left/left-06.png",
+              "ticks": 2,
+              "props": [],
+              "sha256": "9e923fbb345533326dbc49c0da4724d996fc4ee46ae90c8d333d9b24d6062a60"
+            },
+            {
+              "file": "actions/risk-reminder/keyframes/left/left-07.png",
+              "ticks": 12,
+              "props": [],
+              "sha256": "b95c8f07722bd653b054c3f7cf08902bfdbff79102e4496f9f5b06ac5bd0a8aa"
+            }
+          ],
+          "branches": {
+            "default": []
+          }
+        }
+      },
+      "evidence": {
+        "generation_method": "built-in image generation with per-frame chroma-key extraction",
+        "manual_visual_review": "pass",
+        "manual_visual_review_report": "reports/manual-visual-review.json",
+        "project_validation": null
+      }
+    }
+  ],
+  "validation_reports": {
+    "asset_contract": "reports/asset-validation.json",
+    "continuity": "reports/continuity-validation.json",
+    "manual_visual_review": "reports/manual-visual-review.json"
+  }
+}

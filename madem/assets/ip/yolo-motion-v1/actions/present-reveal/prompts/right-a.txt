@@ -1,0 +1,9 @@
+Use case: identity-preserve
+Asset type: sequential full-body character animation mother strip
+Input images: Image 1 is the immutable right-facing YOLO identity master.
+Primary request: create one extra-wide 3:1 production strip containing exactly eight chronological, clearly separated, complete full-body poses of the same character performing the first phase of a right-facing present-and-reveal gesture.
+Sequence left to right: 1 neutral right-facing stance with both hands relaxed; 2 eyes begin looking toward image-right; 3 gaze clearly locks image-right; 4 head follows by only a few degrees; 5 image-right shoulder releases and elbow begins to lift; 6 elbow rises slightly while forearm starts unfolding; 7 forearm reaches halfway toward image-right with hand still relaxed; 8 palm begins opening upward toward image-right, a clear half-presenting pose.
+Identity invariants: preserve the exact face, navy-blue hair silhouette and tuft, large navy glasses, orange nose accent, blue jacket, white shirt, navy trousers, orange sneakers, body proportions, line weight and clean fully filled illustration style from Image 1. Keep foot baseline, pelvis and torso fixed. Keep head rotation below 8 degrees. Keep the non-presenting arm natural.
+Scene/backdrop: perfectly uniform flat solid #ff00ff chroma-key background.
+Composition: one horizontal row of eight evenly spaced poses ordered left to right; no dividers, boxes, panels, captions or labels; generous clean separation; every hand, shoe and hair tip fully visible; identical character scale and identical shoe baseline in all poses.
+Constraints: the presenting palm must travel toward the interior on image-right. Exactly one character per pose. No props, symbols, text, shadow, floor, grid, gradient, texture, reflection, motion blur, speed lines, residual limbs or ghost trails. Do not use #ff00ff inside the character.

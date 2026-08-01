@@ -1441,11 +1441,5046 @@
         "manual_visual_review_report": "reports/manual-visual-review.json",
         "project_validation": null
       }
+    },
+    {
+      "asset_id": "yolo-inspect-react",
+      "role": "inspect-react",
+      "status": "candidate",
+      "playback_mode": "one-shot-with-settled-hold",
+      "outcomes": [
+        "accepted",
+        "doubtful"
+      ],
+      "suitable_for": [
+        "careful review",
+        "inspection",
+        "approval",
+        "doubtful result"
+      ],
+      "not_suitable_for": [
+        "decorative idle",
+        "scenes without a reserved character slot"
+      ],
+      "phases": {
+        "anticipation_tick": 2,
+        "inspect_tick": 7,
+        "scan_end_tick": 16,
+        "outcome_tick": 17,
+        "settled_tick": 22,
+        "total_ticks": 34
+      },
+      "facings": {
+        "right": {
+          "common": [
+            {
+              "file": "actions/inspect-react/keyframes/right/right-00.png",
+              "ticks": 2,
+              "sha256": "fd86101e42b0c293da30f308734e83cb24fb14bb9c4dd4da63904c8b4820746d",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                282,
+                70,
+                707,
+                970
+              ]
+            },
+            {
+              "file": "actions/inspect-react/keyframes/right/right-01.png",
+              "ticks": 1,
+              "sha256": "1c8b04cc17ed792853dc2ec8d61d83c15e65af6817be03949784cf8586f1d583",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                289,
+                75,
+                702,
+                970
+              ]
+            },
+            {
+              "file": "actions/inspect-react/keyframes/right/right-02.png",
+              "ticks": 1,
+              "sha256": "ea9f6f9a13f0e29bb7dc0701b69e23f3cad8ee01bd2e31fc9c591820c2fedd5c",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                289,
+                81,
+                700,
+                970
+              ]
+            },
+            {
+              "file": "actions/inspect-react/keyframes/right/right-03.png",
+              "ticks": 1,
+              "sha256": "a940579c24ac1282033000dd27b97335900a22dadceae4ef74e8466428cc1c96",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                294,
+                84,
+                693,
+                970
+              ]
+            },
+            {
+              "file": "actions/inspect-react/keyframes/right/right-04.png",
+              "ticks": 1,
+              "sha256": "d82057c55a8204d4317fa731546976b9ac07055ac9c27aa08748cab300efcbf1",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                293,
+                84,
+                692,
+                970
+              ]
+            },
+            {
+              "file": "actions/inspect-react/keyframes/right/right-05.png",
+              "ticks": 1,
+              "sha256": "0965ff8a0f95c528521bd443a63ce8a69378427445972eeb55e5260728fb2f5f",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                300,
+                82,
+                696,
+                970
+              ]
+            },
+            {
+              "file": "actions/inspect-react/keyframes/right/right-06.png",
+              "ticks": 1,
+              "sha256": "575dd5f27a949262cd1796b46ff03dd1080d66305d08d8412c90b9a8d030dbf4",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                308,
+                84,
+                688,
+                970
+              ]
+            },
+            {
+              "file": "actions/inspect-react/keyframes/right/right-07.png",
+              "ticks": 1,
+              "sha256": "38ad3ce923453c8d825f883d1db4858c3b89e088ab8d93819015c1c0e811ec51",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                309,
+                84,
+                689,
+                970
+              ]
+            },
+            {
+              "file": "actions/inspect-react/keyframes/right/right-08.png",
+              "ticks": 1,
+              "sha256": "2f448fc23615bc48698016995514b805231295688c04e6d1a5f0ad09ce6e4173",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                303,
+                83,
+                694,
+                972
+              ]
+            },
+            {
+              "file": "actions/inspect-react/keyframes/right/right-09.png",
+              "ticks": 1,
+              "sha256": "41095ae41a86e2297ded255f4a58163f48f3f908448ea819c4c3bb188a677fcf",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                305,
+                84,
+                688,
+                972
+              ]
+            },
+            {
+              "file": "actions/inspect-react/keyframes/right/right-10.png",
+              "ticks": 1,
+              "sha256": "7003b565d8826aeca9124f51650865b06aa7902699accffb532ab5fce7e92939",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                304,
+                84,
+                689,
+                972
+              ]
+            },
+            {
+              "file": "actions/inspect-react/keyframes/right/right-11.png",
+              "ticks": 1,
+              "sha256": "a99a226c4d45f0501df850c5a3080e57063613f90591488c9b8ee324e40f6618",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                311,
+                84,
+                694,
+                973
+              ]
+            },
+            {
+              "file": "actions/inspect-react/keyframes/right/right-12.png",
+              "ticks": 1,
+              "sha256": "f291307f2b2b92753f50f630891670f284e52ac53ed0de9a9771281ba716b831",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                315,
+                84,
+                693,
+                972
+              ]
+            },
+            {
+              "file": "actions/inspect-react/keyframes/right/right-13.png",
+              "ticks": 2,
+              "sha256": "d607d80be4f94702d6af1956812592298623079ca9c17d47057d28d3b557786e",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                317,
+                85,
+                688,
+                973
+              ]
+            }
+          ],
+          "branches": {
+            "accepted": [
+              {
+                "file": "actions/inspect-react/keyframes/right/right-accepted-14.png",
+                "ticks": 1,
+                "sha256": "fb6b3853b5ce3c340ea65ef03e74f02c56437746e96e1015180d71d15dc10007",
+                "foot_anchor": [
+                  512.0,
+                  970.0
+                ],
+                "bbox": [
+                  302,
+                  82,
+                  693,
+                  974
+                ]
+              },
+              {
+                "file": "actions/inspect-react/keyframes/right/right-accepted-15.png",
+                "ticks": 1,
+                "sha256": "c9c5ffe345ebd2657ddf6eaa70ebea0772e41e0c695876c4575b78d9ebb1fee4",
+                "foot_anchor": [
+                  512.0,
+                  970.0
+                ],
+                "bbox": [
+                  311,
+                  94,
+                  697,
+                  974
+                ]
+              },
+              {
+                "file": "actions/inspect-react/keyframes/right/right-accepted-16.png",
+                "ticks": 1,
+                "sha256": "e20a97e91560851235fa9bc1aa7a10cb921c42a4ee62cc3208059cafd5c30b87",
+                "foot_anchor": [
+                  512.0,
+                  970.0
+                ],
+                "bbox": [
+                  317,
+                  110,
+                  692,
+                  974
+                ]
+              },
+              {
+                "file": "actions/inspect-react/keyframes/right/right-accepted-17.png",
+                "ticks": 1,
+                "sha256": "6182805afc58560cd813379188ebaaf2fcf0b844889b5d448d490cf246c975ab",
+                "foot_anchor": [
+                  512.0,
+                  970.0
+                ],
+                "bbox": [
+                  309,
+                  82,
+                  692,
+                  974
+                ]
+              },
+              {
+                "file": "actions/inspect-react/keyframes/right/right-accepted-18.png",
+                "ticks": 2,
+                "sha256": "25e5c82ce5f54cf4419c7f29fb1d0e2538b1220ba654064174ab27c6454ac5d3",
+                "foot_anchor": [
+                  512.0,
+                  970.0
+                ],
+                "bbox": [
+                  313,
+                  81,
+                  691,
+                  973
+                ]
+              },
+              {
+                "file": "actions/inspect-react/keyframes/right/right-accepted-19.png",
+                "ticks": 12,
+                "sha256": "e323138cb2d2059ca8ad97934064b6b2c1fcaa7c78bd83d0379ecadb2b8d4c63",
+                "foot_anchor": [
+                  512.0,
+                  970.0
+                ],
+                "bbox": [
+                  315,
+                  83,
+                  690,
+                  974
+                ]
+              }
+            ],
+            "doubtful": [
+              {
+                "file": "actions/inspect-react/keyframes/right/right-doubtful-14.png",
+                "ticks": 1,
+                "sha256": "fb571b8c542d5b1ec31e4d4e03a65fa821144efebcabb1bc65845e791cba96be",
+                "foot_anchor": [
+                  512.0,
+                  970.0
+                ],
+                "bbox": [
+                  304,
+                  81,
+                  696,
+                  973
+                ]
+              },
+              {
+                "file": "actions/inspect-react/keyframes/right/right-doubtful-15.png",
+                "ticks": 1,
+                "sha256": "58e5fc2635d78a7c6a3b50f7fa3553fae846621d1d5722ed7845335a3f09e6c9",
+                "foot_anchor": [
+                  512.0,
+                  970.0
+                ],
+                "bbox": [
+                  309,
+                  82,
+                  690,
+                  973
+                ]
+              },
+              {
+                "file": "actions/inspect-react/keyframes/right/right-doubtful-16.png",
+                "ticks": 1,
+                "sha256": "9014f7d205876e613901b255e6b590a348b7fb9f70983d443d11628dfce375b6",
+                "foot_anchor": [
+                  512.0,
+                  970.0
+                ],
+                "bbox": [
+                  306,
+                  82,
+                  687,
+                  973
+                ]
+              },
+              {
+                "file": "actions/inspect-react/keyframes/right/right-doubtful-17.png",
+                "ticks": 1,
+                "sha256": "39cef67dd6c864c48db47f506dbe0ab6c053999eebe1d1e14382d301b5265c10",
+                "foot_anchor": [
+                  512.0,
+                  970.0
+                ],
+                "bbox": [
+                  313,
+                  82,
+                  691,
+                  974
+                ]
+              },
+              {
+                "file": "actions/inspect-react/keyframes/right/right-doubtful-18.png",
+                "ticks": 2,
+                "sha256": "d08774cdcec040c21f58a0bd66d8e9358d5ef0a6b0edf44d9c6359a635fde220",
+                "foot_anchor": [
+                  512.0,
+                  970.0
+                ],
+                "bbox": [
+                  313,
+                  79,
+                  694,
+                  973
+                ]
+              },
+              {
+                "file": "actions/inspect-react/keyframes/right/right-doubtful-19.png",
+                "ticks": 12,
+                "sha256": "dc8a8a628c55a150dea19176075e82fd0e8b5f3589f4c1db2950e897432deff1",
+                "foot_anchor": [
+                  512.0,
+                  970.0
+                ],
+                "bbox": [
+                  314,
+                  82,
+                  689,
+                  974
+                ]
+              }
+            ]
+          }
+        },
+        "left": {
+          "common": [
+            {
+              "file": "actions/inspect-react/keyframes/left/left-00.png",
+              "ticks": 2,
+              "sha256": "70a8cd092232a63d26dd97e98d8d5f813a4c5144f9ff6f382172e3948f2fd9b1",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                351,
+                73,
+                757,
+                970
+              ]
+            },
+            {
+              "file": "actions/inspect-react/keyframes/left/left-01.png",
+              "ticks": 1,
+              "sha256": "66719220cfdc548a60b18886c758e443d1cf51886e2c82f0e3f67c63834586a3",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                369,
+                70,
+                756,
+                970
+              ]
+            },
+            {
+              "file": "actions/inspect-react/keyframes/left/left-02.png",
+              "ticks": 1,
+              "sha256": "fd46ca862352c07e9b9e34c833b0376b2ed683cb29ea75d443d1173d7d380d70",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                371,
+                83,
+                758,
+                970
+              ]
+            },
+            {
+              "file": "actions/inspect-react/keyframes/left/left-03.png",
+              "ticks": 1,
+              "sha256": "9d7e13bc95567ef6c9695a8ab13a32711717b2b2eef536f7e59506fcac14b434",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                362,
+                84,
+                744,
+                970
+              ]
+            },
+            {
+              "file": "actions/inspect-react/keyframes/left/left-04.png",
+              "ticks": 1,
+              "sha256": "21e991a733a57677bb82c003565f77247e39fdefe88b411eaa2b58d3b34ab36e",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                364,
+                88,
+                747,
+                970
+              ]
+            },
+            {
+              "file": "actions/inspect-react/keyframes/left/left-05.png",
+              "ticks": 1,
+              "sha256": "5edba8b90341abe587288d1e3ecf1638397082809e295462e6f9835e6b1bc524",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                360,
+                84,
+                740,
+                970
+              ]
+            },
+            {
+              "file": "actions/inspect-react/keyframes/left/left-06.png",
+              "ticks": 1,
+              "sha256": "235a6bd08b01e5a3e4124e72fc40494d94254818109e76621c1af4f4415fbd19",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                357,
+                84,
+                731,
+                970
+              ]
+            },
+            {
+              "file": "actions/inspect-react/keyframes/left/left-07.png",
+              "ticks": 1,
+              "sha256": "6fb601966adb7f6b4703fb3bd02b1379fc46ee633b6baa91a98df42f4e6835e4",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                359,
+                84,
+                725,
+                971
+              ]
+            },
+            {
+              "file": "actions/inspect-react/keyframes/left/left-08.png",
+              "ticks": 1,
+              "sha256": "360ef916259fffd292d9c6793bb29d3c3345920a65fa38dd835f24bda04f5fc8",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                363,
+                87,
+                742,
+                974
+              ]
+            },
+            {
+              "file": "actions/inspect-react/keyframes/left/left-09.png",
+              "ticks": 1,
+              "sha256": "be330f0952fbbc4c3772dfeb8ecbdbe6481f5bf256f5753f43393e847dd8d394",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                360,
+                87,
+                740,
+                974
+              ]
+            },
+            {
+              "file": "actions/inspect-react/keyframes/left/left-10.png",
+              "ticks": 1,
+              "sha256": "23f14cf777a6de2efe2eda30c65bb613e9b45cb996d0b0004c49f1eb82eb239c",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                364,
+                89,
+                738,
+                973
+              ]
+            },
+            {
+              "file": "actions/inspect-react/keyframes/left/left-11.png",
+              "ticks": 1,
+              "sha256": "453057aba54fe970b8d1bc05237f284885537cedf419c515b15c2e3414a19d05",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                357,
+                90,
+                739,
+                974
+              ]
+            },
+            {
+              "file": "actions/inspect-react/keyframes/left/left-12.png",
+              "ticks": 1,
+              "sha256": "4f846e2ca4d6306a91dd6edb15c01759c32f7547719e76aeec3455b4e9d5b0d5",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                355,
+                91,
+                735,
+                973
+              ]
+            },
+            {
+              "file": "actions/inspect-react/keyframes/left/left-13.png",
+              "ticks": 2,
+              "sha256": "a575e1ca44faecbc53d5ec13051994849f72fc046b728981e4c981b50f9a1a20",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                354,
+                91,
+                734,
+                973
+              ]
+            }
+          ],
+          "branches": {
+            "accepted": [
+              {
+                "file": "actions/inspect-react/keyframes/left/left-accepted-14.png",
+                "ticks": 1,
+                "sha256": "46484f6b8c9ee39d71284de64aa66bcdd100cec6d1d352e98ff34af99439fb68",
+                "foot_anchor": [
+                  512.0,
+                  970.0
+                ],
+                "bbox": [
+                  363,
+                  90,
+                  746,
+                  972
+                ]
+              },
+              {
+                "file": "actions/inspect-react/keyframes/left/left-accepted-15.png",
+                "ticks": 1,
+                "sha256": "3352214a44ce3ed1b2e1ccd98cf9ce4c148ae4ea0d3a498d9fda37a9721369e1",
+                "foot_anchor": [
+                  512.0,
+                  970.0
+                ],
+                "bbox": [
+                  359,
+                  105,
+                  738,
+                  973
+                ]
+              },
+              {
+                "file": "actions/inspect-react/keyframes/left/left-accepted-16.png",
+                "ticks": 1,
+                "sha256": "916d5935f57c4d54c054d5999b53c603a9969ef5f259e5000447b6a502a13abe",
+                "foot_anchor": [
+                  512.0,
+                  970.0
+                ],
+                "bbox": [
+                  359,
+                  107,
+                  734,
+                  972
+                ]
+              },
+              {
+                "file": "actions/inspect-react/keyframes/left/left-accepted-17.png",
+                "ticks": 1,
+                "sha256": "4be803bf8a3f648981bcda7ad38ed205b3e56fc1afbc7a7870f2690a60bacc82",
+                "foot_anchor": [
+                  512.0,
+                  970.0
+                ],
+                "bbox": [
+                  365,
+                  90,
+                  745,
+                  972
+                ]
+              },
+              {
+                "file": "actions/inspect-react/keyframes/left/left-accepted-18.png",
+                "ticks": 2,
+                "sha256": "b30510e4d312142c8ab01715306323349fb9b8cdbb651df4be841242914ab711",
+                "foot_anchor": [
+                  512.0,
+                  970.0
+                ],
+                "bbox": [
+                  362,
+                  90,
+                  742,
+                  972
+                ]
+              },
+              {
+                "file": "actions/inspect-react/keyframes/left/left-accepted-19.png",
+                "ticks": 12,
+                "sha256": "f54c30aa8c7340b063c39c55e2953dd43dff7c0ad35347d43f66f2a90704e1c5",
+                "foot_anchor": [
+                  512.0,
+                  970.0
+                ],
+                "bbox": [
+                  362,
+                  94,
+                  736,
+                  972
+                ]
+              }
+            ],
+            "doubtful": [
+              {
+                "file": "actions/inspect-react/keyframes/left/left-doubtful-14.png",
+                "ticks": 1,
+                "sha256": "39d97411910ca9d89d0fd8a7925cc45a3a8c85732d02ce8a35dd3a3b86e5ab32",
+                "foot_anchor": [
+                  512.0,
+                  970.0
+                ],
+                "bbox": [
+                  366,
+                  85,
+                  741,
+                  974
+                ]
+              },
+              {
+                "file": "actions/inspect-react/keyframes/left/left-doubtful-15.png",
+                "ticks": 1,
+                "sha256": "071a588f7b2b9be6f7b0563ef62f622c5733a1541f57a6f16ad6366d67fa96ba",
+                "foot_anchor": [
+                  512.0,
+                  970.0
+                ],
+                "bbox": [
+                  383,
+                  82,
+                  758,
+                  974
+                ]
+              },
+              {
+                "file": "actions/inspect-react/keyframes/left/left-doubtful-16.png",
+                "ticks": 1,
+                "sha256": "44e616eac686b134ac83f5352d2aa205ad0ff138a394cb2dfa553119933e0dfa",
+                "foot_anchor": [
+                  512.0,
+                  970.0
+                ],
+                "bbox": [
+                  377,
+                  85,
+                  751,
+                  974
+                ]
+              },
+              {
+                "file": "actions/inspect-react/keyframes/left/left-doubtful-17.png",
+                "ticks": 1,
+                "sha256": "7c88d3167831e0ee607ffd05207b4b96526c09de0948fa44cadd31857bb4ff4d",
+                "foot_anchor": [
+                  512.0,
+                  970.0
+                ],
+                "bbox": [
+                  384,
+                  87,
+                  751,
+                  974
+                ]
+              },
+              {
+                "file": "actions/inspect-react/keyframes/left/left-doubtful-18.png",
+                "ticks": 2,
+                "sha256": "cc5d5f68187263734c78c2d7e03bb4049187770fe4e9b3d4e1e56aba17b6cf46",
+                "foot_anchor": [
+                  512.0,
+                  970.0
+                ],
+                "bbox": [
+                  371,
+                  88,
+                  742,
+                  974
+                ]
+              },
+              {
+                "file": "actions/inspect-react/keyframes/left/left-doubtful-19.png",
+                "ticks": 12,
+                "sha256": "812611da50b906b0ab808b9466d5e77ae4394e612515dbc1175ea8fd3b61dcbb",
+                "foot_anchor": [
+                  512.0,
+                  970.0
+                ],
+                "bbox": [
+                  363,
+                  88,
+                  737,
+                  974
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "evidence": {
+        "generation_method": "built-in image generation with continuous pose strips, shared branch pose, chroma-key extraction, strip overlap, shared scale, and anatomical anchor registration",
+        "manual_visual_review": "pass",
+        "manual_visual_review_report": "actions/inspect-react/reports/manual-visual-review.md",
+        "technical_validation": "pass",
+        "technical_validation_report": "actions/inspect-react/reports/technical-validation.json",
+        "project_validation": null
+      }
+    },
+    {
+      "asset_id": "yolo-nod-confirm",
+      "role": "nod-confirm",
+      "status": "candidate",
+      "playback_mode": "one-shot-with-settled-hold",
+      "outcomes": [
+        "default"
+      ],
+      "suitable_for": [
+        "confirmation",
+        "agreement",
+        "key-point approval"
+      ],
+      "not_suitable_for": [
+        "strong celebration",
+        "persistent looping"
+      ],
+      "phases": {
+        "anticipation_tick": 2,
+        "inspect_tick": 7,
+        "scan_end_tick": 10,
+        "outcome_tick": 11,
+        "settled_tick": 16,
+        "total_ticks": 28
+      },
+      "facings": {
+        "right": {
+          "common": [
+            {
+              "file": "actions/nod-confirm/keyframes/right/right-00.png",
+              "ticks": 2,
+              "sha256": "59c92902e7a4868e77f46d2fa98aa11f783618cfd51d417f509761034a762c05",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                298,
+                72,
+                693,
+                970
+              ]
+            },
+            {
+              "file": "actions/nod-confirm/keyframes/right/right-01.png",
+              "ticks": 1,
+              "sha256": "ffe2c046abcd78967938617eeeeb26ba28c57c3f344ffa423414f043e59128cd",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                298,
+                70,
+                689,
+                970
+              ]
+            },
+            {
+              "file": "actions/nod-confirm/keyframes/right/right-02.png",
+              "ticks": 1,
+              "sha256": "72cf2e0edad207e0dbaed93f38111c0d7a300a427636ef9a3fe15dd8ad4b86af",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                301,
+                72,
+                691,
+                970
+              ]
+            },
+            {
+              "file": "actions/nod-confirm/keyframes/right/right-03.png",
+              "ticks": 1,
+              "sha256": "fc3e1edc07f1b2e9c7c843e4eaf2667e0cf2d9c244037b1eaffa474e19c8b2a8",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                314,
+                83,
+                697,
+                970
+              ]
+            },
+            {
+              "file": "actions/nod-confirm/keyframes/right/right-04.png",
+              "ticks": 1,
+              "sha256": "5968e2d9129afece4f9eb5c77cfbe6a050fcbf22b72262559f1848abfb9b9f9a",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                325,
+                107,
+                700,
+                970
+              ]
+            },
+            {
+              "file": "actions/nod-confirm/keyframes/right/right-05.png",
+              "ticks": 1,
+              "sha256": "d9e51dc372d4f50972e9cfb04d0acb6d5702ec407f67885faa63950594e51959",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                335,
+                112,
+                712,
+                970
+              ]
+            },
+            {
+              "file": "actions/nod-confirm/keyframes/right/right-06.png",
+              "ticks": 1,
+              "sha256": "3096c2e624008ae5cec12adb6cb977e316481ecc585f090cd2470afa72b41634",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                346,
+                123,
+                717,
+                970
+              ]
+            },
+            {
+              "file": "actions/nod-confirm/keyframes/right/right-07.png",
+              "ticks": 2,
+              "sha256": "19c9af8a49a36d628f720d9aed81a19016c9cdd0449c6c133bec1cf53dd3e2ea",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                348,
+                131,
+                717,
+                970
+              ]
+            },
+            {
+              "file": "actions/nod-confirm/keyframes/right/right-08.png",
+              "ticks": 1,
+              "sha256": "d4a5e0628dcb83352665ac2bdeb6eccc221d49c45c0c2c25017bebf8e851d623",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                326,
+                126,
+                698,
+                975
+              ]
+            },
+            {
+              "file": "actions/nod-confirm/keyframes/right/right-09.png",
+              "ticks": 1,
+              "sha256": "7b1c4531aac449ec9ab7a638fe56aff7a2c70d63de0ceb147c5bf0e4aff0b881",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                316,
+                123,
+                680,
+                975
+              ]
+            },
+            {
+              "file": "actions/nod-confirm/keyframes/right/right-10.png",
+              "ticks": 1,
+              "sha256": "1cbd1348e97e8c971a10a72b7849e30761230de4134dcdd0ebeebec2643ff79c",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                314,
+                130,
+                673,
+                975
+              ]
+            },
+            {
+              "file": "actions/nod-confirm/keyframes/right/right-11.png",
+              "ticks": 1,
+              "sha256": "1ed332b6d5ca708af9caecc3d2c8ff0120c124f1c717af9eb485666d36230f7a",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                311,
+                126,
+                667,
+                975
+              ]
+            },
+            {
+              "file": "actions/nod-confirm/keyframes/right/right-12.png",
+              "ticks": 2,
+              "sha256": "34585cd41920f02fb8330e6223b58a6f246b7952824ea00404e0a33e087f23fe",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                309,
+                123,
+                667,
+                975
+              ]
+            },
+            {
+              "file": "actions/nod-confirm/keyframes/right/right-13.png",
+              "ticks": 12,
+              "sha256": "4db8d7f05ad0e0bd432032130989b56781b7b78b61a0eb5fabdc754688f69210",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                320,
+                131,
+                671,
+                975
+              ]
+            }
+          ],
+          "branches": {
+            "default": []
+          }
+        },
+        "left": {
+          "common": [
+            {
+              "file": "actions/nod-confirm/keyframes/left/left-00.png",
+              "ticks": 2,
+              "sha256": "58089bef98cf45496a15e119d21bd341af3fef36fd757baa72b6c17be797b850",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                355,
+                70,
+                753,
+                970
+              ]
+            },
+            {
+              "file": "actions/nod-confirm/keyframes/left/left-01.png",
+              "ticks": 1,
+              "sha256": "936891a3f15ff1b6077116f0c6044422c9d86a9ef545058bb82ea3fe81217a09",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                359,
+                75,
+                751,
+                970
+              ]
+            },
+            {
+              "file": "actions/nod-confirm/keyframes/left/left-02.png",
+              "ticks": 1,
+              "sha256": "99776b06a6e3569fd23b8a6071f4679d90dd6507cd4dc9318c27c06bd4bede56",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                362,
+                78,
+                750,
+                971
+              ]
+            },
+            {
+              "file": "actions/nod-confirm/keyframes/left/left-03.png",
+              "ticks": 1,
+              "sha256": "0ecdfc5cac5de128428314059415be7a1b20f408436337977740903a96a985fd",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                361,
+                95,
+                741,
+                970
+              ]
+            },
+            {
+              "file": "actions/nod-confirm/keyframes/left/left-04.png",
+              "ticks": 1,
+              "sha256": "6208dea6b0d99e05c67b8ef0e63cb55ac4659a5823531a9889292159bba29497",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                362,
+                101,
+                737,
+                971
+              ]
+            },
+            {
+              "file": "actions/nod-confirm/keyframes/left/left-05.png",
+              "ticks": 1,
+              "sha256": "410b50adb4c711e328749202e2144fd4bee202815669965a2c6abd3fe3818362",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                354,
+                105,
+                731,
+                970
+              ]
+            },
+            {
+              "file": "actions/nod-confirm/keyframes/left/left-06.png",
+              "ticks": 1,
+              "sha256": "3f67661325b5040fb0c200dfb44abe523561cbc0e066e27e833a8f57e627beb8",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                347,
+                128,
+                715,
+                970
+              ]
+            },
+            {
+              "file": "actions/nod-confirm/keyframes/left/left-07.png",
+              "ticks": 2,
+              "sha256": "8a429fc085a5396745230fbbf0f5044e70010144ef8b38a5cef77fa2c6ed9607",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                340,
+                132,
+                707,
+                970
+              ]
+            },
+            {
+              "file": "actions/nod-confirm/keyframes/left/left-08.png",
+              "ticks": 1,
+              "sha256": "756414203c621380b9a8d60cba4d96cb9bac67ab29c6342ef80873c5e3cf22e3",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                356,
+                127,
+                731,
+                975
+              ]
+            },
+            {
+              "file": "actions/nod-confirm/keyframes/left/left-09.png",
+              "ticks": 1,
+              "sha256": "ebceea739a56704f1a410436b5598fc37eae1de4fc5e3cbdff1dbc0c34a74b6a",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                363,
+                124,
+                731,
+                974
+              ]
+            },
+            {
+              "file": "actions/nod-confirm/keyframes/left/left-10.png",
+              "ticks": 1,
+              "sha256": "ca7ab22f80c27277f564ebc437d57e83b68b12c7b274b8bead0c0d8b7beaf48c",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                370,
+                122,
+                740,
+                974
+              ]
+            },
+            {
+              "file": "actions/nod-confirm/keyframes/left/left-11.png",
+              "ticks": 1,
+              "sha256": "e9401f026bb12bd5010d9643b74cf4b8637ef36e75de22afcbf31dd835d236ca",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                371,
+                124,
+                739,
+                974
+              ]
+            },
+            {
+              "file": "actions/nod-confirm/keyframes/left/left-12.png",
+              "ticks": 2,
+              "sha256": "4a1231e9a26123cd9c769ceb1fc7c6903bcc954692a45c7fe851d2cfb84f0ad3",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                368,
+                125,
+                736,
+                975
+              ]
+            },
+            {
+              "file": "actions/nod-confirm/keyframes/left/left-13.png",
+              "ticks": 12,
+              "sha256": "b3d17b55470c2d60229a7cf027279226b277ab9132464f4e0f6b87bb81a49dba",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                365,
+                127,
+                733,
+                975
+              ]
+            }
+          ],
+          "branches": {
+            "default": []
+          }
+        }
+      },
+      "evidence": {
+        "generation_method": "built-in image generation with continuous pose strips, chroma-key extraction, strip overlap, shared scale, and anatomical anchor registration",
+        "manual_visual_review": "pass",
+        "manual_visual_review_report": "actions/nod-confirm/reports/manual-visual-review.md",
+        "technical_validation": "pass",
+        "technical_validation_report": "actions/nod-confirm/reports/technical-validation.json",
+        "project_validation": null
+      }
+    },
+    {
+      "asset_id": "yolo-deny-shake",
+      "role": "deny-shake",
+      "status": "candidate",
+      "playback_mode": "one-shot-with-settled-hold",
+      "outcomes": [
+        "default"
+      ],
+      "suitable_for": [
+        "correction",
+        "negation",
+        "misunderstanding warning"
+      ],
+      "not_suitable_for": [
+        "anger",
+        "panic",
+        "persistent looping"
+      ],
+      "phases": {
+        "anticipation_tick": 2,
+        "inspect_tick": 7,
+        "scan_end_tick": 10,
+        "outcome_tick": 11,
+        "settled_tick": 16,
+        "total_ticks": 28
+      },
+      "facings": {
+        "right": {
+          "common": [
+            {
+              "file": "actions/deny-shake/keyframes/right/right-00.png",
+              "ticks": 2,
+              "sha256": "9b988f30eca9105da18d4fbbfd996a5db3378330a6ea2f05b58440167ed150f9",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                291,
+                70,
+                702,
+                970
+              ]
+            },
+            {
+              "file": "actions/deny-shake/keyframes/right/right-01.png",
+              "ticks": 1,
+              "sha256": "2c09f609b5ef49930df8c32ba32732ac6aa6d2f108b1cfb0783791ee449215a9",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                295,
+                75,
+                699,
+                970
+              ]
+            },
+            {
+              "file": "actions/deny-shake/keyframes/right/right-02.png",
+              "ticks": 1,
+              "sha256": "ec2cffbb5f028aab69e8957f38a6543d61a166593ba9c8e63142636ff08062b3",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                298,
+                79,
+                695,
+                970
+              ]
+            },
+            {
+              "file": "actions/deny-shake/keyframes/right/right-03.png",
+              "ticks": 1,
+              "sha256": "04722a32297881a9de89141fd6c22581b334c70a9daa85acb0b41e55b87adfe2",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                298,
+                80,
+                688,
+                970
+              ]
+            },
+            {
+              "file": "actions/deny-shake/keyframes/right/right-04.png",
+              "ticks": 1,
+              "sha256": "d23531217abb97596a15694db74bdf5f5509bd493a79ab6c157fd79ae2622922",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                300,
+                84,
+                686,
+                970
+              ]
+            },
+            {
+              "file": "actions/deny-shake/keyframes/right/right-05.png",
+              "ticks": 1,
+              "sha256": "b9cf46f3dfc0288c32ce35806f48ad181e2ab93d95baa9960cd9774f60f56bf3",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                300,
+                86,
+                683,
+                970
+              ]
+            },
+            {
+              "file": "actions/deny-shake/keyframes/right/right-06.png",
+              "ticks": 1,
+              "sha256": "01305f3af6b03ffc4e26d5f876e7cbc400e59f1bbb236cde256729561800348f",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                308,
+                89,
+                689,
+                970
+              ]
+            },
+            {
+              "file": "actions/deny-shake/keyframes/right/right-07.png",
+              "ticks": 2,
+              "sha256": "1dc6db3fd700b089cbe909a41c1bc0a695dce2d497f8d7faa85d2ea31f7d8e83",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                312,
+                94,
+                695,
+                970
+              ]
+            },
+            {
+              "file": "actions/deny-shake/keyframes/right/right-08.png",
+              "ticks": 1,
+              "sha256": "3db300c25a5625c78c3ad2a2294f4582ed5de0a0914b91aaffe86430fb435f82",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                313,
+                91,
+                691,
+                970
+              ]
+            },
+            {
+              "file": "actions/deny-shake/keyframes/right/right-09.png",
+              "ticks": 1,
+              "sha256": "762bfc0a7b68594ef8425ad0b1f4b883041d35d0b860d308457554953df4a6b3",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                317,
+                91,
+                698,
+                970
+              ]
+            },
+            {
+              "file": "actions/deny-shake/keyframes/right/right-10.png",
+              "ticks": 1,
+              "sha256": "d6519de49505b30dd7da352efdbd2f760639282d52c8ecfe05cb906aa10aa180",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                324,
+                91,
+                700,
+                970
+              ]
+            },
+            {
+              "file": "actions/deny-shake/keyframes/right/right-11.png",
+              "ticks": 1,
+              "sha256": "48b191ec86760015e0ea4b0f1020e4a3834efc094900a95d7b4b2774e2cd391b",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                353,
+                93,
+                705,
+                970
+              ]
+            },
+            {
+              "file": "actions/deny-shake/keyframes/right/right-12.png",
+              "ticks": 2,
+              "sha256": "cf84e84dcd5c1dd9ff746ae5d1d499ccc2c0e56a1596456ce10cd10dd42aedf1",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                357,
+                91,
+                710,
+                970
+              ]
+            },
+            {
+              "file": "actions/deny-shake/keyframes/right/right-13.png",
+              "ticks": 12,
+              "sha256": "6e8e96e944fd19b4055174a8e5895c7a6438cccbb7152ac0972cc6d10a570d58",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                332,
+                93,
+                691,
+                970
+              ]
+            }
+          ],
+          "branches": {
+            "default": []
+          }
+        },
+        "left": {
+          "common": [
+            {
+              "file": "actions/deny-shake/keyframes/left/left-00.png",
+              "ticks": 2,
+              "sha256": "27b82bc4692bd788663f01e58281cad3b978676b6f471b43c4885dc25dc610e1",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                335,
+                70,
+                732,
+                970
+              ]
+            },
+            {
+              "file": "actions/deny-shake/keyframes/left/left-01.png",
+              "ticks": 1,
+              "sha256": "14dc76efde93ba21d3afc8b764404ceae9b830d9891aff53b322195356aa59d2",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                336,
+                75,
+                726,
+                970
+              ]
+            },
+            {
+              "file": "actions/deny-shake/keyframes/left/left-02.png",
+              "ticks": 1,
+              "sha256": "37abc826953758efc023f518bfd029d730e5993ceea3e8644368767a57c8f029",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                344,
+                81,
+                719,
+                970
+              ]
+            },
+            {
+              "file": "actions/deny-shake/keyframes/left/left-03.png",
+              "ticks": 1,
+              "sha256": "423ac5e13bc906004dca01604257727638e96923aa55a960b24a23ecb691160c",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                345,
+                81,
+                717,
+                970
+              ]
+            },
+            {
+              "file": "actions/deny-shake/keyframes/left/left-04.png",
+              "ticks": 1,
+              "sha256": "f5b35c4172bf698d336322fbf5205f0715ba15b13e66573b6975ec548308bd3c",
+              "foot_anchor": [
+                512.5,
+                970.0
+              ],
+              "bbox": [
+                345,
+                81,
+                717,
+                970
+              ]
+            },
+            {
+              "file": "actions/deny-shake/keyframes/left/left-05.png",
+              "ticks": 1,
+              "sha256": "0d66429fb389058da42317b95dd9b09b0f6e3cdc2d6f8add6a27d592f89f845d",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                348,
+                90,
+                714,
+                970
+              ]
+            },
+            {
+              "file": "actions/deny-shake/keyframes/left/left-06.png",
+              "ticks": 1,
+              "sha256": "986f0b8d4b547c2dd32d8a891b76f5921b3a942023e7ff01188cb4e887bf5b0e",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                350,
+                98,
+                694,
+                970
+              ]
+            },
+            {
+              "file": "actions/deny-shake/keyframes/left/left-07.png",
+              "ticks": 2,
+              "sha256": "1f3085e8dd59686e2f43dcbe918dbdebe4bfbd02155913eedc833ed8638b4d94",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                350,
+                104,
+                688,
+                970
+              ]
+            },
+            {
+              "file": "actions/deny-shake/keyframes/left/left-08.png",
+              "ticks": 1,
+              "sha256": "fbe2c9a9f15a35d3cf31bee57744dbe06ab9f77182df14e990b4b941463d9eda",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                361,
+                101,
+                689,
+                970
+              ]
+            },
+            {
+              "file": "actions/deny-shake/keyframes/left/left-09.png",
+              "ticks": 1,
+              "sha256": "a7dd5f2249b0652ce507131d35ba1fd87c5baa4b236963c852049c50451bf2d3",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                360,
+                103,
+                694,
+                970
+              ]
+            },
+            {
+              "file": "actions/deny-shake/keyframes/left/left-10.png",
+              "ticks": 1,
+              "sha256": "5a04e9b599788dc1c73f2cf20a76226729085e513d1d2a2c597c699ca8303e2b",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                360,
+                103,
+                698,
+                970
+              ]
+            },
+            {
+              "file": "actions/deny-shake/keyframes/left/left-11.png",
+              "ticks": 1,
+              "sha256": "44bf67aa3ac55493837e8a6f3a9a0d343b3fb547f968dfdb066299b224274222",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                358,
+                103,
+                706,
+                970
+              ]
+            },
+            {
+              "file": "actions/deny-shake/keyframes/left/left-12.png",
+              "ticks": 2,
+              "sha256": "56f5e4bc8fbc487ca1ec4f06359a72e02f9efcbc8cbc130373a80c12d57e3bf0",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                357,
+                103,
+                705,
+                970
+              ]
+            },
+            {
+              "file": "actions/deny-shake/keyframes/left/left-13.png",
+              "ticks": 12,
+              "sha256": "d4b576ec1590ddee73b3c8dde63d2acd1c9d8b69441383563f4d4f2a3e4c63eb",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                361,
+                103,
+                694,
+                970
+              ]
+            }
+          ],
+          "branches": {
+            "default": []
+          }
+        }
+      },
+      "evidence": {
+        "generation_method": "built-in image generation with continuous pose strips, chroma-key extraction, strip overlap, shared scale, and anatomical anchor registration",
+        "manual_visual_review": "pass",
+        "manual_visual_review_report": "actions/deny-shake/reports/manual-visual-review.md",
+        "technical_validation": "pass",
+        "technical_validation_report": "actions/deny-shake/reports/technical-validation.json",
+        "project_validation": null
+      }
+    },
+    {
+      "asset_id": "yolo-present-reveal",
+      "role": "present-reveal",
+      "status": "candidate",
+      "playback_mode": "one-shot-with-settled-hold",
+      "outcomes": [
+        "default"
+      ],
+      "suitable_for": [
+        "introducing content",
+        "open-palm presentation",
+        "chapter reveal"
+      ],
+      "not_suitable_for": [
+        "finger tapping",
+        "risk blocking"
+      ],
+      "phases": {
+        "anticipation_tick": 2,
+        "inspect_tick": 7,
+        "scan_end_tick": 17,
+        "outcome_tick": 18,
+        "settled_tick": 23,
+        "total_ticks": 35
+      },
+      "facings": {
+        "right": {
+          "common": [
+            {
+              "file": "actions/present-reveal/keyframes/right/right-00.png",
+              "ticks": 2,
+              "sha256": "0b88ef384349b769ed86968767b108d466948afe55e768f13713aa3963090c0f",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                299,
+                70,
+                706,
+                970
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/right/right-01.png",
+              "ticks": 1,
+              "sha256": "925795a0d2c275df38c291a093a3ec0120cc60e65001f0e94e8fc473577e7487",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                304,
+                70,
+                705,
+                970
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/right/right-02.png",
+              "ticks": 1,
+              "sha256": "080faabf79091112c515e65873f29548840569bfe23250c220518333ebc112cd",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                299,
+                72,
+                700,
+                970
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/right/right-03.png",
+              "ticks": 1,
+              "sha256": "674565478073f5f3e8028d5acf1dc4fd0c07a683b3b0e793d0f86c1449e3d837",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                301,
+                75,
+                698,
+                970
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/right/right-04.png",
+              "ticks": 1,
+              "sha256": "661ee21817c3662f0287d24ca0f951e039b7e1a867385655a82969b0e4bd5d66",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                304,
+                83,
+                696,
+                970
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/right/right-05.png",
+              "ticks": 1,
+              "sha256": "7393572e4603cc3d280dac35527a3bb001bc42f01d89dfc4d638676683e85fe5",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                305,
+                90,
+                717,
+                970
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/right/right-06.png",
+              "ticks": 1,
+              "sha256": "3792071862dfc443002771ae56ecdcf7322a95bb6b7a511e1f61d5fd9c7b87e7",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                310,
+                90,
+                751,
+                970
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/right/right-07.png",
+              "ticks": 2,
+              "sha256": "7914538a19be3a54b87262e77538375e56e6cd26fb8a38a77cbfeb85df4eb5db",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                308,
+                93,
+                714,
+                970
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/right/right-08.png",
+              "ticks": 1,
+              "sha256": "2b5e446a3b4c9b8964e11296ef40fc4ac75159dae71c477ad085d714b3c9b487",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                301,
+                88,
+                748,
+                973
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/right/right-09.png",
+              "ticks": 1,
+              "sha256": "df69264bc6f9fbfd62ad44c3870bb2dd253641dbac48e1c43a64701773d7e83a",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                302,
+                85,
+                775,
+                973
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/right/right-10.png",
+              "ticks": 1,
+              "sha256": "865b66bedb07a65d2991aee847e5021e88dcbef70df2f326d690c5ae32c38a2d",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                307,
+                86,
+                775,
+                973
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/right/right-11.png",
+              "ticks": 1,
+              "sha256": "c7c8429d00b308023bb9913bf39599ff7b78fd3367da442aac50fa73758dc13e",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                310,
+                90,
+                779,
+                973
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/right/right-12.png",
+              "ticks": 1,
+              "sha256": "b9bdcace448e02e6393874dd63ef863e26f10d3178361d572879376e0ae2a714",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                314,
+                91,
+                787,
+                973
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/right/right-13.png",
+              "ticks": 2,
+              "sha256": "0d14a094243e5a0ebf5a3a5de1e16e2a6379703de96472b6ccb5e955d46e4db1",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                311,
+                93,
+                752,
+                973
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/right/right-14.png",
+              "ticks": 1,
+              "sha256": "6a7c99e6b95833736bd12ba8f24d95ffc75f726b6a5ca2c44197dcd75bba09e5",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                304,
+                86,
+                777,
+                974
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/right/right-15.png",
+              "ticks": 1,
+              "sha256": "82aff025e8072755d71a97019a10a619cfcb7af822501cd2dedc64ad7c9a6f41",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                306,
+                84,
+                753,
+                976
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/right/right-16.png",
+              "ticks": 1,
+              "sha256": "c49be1393f60a953da789ba650d9e61320f6056825b8c980c79b35a9f572dffb",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                306,
+                84,
+                765,
+                974
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/right/right-17.png",
+              "ticks": 1,
+              "sha256": "48467d793cab801c91237920ff0f88769c01c9ea396331d7f657cd9523ae8d07",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                304,
+                86,
+                765,
+                974
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/right/right-18.png",
+              "ticks": 2,
+              "sha256": "935434a20de34e993f7e6ac7d0692c5a218db04f68560641331be124f165e998",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                311,
+                86,
+                760,
+                976
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/right/right-19.png",
+              "ticks": 12,
+              "sha256": "6f3898dea73b91102579dd2828d6e0a8ca3434a5d597df7a03c0d6e70434f8c0",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                309,
+                86,
+                755,
+                976
+              ]
+            }
+          ],
+          "branches": {
+            "default": []
+          }
+        },
+        "left": {
+          "common": [
+            {
+              "file": "actions/present-reveal/keyframes/left/left-00.png",
+              "ticks": 2,
+              "sha256": "75831aa5452f8d9e388e87045e65a5c292b2f5810ec33849dda2bd4aa412d982",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                362,
+                84,
+                709,
+                970
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/left/left-01.png",
+              "ticks": 1,
+              "sha256": "f78bb7e86e680d9d6ea241ea0a0443a68b083e91bd7bdc18bf9387e82fc2e143",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                360,
+                84,
+                707,
+                970
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/left/left-02.png",
+              "ticks": 1,
+              "sha256": "60f90896e5a3108266e7069d87cdf7c665b11bf3e332092d7b52e17c68d72952",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                365,
+                86,
+                706,
+                970
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/left/left-03.png",
+              "ticks": 1,
+              "sha256": "ec08af013af8581a0ce54f3e941d810df534a55d5a11d964bcab721cb3bae3eb",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                363,
+                84,
+                707,
+                970
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/left/left-04.png",
+              "ticks": 1,
+              "sha256": "ab0e93bc17c075df279fe5f992ed6b8553f9722c15358c5b401b2b48406652b4",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                379,
+                86,
+                693,
+                970
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/left/left-05.png",
+              "ticks": 1,
+              "sha256": "94b74775df3650c0d574a0a19b9f391dca86c046d380d8f42b7d9f2920572a43",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                330,
+                86,
+                693,
+                970
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/left/left-06.png",
+              "ticks": 1,
+              "sha256": "868c70c925d1ed49dc4e409e45294e426c212a2dd1e96fae1323f986885bc621",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                300,
+                86,
+                688,
+                970
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/left/left-07.png",
+              "ticks": 2,
+              "sha256": "88699de9911c20524e75ae8994dc5ba53eb2eb961390448d235519ea191a8446",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                276,
+                86,
+                690,
+                970
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/left/left-08.png",
+              "ticks": 1,
+              "sha256": "24104462673b734963cb5c51a993ece01ebe5b1f375941319f6a13a6bb037da0",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                240,
+                82,
+                696,
+                974
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/left/left-09.png",
+              "ticks": 1,
+              "sha256": "0551a0c1c9736a2176d8f3a1059e1577e65482a644c14f8d1b26e4b42f5b7089",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                217,
+                82,
+                697,
+                974
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/left/left-10.png",
+              "ticks": 1,
+              "sha256": "f1745e75541f836825c470b7956d20dd8310463342de001cc1392b44573ba72f",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                212,
+                82,
+                690,
+                974
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/left/left-11.png",
+              "ticks": 1,
+              "sha256": "6192ce96675c604fb1e0648a5af0097e7b6f8617b42feeb49bb970f2a0d3dcb4",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                231,
+                82,
+                694,
+                974
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/left/left-12.png",
+              "ticks": 1,
+              "sha256": "bf749aba10ed461aac2715b57d5b761d0b0e5a7a3335acdd341c33c760ae6fb0",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                225,
+                82,
+                691,
+                974
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/left/left-13.png",
+              "ticks": 2,
+              "sha256": "863f69b688508929f5bb50f4fa9407baf423bc45b1f262ee92f355dce8104314",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                264,
+                82,
+                692,
+                974
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/left/left-14.png",
+              "ticks": 1,
+              "sha256": "129b9dcd169e04208e182c7499babc4e0c60cae277084028e0c0cd1f335eecfb",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                233,
+                74,
+                697,
+                974
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/left/left-15.png",
+              "ticks": 1,
+              "sha256": "6fd1c38fea1ade8a60d42e6f298354d5c1a24e9e0ed44586b432887aef7bb7be",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                229,
+                74,
+                700,
+                974
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/left/left-16.png",
+              "ticks": 1,
+              "sha256": "a2e76cc15a4c9c0139e6ef7ac517983d8f0daf8206dcea1342f5a705d98e848b",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                209,
+                74,
+                695,
+                974
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/left/left-17.png",
+              "ticks": 1,
+              "sha256": "6381e8026cfb1cba59ac390d7e0bf1b252f9ec31e613f686451b8c7d86aa16ba",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                232,
+                74,
+                696,
+                974
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/left/left-18.png",
+              "ticks": 2,
+              "sha256": "eee3086ee07e0ec1c7d750ecece2ff32ae0fd7feacad196069259b3f77184b48",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                230,
+                74,
+                696,
+                974
+              ]
+            },
+            {
+              "file": "actions/present-reveal/keyframes/left/left-19.png",
+              "ticks": 12,
+              "sha256": "05bb54e4be7cdcf7dc98695953ab5cbf9df08616fbe1a370f65f855c62fee7c8",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                251,
+                74,
+                695,
+                974
+              ]
+            }
+          ],
+          "branches": {
+            "default": []
+          }
+        }
+      },
+      "evidence": {
+        "generation_method": "built-in image generation with continuous pose strips, chroma-key extraction, strip overlap, shared scale, and anatomical anchor registration",
+        "manual_visual_review": "pass",
+        "manual_visual_review_report": "actions/present-reveal/reports/manual-visual-review.md",
+        "technical_validation": "pass",
+        "technical_validation_report": "actions/present-reveal/reports/technical-validation.json",
+        "project_validation": null
+      }
+    },
+    {
+      "asset_id": "yolo-welcome-wave",
+      "role": "welcome-wave",
+      "status": "candidate",
+      "playback_mode": "one-shot-with-settled-hold",
+      "outcomes": [
+        "default"
+      ],
+      "suitable_for": [
+        "opening welcome",
+        "chapter entrance",
+        "light farewell"
+      ],
+      "not_suitable_for": [
+        "persistent looping",
+        "semantic result emphasis"
+      ],
+      "phases": {
+        "anticipation_tick": 2,
+        "inspect_tick": 7,
+        "scan_end_tick": 17,
+        "outcome_tick": 18,
+        "settled_tick": 23,
+        "total_ticks": 35
+      },
+      "facings": {
+        "right": {
+          "common": [
+            {
+              "file": "actions/welcome-wave/keyframes/right/right-00.png",
+              "ticks": 2,
+              "sha256": "4c2c154fde0f38da9b9897263b229ba8f351b1aa3429917dea173adcdbae27a5",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                310,
+                74,
+                689,
+                970
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/right/right-01.png",
+              "ticks": 1,
+              "sha256": "e65b467d92ee2d351948450c703ecf97cbdd29648a9b8737a58a64c57924b2af",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                326,
+                72,
+                699,
+                970
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/right/right-02.png",
+              "ticks": 1,
+              "sha256": "38f7d9d2a526469c8162cba92da14ebac30be36ef373edd9f052f6160700ca0b",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                326,
+                72,
+                696,
+                970
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/right/right-03.png",
+              "ticks": 1,
+              "sha256": "cd3210a2f57fed3a313a3505982e745689c234b1365d273db5f035df24ca0c23",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                330,
+                72,
+                694,
+                970
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/right/right-04.png",
+              "ticks": 1,
+              "sha256": "d6bde7e1a5b8322946eef87f70e6f19b84d81d191862748a97dbbd2c1935e39c",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                334,
+                72,
+                707,
+                970
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/right/right-05.png",
+              "ticks": 1,
+              "sha256": "76737b725ec09146750dcc2f957cf47882b46cd69f3735bbf8009363c77b53ed",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                331,
+                72,
+                723,
+                970
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/right/right-06.png",
+              "ticks": 1,
+              "sha256": "6a5f58b6fa844a8d6bcd00d22993a5b272acac0d8d8574a46d21b8a44dd45a48",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                326,
+                72,
+                716,
+                970
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/right/right-07.png",
+              "ticks": 2,
+              "sha256": "653c8ef64c95081ab7be94fdce579c814fbccece87d2d2dea55b99503a2d7b67",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                332,
+                72,
+                727,
+                970
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/right/right-08.png",
+              "ticks": 1,
+              "sha256": "0204b19f0144e3598170c4bc4676a55f257bbf57390fc317e47e23b669b85fc2",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                329,
+                72,
+                728,
+                970
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/right/right-09.png",
+              "ticks": 1,
+              "sha256": "3d14793ded1e8dc01e9c6a94f8d43bc3eb3991dc3fc2e4cc5b4848e71a13b559",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                337,
+                70,
+                729,
+                970
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/right/right-10.png",
+              "ticks": 1,
+              "sha256": "47d2cf3064d9e315b31dec463e3c584f7f85f559940026d8aef9985888227c82",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                333,
+                74,
+                719,
+                970
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/right/right-11.png",
+              "ticks": 1,
+              "sha256": "38974db6a53c44dfdf031a334cc511035875a087440c303706b387c812e75269",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                336,
+                70,
+                711,
+                970
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/right/right-12.png",
+              "ticks": 1,
+              "sha256": "cc62786b8313ea5a495b58ff890c721a1f3241ab3d7cf2ccfe526392257ec997",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                340,
+                72,
+                710,
+                970
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/right/right-13.png",
+              "ticks": 2,
+              "sha256": "b311ddc3f2507c69242e794e4ac9ebea6ce8d7a6a889fdd00e84a78c88e23674",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                335,
+                72,
+                708,
+                970
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/right/right-14.png",
+              "ticks": 1,
+              "sha256": "0eaa0fc447f22862464a78a78e7d176fb37e404ed7d1a3b2d2d8b303bbe04785",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                334,
+                70,
+                726,
+                970
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/right/right-15.png",
+              "ticks": 1,
+              "sha256": "62403d02115b713fd9ca1c887d2dbc005b10c11e9fb5e185ad3eaed6e44f21c5",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                333,
+                70,
+                734,
+                970
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/right/right-16.png",
+              "ticks": 1,
+              "sha256": "79c792590bff44742eae8286a8d8c9e4543be8c5774247c5f22f2d50e0e14764",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                334,
+                70,
+                718,
+                970
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/right/right-17.png",
+              "ticks": 1,
+              "sha256": "05b16e149a0e8d2870ac501aca1f2eac4f5bc764fae005145df0cfee9ed37b1f",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                334,
+                70,
+                687,
+                970
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/right/right-18.png",
+              "ticks": 2,
+              "sha256": "a975358d108373916705d4f05bb81ad7fec4883e1aaca6bcdcab8ebf9ccf2f72",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                334,
+                70,
+                689,
+                970
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/right/right-19.png",
+              "ticks": 12,
+              "sha256": "8ee6ed750539db2e12912afa85597248dc75fec0abc951a4e7aee47e378e34fd",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                336,
+                70,
+                685,
+                970
+              ]
+            }
+          ],
+          "branches": {
+            "default": []
+          }
+        },
+        "left": {
+          "common": [
+            {
+              "file": "actions/welcome-wave/keyframes/left/left-00.png",
+              "ticks": 2,
+              "sha256": "97995ee0f0e74350e08f2c572da2e1f0927c75f03629c741156da7647ad2783f",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                335,
+                75,
+                738,
+                970
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/left/left-01.png",
+              "ticks": 1,
+              "sha256": "1185ef9dae73d7e2ca851975f6b04d27badb597bd1bffb9f3d213304865aabde",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                337,
+                75,
+                740,
+                970
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/left/left-02.png",
+              "ticks": 1,
+              "sha256": "ae5ff1bfd9c57b4039a1f3327ad0e752b8ffe6ff00a7d4251349d606b31f0607",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                328,
+                79,
+                735,
+                970
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/left/left-03.png",
+              "ticks": 1,
+              "sha256": "eba24fa0955cdc8d71302964534901eeb4bc8f1f82899229c593f6e6ad94bccf",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                332,
+                80,
+                733,
+                970
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/left/left-04.png",
+              "ticks": 1,
+              "sha256": "732ecdd9d019837176685e930f226a9511367a61fe28180e00b89c33cffbe4a1",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                335,
+                77,
+                731,
+                970
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/left/left-05.png",
+              "ticks": 1,
+              "sha256": "8bbb54faa20ded73bf4c5e5fca730ae035c1c0ff354f5063dffdca0196b4b828",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                327,
+                79,
+                728,
+                970
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/left/left-06.png",
+              "ticks": 1,
+              "sha256": "a593f7d845f1bf73033278a17590cf43aacc9da726d79f7bd343086fc2d7d14e",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                334,
+                80,
+                730,
+                970
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/left/left-07.png",
+              "ticks": 2,
+              "sha256": "8aa0e657a3123e55109e7ae3a357621b0bb5a81a9886434564b7b19e6aab5bb6",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                320,
+                86,
+                721,
+                970
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/left/left-08.png",
+              "ticks": 1,
+              "sha256": "18ae659eb8b74c86ac6812539fbe3f5f49e4161abff3325b165cbe7c5123abee",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                325,
+                78,
+                728,
+                973
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/left/left-09.png",
+              "ticks": 1,
+              "sha256": "dffe0505849bb27afcd3abe589c90fc7f691464b35c4ceeebfebf2a674b40360",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                319,
+                78,
+                729,
+                973
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/left/left-10.png",
+              "ticks": 1,
+              "sha256": "d2611c1b7425dd4bec8e1df0b95065577b057d27f467864867a6381471e45ef5",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                335,
+                78,
+                731,
+                973
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/left/left-11.png",
+              "ticks": 1,
+              "sha256": "89821e6955b51a76004b312c7f07dcfee35567f0f254467e3ef9fd68344693ca",
+              "foot_anchor": [
+                511.5,
+                970.0
+              ],
+              "bbox": [
+                317,
+                78,
+                729,
+                973
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/left/left-12.png",
+              "ticks": 1,
+              "sha256": "463092734716fa9253e7489812ec4ab458cb6344786d37188c57e9f93ba4441f",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                322,
+                78,
+                729,
+                973
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/left/left-13.png",
+              "ticks": 2,
+              "sha256": "934e880bae268fbf9cdd953320532ef2e9ef7bd2259dba55e68772c8f164ecf9",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                316,
+                82,
+                716,
+                973
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/left/left-14.png",
+              "ticks": 1,
+              "sha256": "0a74411760878741b237982ac9cb7f2b4c5719cc2e048eafb6788f26cd33e4da",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                306,
+                73,
+                728,
+                973
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/left/left-15.png",
+              "ticks": 1,
+              "sha256": "5256d80927f5d5de7ea229c65ad2be291c2279bd72fb034f08cdf19350fbeafa",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                316,
+                73,
+                730,
+                973
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/left/left-16.png",
+              "ticks": 1,
+              "sha256": "0a7eb5260624d26311cc1581ad8f8f405ea5ecae268e03bfee74b9845df1363e",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                319,
+                73,
+                729,
+                973
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/left/left-17.png",
+              "ticks": 1,
+              "sha256": "cc91318879a0636936696d1d0b588bad505e1e21a3f14dab14b7db47f2c8438a",
+              "foot_anchor": [
+                511.5,
+                970.0
+              ],
+              "bbox": [
+                300,
+                73,
+                729,
+                973
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/left/left-18.png",
+              "ticks": 2,
+              "sha256": "29718b86db5baab0914191f57d218eadb6a0ea2147b252ad6149e6a260b6fbab",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                332,
+                73,
+                730,
+                973
+              ]
+            },
+            {
+              "file": "actions/welcome-wave/keyframes/left/left-19.png",
+              "ticks": 12,
+              "sha256": "ea92ce5649767c50948371592479dc97f4c86af5fda09d4663249201114c4e88",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                339,
+                75,
+                721,
+                973
+              ]
+            }
+          ],
+          "branches": {
+            "default": []
+          }
+        }
+      },
+      "evidence": {
+        "generation_method": "built-in image generation with continuous pose strips, chroma-key extraction, strip overlap, shared scale, and anatomical anchor registration",
+        "manual_visual_review": "pass",
+        "manual_visual_review_report": "actions/welcome-wave/reports/manual-visual-review.md",
+        "technical_validation": "pass",
+        "technical_validation_report": "actions/welcome-wave/reports/technical-validation.json",
+        "project_validation": null
+      }
+    },
+    {
+      "asset_id": "yolo-gather-conclude",
+      "role": "gather-conclude",
+      "status": "candidate",
+      "playback_mode": "one-shot-with-settled-hold",
+      "outcomes": [
+        "default"
+      ],
+      "suitable_for": [
+        "summary",
+        "synthesis",
+        "bringing points together"
+      ],
+      "not_suitable_for": [
+        "applause",
+        "prayer",
+        "object handling"
+      ],
+      "phases": {
+        "anticipation_tick": 2,
+        "inspect_tick": 7,
+        "scan_end_tick": 17,
+        "outcome_tick": 18,
+        "settled_tick": 23,
+        "total_ticks": 35
+      },
+      "facings": {
+        "right": {
+          "common": [
+            {
+              "file": "actions/gather-conclude/keyframes/right/right-00.png",
+              "ticks": 2,
+              "sha256": "5191bd3ad02f2f9d87b8d11303e7a7d4ffb2e45992b31b9933f40bac15dab66d",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                290,
+                85,
+                706,
+                970
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/right/right-01.png",
+              "ticks": 1,
+              "sha256": "e40dfef41c77fdbf168c67eda17f3d02c946cc6f76a37ce61c15679799caf880",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                288,
+                85,
+                704,
+                970
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/right/right-02.png",
+              "ticks": 1,
+              "sha256": "8719454293b1d96f343eeb484a93be76ceb282b343daa6b0d9172ca42f57bfa6",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                290,
+                85,
+                706,
+                970
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/right/right-03.png",
+              "ticks": 1,
+              "sha256": "620211ef54815bde7b844445412578b5a34784cf2ff08f14e54c4b8b713131f3",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                291,
+                85,
+                711,
+                970
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/right/right-04.png",
+              "ticks": 1,
+              "sha256": "6a5625205d27e70f891334cdfbacf49a8779027265f23121f54154b841d8965b",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                285,
+                87,
+                719,
+                970
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/right/right-05.png",
+              "ticks": 1,
+              "sha256": "0226448de27178d8d64869c8df4e7c0421e1cfc19f7dfbf65deb1212480aa315",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                289,
+                85,
+                730,
+                970
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/right/right-06.png",
+              "ticks": 1,
+              "sha256": "ad2ec3d8561576e16472976f81e3ce523aa03a45da3f5f1ffffb9547df4fefc8",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                289,
+                87,
+                730,
+                970
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/right/right-07.png",
+              "ticks": 2,
+              "sha256": "d9765d83144c7db19f6e4ee83e5d5e45cf46f4f8e06eda4d485684908a2df34b",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                287,
+                85,
+                705,
+                970
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/right/right-08.png",
+              "ticks": 1,
+              "sha256": "64c4ff138c4e884c7f5ad3aa85e8e771501321f613ad972c361e086b7dca6269",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                290,
+                82,
+                712,
+                976
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/right/right-09.png",
+              "ticks": 1,
+              "sha256": "129ad31c71a95f3b36614c8f3da892f7669ee11643920bc30558b0e604178c09",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                289,
+                82,
+                711,
+                976
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/right/right-10.png",
+              "ticks": 1,
+              "sha256": "3474c0e3569851cd83ec382f80cb59f2bb4384ae1c12ca2c4b2d6e41e26f1fbb",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                288,
+                82,
+                712,
+                976
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/right/right-11.png",
+              "ticks": 1,
+              "sha256": "3361b91e3e9181156fdeaa2b340cb19338118586c1e2fbcf73f27f08cb95d2cf",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                288,
+                82,
+                712,
+                974
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/right/right-12.png",
+              "ticks": 1,
+              "sha256": "e40c9e5e40d20a9faf1345027da86ba39ecc9776ee2f4a82be264c47ab4f3749",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                290,
+                82,
+                712,
+                974
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/right/right-13.png",
+              "ticks": 2,
+              "sha256": "495b967daf7aa1006bb32bdd5cd1893668a3773ac4abd6e76c05e0e22d7eefcf",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                292,
+                86,
+                712,
+                976
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/right/right-14.png",
+              "ticks": 1,
+              "sha256": "03a4b728046da67d61e639b854ea96afd8024d18fb72a620b5a9bdf58cd925b7",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                288,
+                76,
+                714,
+                976
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/right/right-15.png",
+              "ticks": 1,
+              "sha256": "806688316a4fe8358e2308094b2ddb43a09244fa62e2bf1678bb61f2d3ab3b98",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                292,
+                86,
+                726,
+                976
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/right/right-16.png",
+              "ticks": 1,
+              "sha256": "3a2bb25970d53198c3390d9bdd4d839a663ee9e82827c8dc408b5c7b20304440",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                294,
+                76,
+                722,
+                976
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/right/right-17.png",
+              "ticks": 1,
+              "sha256": "1229e26b8d0a468eef412e9d48b032dadc5c94e8caeec88b2b2356dbbb6448b8",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                288,
+                76,
+                716,
+                976
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/right/right-18.png",
+              "ticks": 2,
+              "sha256": "ded9bb771e8b5b599e23629c08184d8c4ea02e675ad1e82cc9f2225f0e627d4c",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                288,
+                76,
+                714,
+                976
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/right/right-19.png",
+              "ticks": 12,
+              "sha256": "cc25bb06ef3dd3aa29e6159918436b917ad5e127749734e8522cb36583e299e4",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                284,
+                76,
+                712,
+                976
+              ]
+            }
+          ],
+          "branches": {
+            "default": []
+          }
+        },
+        "left": {
+          "common": [
+            {
+              "file": "actions/gather-conclude/keyframes/left/left-00.png",
+              "ticks": 2,
+              "sha256": "f0cb9986f0329df67fcd0de5d32128f08c9bf01a50415fd601e73673b55e97c5",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                338,
+                70,
+                732,
+                970
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/left/left-01.png",
+              "ticks": 1,
+              "sha256": "473a6beaf181ce1a1548b8338898aeb2e21541e98ba70066578b2ad6f1c6664e",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                340,
+                70,
+                725,
+                970
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/left/left-02.png",
+              "ticks": 1,
+              "sha256": "9f5c745666846b139d91d9f286b66d872e321ce31afcca7e8595156959353666",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                346,
+                72,
+                724,
+                970
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/left/left-03.png",
+              "ticks": 1,
+              "sha256": "1057ba52d12c71ddda93f9855d9ba457daf2237f82695383347a54871ba45214",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                331,
+                77,
+                722,
+                970
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/left/left-04.png",
+              "ticks": 1,
+              "sha256": "9f9b94dc621e81271829a1e08c657602b6df0ff68c8b4a39c7f0c62811912680",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                321,
+                81,
+                715,
+                970
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/left/left-05.png",
+              "ticks": 1,
+              "sha256": "03b2796f7c3979be657c1f195d4df43bf7d4d4d6146742b0f8edf1cbd17532c7",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                296,
+                81,
+                712,
+                970
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/left/left-06.png",
+              "ticks": 1,
+              "sha256": "bf68f43c2f8c93064701a39360b706f0ae3c75bbc09f556a74104de2ddef8d54",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                269,
+                83,
+                742,
+                970
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/left/left-07.png",
+              "ticks": 2,
+              "sha256": "063038f5fb77eaf54f7599c692ba83a460d77ea0187cb37fe34721d71aa5d007",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                348,
+                83,
+                712,
+                970
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/left/left-08.png",
+              "ticks": 1,
+              "sha256": "3f2af6133c5b5f940fa63a7a90d3620df1a71d3ce76a46506b7c16235433c3d4",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                331,
+                87,
+                720,
+                974
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/left/left-09.png",
+              "ticks": 1,
+              "sha256": "c77bc3630295545e3be9fd105e7790d2cec31021e4e80e261ccf976cb94dbdfb",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                348,
+                90,
+                723,
+                974
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/left/left-10.png",
+              "ticks": 1,
+              "sha256": "bb98022db47d0ece33d45ba2acde49ecafc9f95f2a3141194290927bb1b722a7",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                352,
+                88,
+                725,
+                974
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/left/left-11.png",
+              "ticks": 1,
+              "sha256": "0f08d4ca3a1e4a721d84f5d3848ba2095e7bdf1e44fa8452967a45b8d8cecc0d",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                349,
+                87,
+                724,
+                973
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/left/left-12.png",
+              "ticks": 1,
+              "sha256": "9a03e73c0a455f09d286d1e9986724bd8b1471f092a64a66e725a1f2d896ba81",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                347,
+                87,
+                723,
+                974
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/left/left-13.png",
+              "ticks": 2,
+              "sha256": "69cd8de327d6f1f617bdbbfa532283207f5bd8b37f62a4283c933800555cbd17",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                347,
+                93,
+                718,
+                975
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/left/left-14.png",
+              "ticks": 1,
+              "sha256": "52c1d9b90f6614d96495b4f0c4139ef0c977205800abd475f4b77f6564f43150",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                354,
+                86,
+                720,
+                973
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/left/left-15.png",
+              "ticks": 1,
+              "sha256": "e9f5c74d08c191d4934c657a71be95ec69c0db7977ef67db197d71d30ce787cd",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                353,
+                91,
+                715,
+                975
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/left/left-16.png",
+              "ticks": 1,
+              "sha256": "0ce7d5d5bfa861d5bf25d521644d2682d5ea98e3f1d77ae60365ec7c0e22fb9a",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                353,
+                85,
+                719,
+                974
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/left/left-17.png",
+              "ticks": 1,
+              "sha256": "ec92d6fbf858daf21893fa2c47208af30b51d44c4728ab76bf678618eead0826",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                352,
+                82,
+                718,
+                973
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/left/left-18.png",
+              "ticks": 2,
+              "sha256": "1b9e6780c30d3ab25ddd7e857da67fd24bf50ae12b9265a2222f834d0e056734",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                351,
+                82,
+                719,
+                973
+              ]
+            },
+            {
+              "file": "actions/gather-conclude/keyframes/left/left-19.png",
+              "ticks": 12,
+              "sha256": "198dab5641160e966e4bbfbfb29b3a267b63b5f2d274501de1b053c909760823",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                347,
+                80,
+                713,
+                975
+              ]
+            }
+          ],
+          "branches": {
+            "default": []
+          }
+        }
+      },
+      "evidence": {
+        "generation_method": "built-in image generation with continuous pose strips, chroma-key extraction, strip overlap, shared scale, and anatomical anchor registration",
+        "manual_visual_review": "pass",
+        "manual_visual_review_report": "actions/gather-conclude/reports/manual-visual-review.md",
+        "technical_validation": "pass",
+        "technical_validation_report": "actions/gather-conclude/reports/technical-validation.json",
+        "project_validation": null
+      }
+    },
+    {
+      "asset_id": "yolo-question-shrug",
+      "role": "question-shrug",
+      "status": "candidate",
+      "playback_mode": "one-shot-with-settled-hold",
+      "outcomes": [
+        "default"
+      ],
+      "suitable_for": [
+        "question",
+        "uncertainty",
+        "waiting for explanation"
+      ],
+      "not_suitable_for": [
+        "surrender",
+        "risk blocking",
+        "anger"
+      ],
+      "phases": {
+        "anticipation_tick": 2,
+        "inspect_tick": 7,
+        "scan_end_tick": 17,
+        "outcome_tick": 18,
+        "settled_tick": 23,
+        "total_ticks": 35
+      },
+      "facings": {
+        "right": {
+          "common": [
+            {
+              "file": "actions/question-shrug/keyframes/right/right-00.png",
+              "ticks": 2,
+              "sha256": "f9bd5681a39059107349a9040eadff1b39d9fd3a53bce2df4d8e68e1b04c89d0",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                294,
+                70,
+                703,
+                970
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/right/right-01.png",
+              "ticks": 1,
+              "sha256": "811372e4cc94a50d8394dc72c98109f1bcaaa945f8dc8612e138a72771faa284",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                290,
+                77,
+                698,
+                970
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/right/right-02.png",
+              "ticks": 1,
+              "sha256": "47566c8c574a54c0b6999201e2dd29d4eb5566e20a91de1d485e243e8ad727be",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                280,
+                90,
+                667,
+                970
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/right/right-03.png",
+              "ticks": 1,
+              "sha256": "eb0ba5edcead85a6084d13a1a42a3cf315819e4450aba77a5b577e4cccdee3ee",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                291,
+                83,
+                689,
+                970
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/right/right-04.png",
+              "ticks": 1,
+              "sha256": "b1925cdcd09cb9e27613749307134c54771abfbc3ec8e67b0bf15e7edc922f91",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                306,
+                90,
+                695,
+                970
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/right/right-05.png",
+              "ticks": 1,
+              "sha256": "01a2bff621b559b3634cac9bec2f735ff6cc5904c20fe2dd3215a15a165cdeee",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                304,
+                90,
+                691,
+                970
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/right/right-06.png",
+              "ticks": 1,
+              "sha256": "ab9b61cd8bcb992a27bab498b78cc52cc0ab56a0f4905b6cbe6950f2fdfedd8f",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                316,
+                105,
+                705,
+                970
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/right/right-07.png",
+              "ticks": 2,
+              "sha256": "4675bf93ed4a24765b3b67d8d7e486ebcda7f6eb37f7cda7e20e021c206bc595",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                293,
+                111,
+                704,
+                970
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/right/right-08.png",
+              "ticks": 1,
+              "sha256": "ed35525ffb63d4433bb54cdb59dd8923b2f629f1c6207c81aa574649d5feec39",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                313,
+                104,
+                684,
+                973
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/right/right-09.png",
+              "ticks": 1,
+              "sha256": "2ccd7b01407f72140398e494e56f4bafab968032aff9a816435f2649a31b8ca5",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                304,
+                104,
+                693,
+                973
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/right/right-10.png",
+              "ticks": 1,
+              "sha256": "6b5c4a45b8f574749d310cce6a6a62c26309bf130ef7acb3ba30c12e1b56da29",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                311,
+                101,
+                696,
+                973
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/right/right-11.png",
+              "ticks": 1,
+              "sha256": "5c41253d737cb633c201cb17718f182faa474d411e63a020f814f08d0a914fbf",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                316,
+                104,
+                683,
+                973
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/right/right-12.png",
+              "ticks": 1,
+              "sha256": "4d3365a1ffc407fe8cdaa83b23ec1a4d4f25677511c7f4db40b8f53f9cd4b136",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                318,
+                114,
+                679,
+                973
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/right/right-13.png",
+              "ticks": 2,
+              "sha256": "a5643c2114704762b7552fb8e40647fe4dafdc22878d1c40323a7f5a425fdade",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                310,
+                115,
+                675,
+                973
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/right/right-14.png",
+              "ticks": 1,
+              "sha256": "81e4b58b53b9c7e69d1059aa19e5531524b241b4e89b2e006421693e2f65a98a",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                326,
+                111,
+                682,
+                972
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/right/right-15.png",
+              "ticks": 1,
+              "sha256": "ad394655d0392d278df806f6baf61f9c9a9cd4f3deb9059efa48b530754e3b27",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                322,
+                113,
+                683,
+                972
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/right/right-16.png",
+              "ticks": 1,
+              "sha256": "b753c55d2048dda6c3155bd72aec2f8e4394df786af0cc12127bd556c37d2444",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                319,
+                109,
+                679,
+                972
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/right/right-17.png",
+              "ticks": 1,
+              "sha256": "f1f87b36427db3086bdc0618ea7a0e02daaf7bd23faae2a844609c9c0818dbb2",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                318,
+                109,
+                679,
+                972
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/right/right-18.png",
+              "ticks": 2,
+              "sha256": "e256eafc3847843612661f63bb0f6f5a5cfc4bab24d5b43b4137b39ac7390704",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                321,
+                113,
+                671,
+                972
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/right/right-19.png",
+              "ticks": 12,
+              "sha256": "df3905c61951a6d6bd26e9fe200a292010ab047854125b55dcbd1126bcdf018e",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                316,
+                114,
+                670,
+                972
+              ]
+            }
+          ],
+          "branches": {
+            "default": []
+          }
+        },
+        "left": {
+          "common": [
+            {
+              "file": "actions/question-shrug/keyframes/left/left-00.png",
+              "ticks": 2,
+              "sha256": "3f01d77b6eaef32eba05b18b7821a25534d1ba050e179f3e19e473b1c13fbbf3",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                332,
+                70,
+                752,
+                970
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/left/left-01.png",
+              "ticks": 1,
+              "sha256": "5b55a9b6c06971d4f64a30e25596233a8aef8b9381c62bf34ffad336e69bfb4a",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                336,
+                72,
+                746,
+                970
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/left/left-02.png",
+              "ticks": 1,
+              "sha256": "654a5114d2d6bbc01889f29f3358a43ae41494ef65255ab186f39b92ed7f74be",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                331,
+                77,
+                731,
+                971
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/left/left-03.png",
+              "ticks": 1,
+              "sha256": "a640ce31533c298e335796e98dab0e86fbead2360e12073ce8bf9cb94edfb214",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                344,
+                75,
+                741,
+                970
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/left/left-04.png",
+              "ticks": 1,
+              "sha256": "7d51d20353195896f73ad22f1ef9aba0339934f6956fdeffd12cf3491ea0dfb4",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                344,
+                75,
+                748,
+                970
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/left/left-05.png",
+              "ticks": 1,
+              "sha256": "705311d3911cc3040bab70b2db61931238a7f690027781b0e5d408e1382bd437",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                341,
+                72,
+                751,
+                970
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/left/left-06.png",
+              "ticks": 1,
+              "sha256": "f545503a84eaf9a193adbfd26701e4904f7b5291eeaba2a319a87ce66e54f9f4",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                329,
+                88,
+                741,
+                970
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/left/left-07.png",
+              "ticks": 2,
+              "sha256": "629469181b443f36861b4d62b71e9d7750ec46290af661f840837d50a55a1b81",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                332,
+                92,
+                740,
+                970
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/left/left-08.png",
+              "ticks": 1,
+              "sha256": "cd949694d50d3e66f8dca76bed55faa2305c76f305767b4e24fd78a5a15d429a",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                344,
+                87,
+                716,
+                973
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/left/left-09.png",
+              "ticks": 1,
+              "sha256": "9fdbe3c133ee8391e5c76e4673ea12ec4fdec6f7bef8dcb95abea35d9aeca963",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                346,
+                91,
+                719,
+                973
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/left/left-10.png",
+              "ticks": 1,
+              "sha256": "ae12d2a3b950c2ec2af8697d29a8bd2e99ea3d2a72acdd9c988045177b47b4b8",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                323,
+                87,
+                719,
+                973
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/left/left-11.png",
+              "ticks": 1,
+              "sha256": "9b5c68867376f94e3ce89bc4d931a24512806e617757c912cf0ed55a666741bc",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                337,
+                91,
+                715,
+                973
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/left/left-12.png",
+              "ticks": 1,
+              "sha256": "51a039d1a32b6b842c6e7a9100a5aa7b6e5e4d346d46b0c213234124b5ba43e9",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                360,
+                92,
+                712,
+                973
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/left/left-13.png",
+              "ticks": 2,
+              "sha256": "cee0abcd2e6cb01e70fc47b7ebb903521404c5336ea967a8cbf3496f29f23d6a",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                360,
+                92,
+                711,
+                974
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/left/left-14.png",
+              "ticks": 1,
+              "sha256": "dc93c86fd3f3d9cd96304dd47825b4e1f0bbc9d45630b07e6ef651a5f081e706",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                353,
+                87,
+                717,
+                974
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/left/left-15.png",
+              "ticks": 1,
+              "sha256": "44b0f1733ea2558a8922c502001810a21fba8d61a4afc22d54f9b604555a58ca",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                368,
+                87,
+                720,
+                973
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/left/left-16.png",
+              "ticks": 1,
+              "sha256": "8dece7d7213827018f9df8a95a6dbe5a9629b302f655ade71fe9132519e4dcdf",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                364,
+                88,
+                712,
+                974
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/left/left-17.png",
+              "ticks": 1,
+              "sha256": "3cb6837f61c867a4a8a2a72a26e1308a78e12a46f8988bbea167149374793907",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                349,
+                87,
+                716,
+                973
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/left/left-18.png",
+              "ticks": 2,
+              "sha256": "6024446e577f6d24cd1fd61cbd19e10526b25e27a5ef4d3b6e90986b2b62210d",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                354,
+                91,
+                716,
+                973
+              ]
+            },
+            {
+              "file": "actions/question-shrug/keyframes/left/left-19.png",
+              "ticks": 12,
+              "sha256": "55c240c65c80f478d63b5706669560b45d173d2468d03afae17cf0670e677365",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                357,
+                89,
+                709,
+                973
+              ]
+            }
+          ],
+          "branches": {
+            "default": []
+          }
+        }
+      },
+      "evidence": {
+        "generation_method": "built-in image generation with continuous pose strips, chroma-key extraction, strip overlap, shared scale, and anatomical anchor registration",
+        "manual_visual_review": "pass",
+        "manual_visual_review_report": "actions/question-shrug/reports/manual-visual-review.md",
+        "technical_validation": "pass",
+        "technical_validation_report": "actions/question-shrug/reports/technical-validation.json",
+        "project_validation": null
+      }
+    },
+    {
+      "asset_id": "yolo-success-celebrate",
+      "role": "success-celebrate",
+      "status": "candidate",
+      "playback_mode": "one-shot-with-settled-hold",
+      "outcomes": [
+        "default"
+      ],
+      "suitable_for": [
+        "completion",
+        "validation passed",
+        "light celebration"
+      ],
+      "not_suitable_for": [
+        "large hero celebration",
+        "jumping",
+        "persistent looping"
+      ],
+      "phases": {
+        "anticipation_tick": 2,
+        "inspect_tick": 7,
+        "scan_end_tick": 17,
+        "outcome_tick": 18,
+        "settled_tick": 23,
+        "total_ticks": 35
+      },
+      "facings": {
+        "right": {
+          "common": [
+            {
+              "file": "actions/success-celebrate/keyframes/right/right-00.png",
+              "ticks": 2,
+              "sha256": "189864f61ba5de63ecee100cafc454ac7f8aab984a15d92aa5d486d160162b6d",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                290,
+                70,
+                712,
+                970
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/right/right-01.png",
+              "ticks": 1,
+              "sha256": "b7001e7dfd25e4b094b7145484a3bb60a668966b2c5e0a418c4e9b22f3eda8d1",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                283,
+                75,
+                705,
+                970
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/right/right-02.png",
+              "ticks": 1,
+              "sha256": "dc6175a8e9f4668b98b1dadaf9d4d1abb6a0b693831b0a302351f27f512215a8",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                289,
+                80,
+                707,
+                970
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/right/right-03.png",
+              "ticks": 1,
+              "sha256": "792ed3b723d97870a98c2bd95d361e2269236aeedc41b97cfc7a54beda0b16ab",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                297,
+                82,
+                704,
+                970
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/right/right-04.png",
+              "ticks": 1,
+              "sha256": "5c9ce9c55a40d4b038cad67678780b287dae1758abc7d54bc6348e783f4cb242",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                290,
+                83,
+                703,
+                970
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/right/right-05.png",
+              "ticks": 1,
+              "sha256": "2a3a01a611e038f8ceec42108ed6dcf6d0936d58f10af586e248976ca7e0a261",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                290,
+                84,
+                703,
+                971
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/right/right-06.png",
+              "ticks": 1,
+              "sha256": "d6ac7c4dfa0de4c1950122b6dc85dceacac2149ede3751c103b5b638e650ca3d",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                304,
+                92,
+                700,
+                970
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/right/right-07.png",
+              "ticks": 2,
+              "sha256": "3dd40b58569136bd714db7d1cac4da40068b391e6cb11335119d731c6edc4f6b",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                302,
+                103,
+                678,
+                970
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/right/right-08.png",
+              "ticks": 1,
+              "sha256": "b4ea32f4f58e7c07e98b3ac2db08b9e75d86df4cbef69ef0fc87c34913126a8a",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                303,
+                99,
+                696,
+                974
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/right/right-09.png",
+              "ticks": 1,
+              "sha256": "f19d685dab7d88e79bcf553b3a69788d87c592e73cc436a3ccf02619eed4f30c",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                303,
+                98,
+                696,
+                973
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/right/right-10.png",
+              "ticks": 1,
+              "sha256": "f9850a8b3a3e3ca3cbedfdf6ccd088fb622194c1aab07fcd59701be1733ca969",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                305,
+                100,
+                695,
+                973
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/right/right-11.png",
+              "ticks": 1,
+              "sha256": "8c398f5651464e87fc1a2d18cfc515874535daf75ff1ad876eef9befd13fc778",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                305,
+                105,
+                691,
+                973
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/right/right-12.png",
+              "ticks": 1,
+              "sha256": "c144d2eb260ab46e1149a547e6faaf15bf28d45f81ccef6b3d9d7e2b61382350",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                309,
+                106,
+                694,
+                973
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/right/right-13.png",
+              "ticks": 2,
+              "sha256": "75c85a5e1f0ea6c02e5b394fc2d54b0b49748d064909279b0bd82c3bb7674505",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                307,
+                118,
+                687,
+                973
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/right/right-14.png",
+              "ticks": 1,
+              "sha256": "e5ffa71d3d3d280a178455d0441ac11efd9ee9085f3f713471dd613c9f130542",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                311,
+                110,
+                691,
+                973
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/right/right-15.png",
+              "ticks": 1,
+              "sha256": "63f112d5a11a2f24eedda2701dccdb287b12f7f6361b16b86026bf23fbb9b396",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                313,
+                115,
+                691,
+                973
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/right/right-16.png",
+              "ticks": 1,
+              "sha256": "d42be06f6f3e0e483280ea1e771d86a618625e30b4b304575fcd1004ad02bcb6",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                315,
+                121,
+                690,
+                974
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/right/right-17.png",
+              "ticks": 1,
+              "sha256": "b7c40775082bc0be94b87b1751afe7a5aab7fac1f148a2d9bed906ca41addfee",
+              "foot_anchor": [
+                512.5,
+                970.0
+              ],
+              "bbox": [
+                318,
+                120,
+                688,
+                973
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/right/right-18.png",
+              "ticks": 2,
+              "sha256": "60619aba0dfbbe53a0853df538236b2ecde1de6f7b51253fb46e33036c247210",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                319,
+                122,
+                687,
+                973
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/right/right-19.png",
+              "ticks": 12,
+              "sha256": "af3217e305f8cf74f1946ad27cc78186b7cfa4ea4f2221f05d68dbe60e132c8f",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                316,
+                119,
+                686,
+                974
+              ]
+            }
+          ],
+          "branches": {
+            "default": []
+          }
+        },
+        "left": {
+          "common": [
+            {
+              "file": "actions/success-celebrate/keyframes/left/left-00.png",
+              "ticks": 2,
+              "sha256": "801dd5ee236ba38c179795bbbfa41baff8fc9dfb7eba3737955f012ca48229ad",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                360,
+                75,
+                731,
+                970
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/left/left-01.png",
+              "ticks": 1,
+              "sha256": "3b843eb900eda3641b42e75c9ba654e5c1347195b1a4339021069a93a60e3402",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                363,
+                75,
+                727,
+                970
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/left/left-02.png",
+              "ticks": 1,
+              "sha256": "f536f727f5093890b720ae78066196da50cc502ff3c9ec47b1e15c653fd13d08",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                360,
+                73,
+                723,
+                970
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/left/left-03.png",
+              "ticks": 1,
+              "sha256": "1d800e8e5d06a1bc4953390f8d3fd7bf03d70f9e48cb04611040448e28d23c35",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                359,
+                75,
+                722,
+                970
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/left/left-04.png",
+              "ticks": 1,
+              "sha256": "3fb5aac86fec15fe9827e5cff2a09bd282bdb272e9d2230c173492220ce3bca8",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                364,
+                75,
+                722,
+                970
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/left/left-05.png",
+              "ticks": 1,
+              "sha256": "acda82fdaa44bcc78639bdad20b122c57d002b4c7199d47d847767c3696057dc",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                360,
+                75,
+                721,
+                970
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/left/left-06.png",
+              "ticks": 1,
+              "sha256": "8051934ee76912eaab7174eb6d0eb7524c5dc02acae17dc7574e8e87689fd4bd",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                357,
+                75,
+                717,
+                970
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/left/left-07.png",
+              "ticks": 2,
+              "sha256": "7a2f975c51dd333ee2eaddec14c27ea5a1ec0f6fdb1c3cd84fc11d734639100c",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                360,
+                76,
+                713,
+                970
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/left/left-08.png",
+              "ticks": 1,
+              "sha256": "c824f0ed15a3dfd620295efa429b40c052260b66ae34bb48d82a3e501de96eef",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                360,
+                73,
+                718,
+                973
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/left/left-09.png",
+              "ticks": 1,
+              "sha256": "30c532d13462a182d43285279eddc0447005535c5177004252ea5013f0b70239",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                365,
+                73,
+                720,
+                973
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/left/left-10.png",
+              "ticks": 1,
+              "sha256": "55573a562382d3b489950d402bcb1188e374b6a05a72052470cf4f517b598720",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                364,
+                73,
+                721,
+                973
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/left/left-11.png",
+              "ticks": 1,
+              "sha256": "aaee796b7f3c5f3f9617c83fc35a262755d8d6138deaa82a20a2c9493b48d86f",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                365,
+                76,
+                723,
+                974
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/left/left-12.png",
+              "ticks": 1,
+              "sha256": "1d67f80e9104c28e73f45c3ac03bf50c1cdd7cad5e6c7ae23fb7757cd19be9c6",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                370,
+                89,
+                717,
+                973
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/left/left-13.png",
+              "ticks": 2,
+              "sha256": "dfa00e130af5f77dd110c449ee8cd720e23554ad828139bdf18ca911ae5ffca6",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                365,
+                79,
+                715,
+                973
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/left/left-14.png",
+              "ticks": 1,
+              "sha256": "d0f23a8a462485e00609408bfa74ce8a169f04c91af57ceb984487a477c2e4d0",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                362,
+                78,
+                720,
+                973
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/left/left-15.png",
+              "ticks": 1,
+              "sha256": "ea8f5b8dcde7b4d49ae60c1f9ad0458eb0324fbbbd64cfc51b5f5cf58a6c9fce",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                369,
+                78,
+                726,
+                973
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/left/left-16.png",
+              "ticks": 1,
+              "sha256": "bc70edf60bdaab09da6c7b178e99da25850b2830f821df4efd783dc19a51ec48",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                371,
+                79,
+                728,
+                973
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/left/left-17.png",
+              "ticks": 1,
+              "sha256": "935258a6cbe3af3cba82287a3dfee7643070fb07f532a807e00fa0c07ad97011",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                370,
+                81,
+                725,
+                973
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/left/left-18.png",
+              "ticks": 2,
+              "sha256": "136f5c0373ead10c56c004989796c49bcada4c4c5b1155e42c83ba7634ac33a8",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                377,
+                92,
+                723,
+                973
+              ]
+            },
+            {
+              "file": "actions/success-celebrate/keyframes/left/left-19.png",
+              "ticks": 12,
+              "sha256": "dfccb4a8673a31bc3ed49eb0a15ff3b87eed95ce932373bd0c030f7c4c33d0b8",
+              "foot_anchor": [
+                512.0,
+                970.0
+              ],
+              "bbox": [
+                372,
+                86,
+                721,
+                973
+              ]
+            }
+          ],
+          "branches": {
+            "default": []
+          }
+        }
+      },
+      "evidence": {
+        "generation_method": "built-in image generation with continuous pose strips, chroma-key extraction, strip overlap, shared scale, and anatomical anchor registration",
+        "manual_visual_review": "pass",
+        "manual_visual_review_report": "actions/success-celebrate/reports/manual-visual-review.md",
+        "technical_validation": "pass",
+        "technical_validation_report": "actions/success-celebrate/reports/technical-validation.json",
+        "project_validation": null
+      }
     }
   ],
   "validation_reports": {
     "asset_contract": "reports/asset-validation.json",
     "continuity": "reports/continuity-validation.json",
-    "manual_visual_review": "reports/manual-visual-review.json"
+    "manual_visual_review": "reports/manual-visual-review.json",
+    "no_prop_batch_technical": "reports/no-prop-batch-technical-validation.json",
+    "no_prop_batch_manual_visual_review": "reports/no-prop-batch-manual-visual-review.json",
+    "no_prop_batch_shoe_color": "reports/no-prop-batch-shoe-color-validation.json"
   }
 }

@@ -1,0 +1,11 @@
+Use case: stylized-concept
+Asset type: left-facing accepted-result pose strip
+Input images: Image 1 is the exact left-facing YOLO identity; Image 2 is the left-common-b strip and defines the shared upright branching pose
+Primary request: create one extra-wide horizontal strip with exactly 8 ordered, separated, complete full-body poses transitioning from upright inspection into one small natural nod and a calm accepted stance
+Character invariants: preserve the exact left-facing YOLO identity, hairstyle asymmetry, glasses, face, blue jacket, white shirt, navy trousers, orange sneakers, clean filled illustration, navy outlines and proportions
+Motion progression left to right: poses 1 and 2 faithfully reproduce the last two poses of Image 2; pose 3 eyes and brows relax; pose 4 chin begins a tiny downward movement at the neck only; pose 5 completes one small nod without bowing the torso; pose 6 head rises with a tiny rebound; pose 7 returns to neutral head height; pose 8 settles upright with a calm small smile
+Composition: exactly 8 isolated complete full-body figures in one row, identical scale and shoe baseline, shoulders and hips remain stable, no overlap, no crop, no labels
+Scene/backdrop: perfectly flat solid #ff00ff chroma-key background
+Constraints: one small nod only; torso upright; shoulders do not drop; feet and pelvis fixed; approval readable through head and expression; hands empty
+Avoid: waist bowing, shrinking silhouette, thumbs-up, props, check marks, magnifier, cards, text, symbols, shadows, floor, gradients, glow, motion blur, duplicate limbs, face drift, clothing or scale changes, #ff00ff in the character
+

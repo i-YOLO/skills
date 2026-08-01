@@ -1,0 +1,10 @@
+Use case: stylized-concept
+Asset type: clean left-facing character pose strip with eight animation frames
+Input image: the supplied transparent left-facing YOLO character is the exact identity reference
+Primary request: render EXACTLY EIGHT complete left-facing YOLO figures in eight evenly spaced horizontal slots, gradually moving both hands from pockets to small fists below the chest
+Character invariants: exact left-facing YOLO identity and asymmetry, navy hair and curl, large navy glasses, pale face, blue jacket, white shirt, navy trousers, orange sneakers, clean filled illustration, navy outlines, fixed proportions
+Eight poses left to right: 1 neutral hands in pockets; 2 same stance with pupils slightly wider; 3 small closed-mouth smile; 4 shoulders physically prepare; 5 elbows bend and hands begin leaving pockets; 6 both hands become small relaxed fists near waist; 7 forearms rise slightly; 8 both fists remain below lower chest in a compact happy pose
+Composition: EXACTLY 8 distinct complete full-body figures, identical scale and shoe baseline, equal generous gaps, no overlap, no crop, no panels, no labels
+Scene/backdrop: perfectly uniform flat #ff00ff chroma-key background
+Constraints: only the eight character silhouettes may appear; every background pixel must be magenta; planted feet, stable pelvis, no jump, clean hands
+Avoid: attention rays, motion marks, action lines, vibration lines, floating strokes, dots, symbols, text, extra graphics, seven figures, nine figures, mirroring, arms above shoulders, thumbs-up, props, confetti, stars, checks, shadows, floor, gradients, glow, blur, duplicate limbs, identity or clothing changes, #ff00ff inside character

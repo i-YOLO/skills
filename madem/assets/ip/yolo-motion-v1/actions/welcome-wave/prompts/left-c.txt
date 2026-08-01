@@ -1,0 +1,9 @@
+Use case: identity-preserve
+Asset type: sequential full-body character animation mother strip
+Input images: Image 1 is the immutable left-facing YOLO identity master. Image 2 is the immediately preceding left-facing strip and defines exact handoff poses, scale and baseline.
+Primary request: create the final extra-wide 3:1 production strip with exactly eight chronological complete full-body poses finishing the same two-cycle welcome wave.
+Sequence left to right: poses 1 and 2 must faithfully reproduce Image 2 poses 7 and 8; 3 wrist bends inward to finish the second wave; 4 wrist returns to center with palm still facing viewer; 5 forearm begins a small natural descent; 6 elbow lowers halfway; 7 hand returns beside the torso; 8 stable friendly neutral stance suitable for a long hold.
+Identity and handoff invariants: preserve Image 1 exactly and match Image 2 scale, shoe baseline, torso placement, palette and line weight. Torso and feet stay fixed; upper arm movement is minimal until the return begins.
+Scene/backdrop: perfectly uniform flat solid #ff00ff chroma-key background.
+Composition: one horizontal row of eight evenly spaced poses ordered left to right; no dividers or panels; every body part fully visible and separated.
+Constraints: stable palm and fingers; no props, symbols, text, shadow, floor, grid, gradient, texture, reflection, blur, speed lines, residual limbs or ghost trails. No #ff00ff inside the character.

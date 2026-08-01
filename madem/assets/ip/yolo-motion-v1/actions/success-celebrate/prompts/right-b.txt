@@ -1,0 +1,11 @@
+Use case: stylized-concept
+Asset type: right-facing success animation pose strip, key-action phase
+Input images: Image 1 is the exact right-facing YOLO identity; Image 2 is the right-a strip and defines posture, scale and motion direction
+Primary request: create one extra-wide horizontal strip with exactly 8 ordered, separated, complete full-body poses continuing into one restrained fist-lift success gesture
+Character invariants: preserve the exact right-facing YOLO identity, hair, glasses, face, blue jacket, white shirt, navy trousers, orange sneakers, clean filled illustration, navy outlines and proportions
+Motion progression left to right: poses 1 and 2 faithfully reproduce the last two poses of Image 2; pose 3 both elbows bend a little more; pose 4 the outer fist leads upward; pose 5 the second fist follows slightly later; pose 6 reaches the celebration peak with fists between waist and chest; pose 7 shoulders ease downward; pose 8 starts a small natural rebound while feet remain planted
+Composition: exactly 8 isolated complete full-body figures in one row, identical scale and shoe baseline, generous gaps, no overlap, no crop, no labels
+Scene/backdrop: perfectly flat solid #ff00ff chroma-key background
+Constraints: fists never rise above shoulders; no jump; hips and shoes stay fixed; both arms are not mechanically identical; hands remain anatomically clean; one celebration beat only
+Avoid: aggressive punching, boxing pose, jumping, props, confetti, stars, check marks, text, symbols, shadows, floor, gradients, glow, motion blur, duplicate limbs, identity or clothing changes, #ff00ff in the character
+

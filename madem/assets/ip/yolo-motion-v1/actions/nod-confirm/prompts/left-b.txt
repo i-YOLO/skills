@@ -1,0 +1,10 @@
+Use case: illustration-story
+Asset type: YOLO IP continuous-pose strip, nod-confirm left-facing phase B
+Primary request: Continue Image 2 with exactly 8 separated full-body poses in one horizontal chronological row. Poses 1 and 2 faithfully reproduce poses 7 and 8 of Image 2. Then reach the tiny nod minimum, reopen eyes while raising the head through neutral, make a very small upward overshoot, soften back, and settle confident and upright.
+Input images: Image 1 is the immutable left-facing identity master. Image 2 is the accepted phase A and defines scale, spacing, shoe baseline, low-point handoff and fixed torso.
+Backdrop: perfectly uniform flat #ff00ff.
+Composition: exactly 8 complete figures, same spacing and scale as Image 2, identical shoe baseline. Feet, hips, torso, shoulders, hands and jacket remain registered. Poses 1-2 match Image 2 last two; poses 3-8 gradually recover. No figure-height jump between handoff or later poses.
+Motion mechanics: only eyes, eyelids, glasses angle, chin and head-neck angle move. Head rotates in place about fixed neck root, decelerates through neutral, tiny overshoot and smaller rebound. Body never bows or changes scale.
+Style: exact filled 2D YOLO identity and colors from references.
+Constraints: no props, text, symbols, panels, borders, grid, dividers, shadows, floor, gradients, blur, ghosting, overlaps, cropping or #ff00ff inside subject.
+Avoid: fewer or more than 8, disconnected action order, scale drift, body lowering, moving shoulders, identity drift, abrupt pose jumps.

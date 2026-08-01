@@ -1,0 +1,11 @@
+Use case: stylized-concept
+Asset type: left-facing continuation pose strip
+Input images: Image 1 is the exact left-facing YOLO identity; Image 2 is the generated left-common-a strip and defines posture, scale and motion direction
+Primary request: create one extra-wide horizontal strip with exactly 8 ordered, separated, complete full-body poses continuing the careful eye scan without bending the torso
+Character invariants: preserve the exact left-facing YOLO identity, hairstyle asymmetry, glasses, face, blue jacket, white shirt, navy trousers, orange sneakers, clean filled illustration, navy outlines and proportions
+Motion progression left to right: poses 1 and 2 faithfully reproduce the last two poses of Image 2; pose 3 pupils continue scanning; pose 4 head follows by only 2 more degrees; pose 5 gaze reaches the far point; pose 6 eyes ease toward center; pose 7 settles into a focused upright inspection pose; pose 8 holds the same upright branching pose with a tiny breathing change
+Composition: exactly 8 isolated complete full-body figures in one row, identical scale and shoe baseline, shoulders and hips at nearly the same height, generous gaps, no overlap, no crop, no panels, no labels
+Scene/backdrop: perfectly flat solid #ff00ff chroma-key background
+Constraints: torso remains upright; no bowing; feet and pelvis fixed; head rotation under 5 degrees; hands empty; final pose neutral enough to branch into approval or doubt
+Avoid: forward bending, shrinking silhouette, props, magnifier, cards, lightbulb, text, symbols, shadows, floor, gradients, glow, motion blur, speed lines, duplicate limbs, identity or clothing changes, #ff00ff in the character
+

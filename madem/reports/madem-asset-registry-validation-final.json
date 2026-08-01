@@ -1,0 +1,375 @@
+{
+  "status": "pass",
+  "registry": "/Users/shike/.codex/skills/madem/assets/registry.json",
+  "summary": {
+    "pack_count": 11,
+    "check_count": 50,
+    "failure_count": 0
+  },
+  "checks": [
+    {
+      "id": "packs-present",
+      "status": "pass",
+      "detail": "registry contains at least one asset pack"
+    },
+    {
+      "id": "pack-ids",
+      "status": "pass",
+      "detail": "pack IDs are non-empty strings and unique",
+      "pack_ids": [
+        "madem-design-system",
+        "madem-product-icons",
+        "madem-product-icons-v2",
+        "madem-ai-tech-dark-v1",
+        "yolo-static-poses",
+        "yolo-motion-v1",
+        "ai-knowledge-high-density-covers",
+        "madem-remotion-animation-library",
+        "madem-dense-motion-v1",
+        "madem-caption-overlay",
+        "madem-default-bgm-v3"
+      ]
+    },
+    {
+      "id": "default-status-policy",
+      "status": "pass",
+      "detail": "candidate packs are excluded from default automatic selection",
+      "default_allowed_statuses": [
+        "library-approved",
+        "project-proven"
+      ]
+    },
+    {
+      "id": "pack-status",
+      "status": "pass",
+      "detail": "madem-design-system uses an allowed status",
+      "pack_id": "madem-design-system",
+      "value": "library-approved"
+    },
+    {
+      "id": "pack-path",
+      "status": "pass",
+      "detail": "madem-design-system pack path exists",
+      "pack_id": "madem-design-system",
+      "path": "design-system"
+    },
+    {
+      "id": "pack-catalog",
+      "status": "pass",
+      "detail": "madem-design-system catalog exists",
+      "pack_id": "madem-design-system",
+      "catalog": "design-system/visual-defaults.json"
+    },
+    {
+      "id": "entrypoint",
+      "status": "pass",
+      "detail": "madem-design-system entrypoint exists",
+      "pack_id": "madem-design-system",
+      "entrypoint": "design-system/visualDefaults.ts"
+    },
+    {
+      "id": "entrypoint",
+      "status": "pass",
+      "detail": "madem-design-system entrypoint exists",
+      "pack_id": "madem-design-system",
+      "entrypoint": "design-system/cream-FAF8F3-1920x1080.png"
+    },
+    {
+      "id": "pack-status",
+      "status": "pass",
+      "detail": "madem-product-icons uses an allowed status",
+      "pack_id": "madem-product-icons",
+      "value": "library-approved"
+    },
+    {
+      "id": "pack-path",
+      "status": "pass",
+      "detail": "madem-product-icons pack path exists",
+      "pack_id": "madem-product-icons",
+      "path": "product-icons"
+    },
+    {
+      "id": "pack-catalog",
+      "status": "pass",
+      "detail": "madem-product-icons catalog exists",
+      "pack_id": "madem-product-icons",
+      "catalog": "product-icons/catalog.json"
+    },
+    {
+      "id": "pack-status",
+      "status": "pass",
+      "detail": "madem-product-icons-v2 uses an allowed status",
+      "pack_id": "madem-product-icons-v2",
+      "value": "project-proven"
+    },
+    {
+      "id": "pack-path",
+      "status": "pass",
+      "detail": "madem-product-icons-v2 pack path exists",
+      "pack_id": "madem-product-icons-v2",
+      "path": "product-icons/v2"
+    },
+    {
+      "id": "pack-catalog",
+      "status": "pass",
+      "detail": "madem-product-icons-v2 catalog exists",
+      "pack_id": "madem-product-icons-v2",
+      "catalog": "product-icons/v2/catalog.json"
+    },
+    {
+      "id": "catalog-status-match",
+      "status": "pass",
+      "detail": "madem-product-icons-v2 registry and catalog statuses match",
+      "pack_id": "madem-product-icons-v2",
+      "registry_status": "project-proven",
+      "catalog_status": "project-proven"
+    },
+    {
+      "id": "entrypoint",
+      "status": "pass",
+      "detail": "madem-product-icons-v2 entrypoint exists",
+      "pack_id": "madem-product-icons-v2",
+      "entrypoint": "product-icons/v2/ProductIcon.tsx"
+    },
+    {
+      "id": "pack-status",
+      "status": "pass",
+      "detail": "madem-ai-tech-dark-v1 uses an allowed status",
+      "pack_id": "madem-ai-tech-dark-v1",
+      "value": "project-proven"
+    },
+    {
+      "id": "pack-path",
+      "status": "pass",
+      "detail": "madem-ai-tech-dark-v1 pack path exists",
+      "pack_id": "madem-ai-tech-dark-v1",
+      "path": "design-system"
+    },
+    {
+      "id": "pack-catalog",
+      "status": "pass",
+      "detail": "madem-ai-tech-dark-v1 catalog exists",
+      "pack_id": "madem-ai-tech-dark-v1",
+      "catalog": "design-system/ai-tech-dark-v1.json"
+    },
+    {
+      "id": "entrypoint",
+      "status": "pass",
+      "detail": "madem-ai-tech-dark-v1 entrypoint exists",
+      "pack_id": "madem-ai-tech-dark-v1",
+      "entrypoint": "design-system/aiTechDarkV1.ts"
+    },
+    {
+      "id": "pack-status",
+      "status": "pass",
+      "detail": "yolo-static-poses uses an allowed status",
+      "pack_id": "yolo-static-poses",
+      "value": "library-approved"
+    },
+    {
+      "id": "pack-path",
+      "status": "pass",
+      "detail": "yolo-static-poses pack path exists",
+      "pack_id": "yolo-static-poses",
+      "path": "ip/yolo"
+    },
+    {
+      "id": "pack-catalog",
+      "status": "pass",
+      "detail": "yolo-static-poses catalog exists",
+      "pack_id": "yolo-static-poses",
+      "catalog": "ip/yolo/catalog.json"
+    },
+    {
+      "id": "pack-status",
+      "status": "pass",
+      "detail": "yolo-motion-v1 uses an allowed status",
+      "pack_id": "yolo-motion-v1",
+      "value": "candidate"
+    },
+    {
+      "id": "pack-path",
+      "status": "pass",
+      "detail": "yolo-motion-v1 pack path exists",
+      "pack_id": "yolo-motion-v1",
+      "path": "ip/yolo-motion-v1"
+    },
+    {
+      "id": "pack-catalog",
+      "status": "pass",
+      "detail": "yolo-motion-v1 catalog exists",
+      "pack_id": "yolo-motion-v1",
+      "catalog": "ip/yolo-motion-v1/catalog.json"
+    },
+    {
+      "id": "catalog-status-match",
+      "status": "pass",
+      "detail": "yolo-motion-v1 registry and catalog statuses match",
+      "pack_id": "yolo-motion-v1",
+      "registry_status": "candidate",
+      "catalog_status": "candidate"
+    },
+    {
+      "id": "entrypoint",
+      "status": "pass",
+      "detail": "yolo-motion-v1 entrypoint exists",
+      "pack_id": "yolo-motion-v1",
+      "entrypoint": "remotion-animation-library/YoloMotion.tsx"
+    },
+    {
+      "id": "candidate-selection",
+      "status": "pass",
+      "detail": "yolo-motion-v1 candidate is not default-selectable",
+      "pack_id": "yolo-motion-v1"
+    },
+    {
+      "id": "pack-status",
+      "status": "pass",
+      "detail": "ai-knowledge-high-density-covers uses an allowed status",
+      "pack_id": "ai-knowledge-high-density-covers",
+      "value": "library-approved"
+    },
+    {
+      "id": "pack-path",
+      "status": "pass",
+      "detail": "ai-knowledge-high-density-covers pack path exists",
+      "pack_id": "ai-knowledge-high-density-covers",
+      "path": "covers/ai-knowledge-high-density"
+    },
+    {
+      "id": "pack-catalog",
+      "status": "pass",
+      "detail": "ai-knowledge-high-density-covers catalog exists",
+      "pack_id": "ai-knowledge-high-density-covers",
+      "catalog": "covers/ai-knowledge-high-density/catalog.json"
+    },
+    {
+      "id": "catalog-status-match",
+      "status": "pass",
+      "detail": "ai-knowledge-high-density-covers registry and catalog statuses match",
+      "pack_id": "ai-knowledge-high-density-covers",
+      "registry_status": "library-approved",
+      "catalog_status": "library-approved"
+    },
+    {
+      "id": "pack-status",
+      "status": "pass",
+      "detail": "madem-remotion-animation-library uses an allowed status",
+      "pack_id": "madem-remotion-animation-library",
+      "value": "project-proven"
+    },
+    {
+      "id": "pack-path",
+      "status": "pass",
+      "detail": "madem-remotion-animation-library pack path exists",
+      "pack_id": "madem-remotion-animation-library",
+      "path": "remotion-animation-library"
+    },
+    {
+      "id": "entrypoint",
+      "status": "pass",
+      "detail": "madem-remotion-animation-library entrypoint exists",
+      "pack_id": "madem-remotion-animation-library",
+      "entrypoint": "remotion-animation-library/PatternLibrary.tsx"
+    },
+    {
+      "id": "entrypoint",
+      "status": "pass",
+      "detail": "madem-remotion-animation-library entrypoint exists",
+      "pack_id": "madem-remotion-animation-library",
+      "entrypoint": "remotion-animation-library/KnowledgeVisuals.tsx"
+    },
+    {
+      "id": "entrypoint",
+      "status": "pass",
+      "detail": "madem-remotion-animation-library entrypoint exists",
+      "pack_id": "madem-remotion-animation-library",
+      "entrypoint": "remotion-animation-library/YoloMotion.tsx"
+    },
+    {
+      "id": "pack-status",
+      "status": "pass",
+      "detail": "madem-dense-motion-v1 uses an allowed status",
+      "pack_id": "madem-dense-motion-v1",
+      "value": "project-proven"
+    },
+    {
+      "id": "pack-path",
+      "status": "pass",
+      "detail": "madem-dense-motion-v1 pack path exists",
+      "pack_id": "madem-dense-motion-v1",
+      "path": "remotion-animation-library"
+    },
+    {
+      "id": "pack-catalog",
+      "status": "pass",
+      "detail": "madem-dense-motion-v1 catalog exists",
+      "pack_id": "madem-dense-motion-v1",
+      "catalog": "remotion-animation-library/dense-tech-catalog.json"
+    },
+    {
+      "id": "catalog-status-match",
+      "status": "pass",
+      "detail": "madem-dense-motion-v1 registry and catalog statuses match",
+      "pack_id": "madem-dense-motion-v1",
+      "registry_status": "project-proven",
+      "catalog_status": "project-proven"
+    },
+    {
+      "id": "entrypoint",
+      "status": "pass",
+      "detail": "madem-dense-motion-v1 entrypoint exists",
+      "pack_id": "madem-dense-motion-v1",
+      "entrypoint": "remotion-animation-library/DenseTechMotion.tsx"
+    },
+    {
+      "id": "pack-status",
+      "status": "pass",
+      "detail": "madem-caption-overlay uses an allowed status",
+      "pack_id": "madem-caption-overlay",
+      "value": "project-proven"
+    },
+    {
+      "id": "pack-path",
+      "status": "pass",
+      "detail": "madem-caption-overlay pack path exists",
+      "pack_id": "madem-caption-overlay",
+      "path": "remotion-caption-overlay"
+    },
+    {
+      "id": "entrypoint",
+      "status": "pass",
+      "detail": "madem-caption-overlay entrypoint exists",
+      "pack_id": "madem-caption-overlay",
+      "entrypoint": "remotion-caption-overlay/CaptionOverlay.tsx"
+    },
+    {
+      "id": "pack-status",
+      "status": "pass",
+      "detail": "madem-default-bgm-v3 uses an allowed status",
+      "pack_id": "madem-default-bgm-v3",
+      "value": "project-proven"
+    },
+    {
+      "id": "pack-path",
+      "status": "pass",
+      "detail": "madem-default-bgm-v3 pack path exists",
+      "pack_id": "madem-default-bgm-v3",
+      "path": "audio"
+    },
+    {
+      "id": "pack-catalog",
+      "status": "pass",
+      "detail": "madem-default-bgm-v3 catalog exists",
+      "pack_id": "madem-default-bgm-v3",
+      "catalog": "audio/default-bgm-profile.json"
+    },
+    {
+      "id": "entrypoint",
+      "status": "pass",
+      "detail": "madem-default-bgm-v3 entrypoint exists",
+      "pack_id": "madem-default-bgm-v3",
+      "entrypoint": "audio/the_mountain-instrumental-minimal-522469.mp3"
+    }
+  ]
+}

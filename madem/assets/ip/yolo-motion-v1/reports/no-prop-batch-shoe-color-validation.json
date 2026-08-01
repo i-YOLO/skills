@@ -1,0 +1,65 @@
+{
+  "status": "pass",
+  "asset_status": "candidate",
+  "method": {
+    "chroma_key": "#ff00ff",
+    "despill": false,
+    "alpha_threshold": 180,
+    "orange_pixel_minimum": 1000,
+    "sequence_coverage_ratio_minimum": 0.6,
+    "manual_features": [
+      "orange shoe upper",
+      "white laces",
+      "white sole"
+    ]
+  },
+  "actions": [
+    {
+      "action_id": "inspect-react",
+      "minimum_orange_pixels": 8883,
+      "minimum_sequence_coverage_ratio": 0.91324
+    },
+    {
+      "action_id": "nod-confirm",
+      "minimum_orange_pixels": 7887,
+      "minimum_sequence_coverage_ratio": 0.846517
+    },
+    {
+      "action_id": "deny-shake",
+      "minimum_orange_pixels": 8866,
+      "minimum_sequence_coverage_ratio": 0.913079
+    },
+    {
+      "action_id": "present-reveal",
+      "minimum_orange_pixels": 7380,
+      "minimum_sequence_coverage_ratio": 0.894437
+    },
+    {
+      "action_id": "welcome-wave",
+      "minimum_orange_pixels": 8352,
+      "minimum_sequence_coverage_ratio": 0.890405
+    },
+    {
+      "action_id": "gather-conclude",
+      "minimum_orange_pixels": 8278,
+      "minimum_sequence_coverage_ratio": 0.900762
+    },
+    {
+      "action_id": "question-shrug",
+      "minimum_orange_pixels": 7780,
+      "minimum_sequence_coverage_ratio": 0.79844
+    },
+    {
+      "action_id": "success-celebrate",
+      "minimum_orange_pixels": 8174,
+      "minimum_sequence_coverage_ratio": 0.85511
+    }
+  ],
+  "summary": {
+    "action_count": 8,
+    "lowest_orange_pixel_count": 7380,
+    "lowest_sequence_coverage_ratio": 0.79844,
+    "failure_count": 0
+  },
+  "reviewed_at": "2026-07-31"
+}

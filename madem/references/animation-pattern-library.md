@@ -18,6 +18,8 @@
 | `PermissionGateCards` | 权限、核对、人工确认 | 边界与风险控制 | 门卡、说明、逐卡起始时间 | 无约束自动执行的表达 |
 | `InterfaceToSystemReveal` | 从表层界面拉开到系统能力 | 聊天框背后的系统 | 模拟界面、箭头、层级数据 | 中间堆叠无含义白卡 |
 | `YoloMotion` | 核验、提醒、指向、接收等轻量角色动作 | 口播词位旁的 IP 强调 | 动作 ID、朝向、结果分支、目标时间节点、槽位和显示高度 | 没有预留角色槽位，或需要大幅全屏表演 |
+
+当前 `yolo-motion-v1` 的无道具 candidate 动作包括：`inspect-react`、`nod-confirm`、`deny-shake`、`present-reveal`、`welcome-wave`、`gather-conclude`、`question-shrug`、`success-celebrate`。调用前仍需显式采用 candidate 并读取对应验证报告。
 | `IconSwarmCollector` | 多个图标聚合、吞噬、吸入、收纳 | AI 产品入口汇聚、文件夹收纳 | `assetId` 列表、目标点、起止帧 | 单个产品的功能详解 |
 | `QualityInspectionLoop` | 检查、失败、修改、重渲、通过 | 自动验收和迭代修复 | 检查项、失败/修复/通过帧 | 没有状态变化的普通清单 |
 | `MotionGallery` | 多种动效能力的可信演示 | 动效合集、能力证明 | 2–6 个短标签、入场点 | 纯文字功能列表 |

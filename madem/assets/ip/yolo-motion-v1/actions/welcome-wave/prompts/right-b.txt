@@ -1,0 +1,10 @@
+Use case: identity-preserve
+Asset type: corrected sequential full-body character animation mother strip, welcome-wave, right-facing, phase B
+Input images: Image 1 is the immutable right-facing identity master. Image 2 is the corrected phase-A strip and defines the exact handoff, identity, scale and baseline.
+Primary request: create the middle 8-pose strip for the same restrained welcome wave. The arm remains raised throughout this strip; motion comes only from a small wrist bend and tiny forearm rotation.
+Sequence: 1 exactly reproduce Image 2 pose 7; 2 exactly reproduce Image 2 pose 8; 3 wrist bends slightly outward; 4 wrist returns through center; 5 wrist bends slightly inward; 6 returns through center, completing wave one; 7 wrist bends slightly outward to begin wave two; 8 returns to center while the arm remains raised.
+Hard handoff and registration lock: poses 1 and 2 match Image 2 poses 7 and 8 in full height, head size, head-to-body ratio, torso width, elbow/hand position, shoe size, camera scale and sole baseline. All eight figures retain exactly this scale. Use a shared hair-tip top line and sole-bottom baseline. Lock head, face, torso, pelvis, supporting arm, legs and feet. Keep the elbow nearly fixed.
+Identity invariants: preserve exact master identity, navy hair and tuft, glasses, blue jacket, white shirt, navy trousers, orange sneakers, white laces, continuous white soles, filled 2D style and right-facing orientation. Both eyes remain open; palm faces viewer with stable five-finger anatomy.
+Scene/backdrop: perfectly uniform solid pure #ff00ff chroma-key only.
+Composition: exactly eight separated complete full-body figures in one row, identical scale and baseline, generous padding.
+Avoid: a lowered arm in pose 8, scale or head-size drift, whole-arm sweeping, foot sliding, shoe drift, missing laces/soles, residual limbs, ghost trails, blur, props, symbols, text, panels, shadow, floor, gradient, texture or watermark. Do not use #ff00ff inside the character.

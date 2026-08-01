@@ -1,0 +1,10 @@
+Use case: illustration-story
+Asset type: YOLO IP continuous-pose animation mother strip, deny-shake, left-facing, phase A
+Primary request: Create one wide mother strip containing exactly eight and only eight complete full-body instances of the same character. Arrange the eight figures in one evenly spaced horizontal row as chronological animation poses from left to right. The restrained denial head shake progresses: neutral; mouth gently straight and brows mildly concerned; eyes lead; head turns slightly toward the first side; travels back through center; ends approaching the opposite side in figures 7 and 8.
+Input images: Image 1 is the immutable left-facing identity master. Preserve its exact identity, glasses, hairstyle, clothing, colors, line weight, body proportions, orange shoes, and overall left-facing orientation.
+Scene/backdrop: perfectly flat uniform solid #ff00ff chroma-key background.
+Style/medium: clean fully filled 2D character illustration matching Image 1 exactly.
+Composition/framing: exactly 8 figures, neither 7 nor 9; one horizontal row; all eight separated; same scale; same shoe baseline; equal center-to-center spacing; generous gaps; all hair and shoes fully inside the canvas. Do not draw slot boxes or separators.
+Motion mechanics: lock feet, pelvis, torso, jacket and hands in pockets. Expression and gaze lead. Head and neck rotate around the neck root, maximum about 8 degrees to either side. Shoulders may follow imperceptibly; body must not sway. Adjacent poses change evenly. Figures 7 and 8 are overlap handoff poses near the second-side extreme.
+Constraints: no props; no extra objects; no text; no written numbers; no symbols; no labels; no borders; no panels; no grid; no dividers; no floor; no shadow; no reflection; no gradient; no texture; no glow; no motion blur; no speed lines; no ghosting; no overlapping; no cropping. Do not use #ff00ff inside the character.
+Avoid: seven figures, nine figures, redesign, facial or clothing drift, scale pop, baseline drift, duplicated limbs, exaggerated rotation, repeated shake cycles, torso twist, body sway, perspective change.

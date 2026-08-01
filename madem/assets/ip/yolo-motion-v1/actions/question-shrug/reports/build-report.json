@@ -1,0 +1,152 @@
+{
+  "status": "candidate",
+  "action_id": "question-shrug",
+  "shared_scale_by_facing": {
+    "right": 1.844262,
+    "left": 1.601423
+  },
+  "logical_frames": 20,
+  "ticks": [
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    2,
+    12
+  ],
+  "duration_seconds": 2.916667,
+  "strip_corrections": {
+    "right": [
+      {
+        "from": "right-a-rgba.png",
+        "to": "right-b-rgba.png",
+        "scale": 1.005376,
+        "previous_tail_heights": [
+          469,
+          466
+        ],
+        "next_head_heights": [
+          466,
+          464
+        ]
+      },
+      {
+        "from": "right-b-rgba.png",
+        "to": "right-c-rgba.png",
+        "scale": 0.995722,
+        "previous_tail_heights": [
+          466,
+          465
+        ],
+        "next_head_heights": [
+          468,
+          467
+        ]
+      }
+    ],
+    "left": [
+      {
+        "from": "left-a-rgba.png",
+        "to": "left-b-rgba.png",
+        "scale": 1.022326,
+        "previous_tail_heights": [
+          551,
+          548
+        ],
+        "next_head_heights": [
+          538,
+          537
+        ]
+      },
+      {
+        "from": "left-b-rgba.png",
+        "to": "left-c-rgba.png",
+        "scale": 1.022284,
+        "previous_tail_heights": [
+          550,
+          551
+        ],
+        "next_head_heights": [
+          539,
+          538
+        ]
+      }
+    ]
+  },
+  "metrics": {
+    "right": {
+      "anchor_x_range": 0.0,
+      "anchor_y_range": 0.0,
+      "height_ratio": 1.048951,
+      "adjacent_mean_difference": {
+        "median": 4.3094,
+        "maximum": 7.0081,
+        "values": [
+          3.5398,
+          5.2995,
+          5.8384,
+          4.9292,
+          2.9391,
+          7.0081,
+          6.4802,
+          6.3586,
+          3.6712,
+          4.3094,
+          2.5818,
+          5.367,
+          3.841,
+          4.8921,
+          2.7296,
+          4.5451,
+          2.0101,
+          4.0393,
+          3.477
+        ]
+      }
+    },
+    "left": {
+      "anchor_x_range": 0.0,
+      "anchor_y_range": 0.0,
+      "height_ratio": 1.025057,
+      "adjacent_mean_difference": {
+        "median": 3.3606,
+        "maximum": 7.9981,
+        "values": [
+          2.5025,
+          4.677,
+          6.762,
+          2.3396,
+          2.641,
+          7.2205,
+          3.1297,
+          7.9981,
+          4.0156,
+          2.1861,
+          2.5904,
+          4.7765,
+          1.495,
+          4.3062,
+          4.4066,
+          4.2666,
+          3.3606,
+          2.6226,
+          2.78
+        ]
+      }
+    }
+  }
+}

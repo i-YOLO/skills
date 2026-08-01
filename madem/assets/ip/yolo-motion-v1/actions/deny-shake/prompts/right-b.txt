@@ -1,0 +1,17 @@
+Use case: illustration-story
+Asset type: YOLO IP continuous-pose animation mother strip, deny-shake, right-facing, repaired phase B
+Primary request: Generate exactly eight complete full-body poses of the same character in one horizontal chronological row. Phase B continues phase A without a cut. Poses 1–2 must be pixel-continuous with phase A poses 7–8. Poses 3–5 move back toward center in small even steps. Pose 6 reaches a clear but restrained opposite-side extreme toward screen-left. Pose 7 returns halfway toward center. Pose 8 settles centered with the same restrained denial expression.
+Input images: Image 1 is the immutable right-facing identity master. Image 2 is the existing right-facing phase A and is the mandatory continuity reference. Preserve identity, body, outfit and orange shoes from Image 1. Preserve Image 2 poses 7 and 8 in the first two positions.
+Scene/backdrop: perfectly flat, perfectly uniform solid #ff00ff chroma-key background, exactly #ff00ff across every background pixel.
+Style/medium: clean fully filled 2D character illustration matching the references exactly.
+Composition/framing: exactly eight separated full-body figures, one horizontal row, chronological left to right, equal scale, equal shoe baseline, equal spacing and generous gaps. All hair tips, orange shoe uppers, white laces and white soles fully visible.
+Motion mechanics: feet, legs, pelvis, torso, jacket and hands in pockets remain locked. Only gaze, facial expression, head and neck rotate around a fixed neck root. Pupils, nose bridge, visible-ear balance, cheek contour and glasses foreshortening must change gradually and consistently with the turn. Head turn remains restrained, under about 8 degrees each side.
+Constraints: no props, no extra objects, no text, no written numbers, no labels, no symbols, no panels, no borders, no grid, no dividers, no floor, no shadow, no reflection, no gradient, no texture, no glow, no motion blur, no speed lines, no ghosting, no overlapping poses, no cropping. Do not use #ff00ff inside the character.
+Avoid: missing or ambiguous opposite-side extreme, sudden three-quarter-to-front jump, replacing the head, abrupt glasses-perspective change, abrupt hair-width change, facial drift, hairstyle drift, outfit drift, shoe-color drift, scale pop, baseline drift, body sway, torso twist, fewer or more than eight figures.
+
+Final repair assembly:
+- Positions 1–2 reuse right phase A positions 7–8 without rescaling, which makes the A/B handoff pixel-continuous.
+- Positions 3–8 use the selected replacement generation in chronological order 3–8.
+- Replacement positions are registered to a 505px foreground height and shoe baseline y=619 on a 2048×768 canvas.
+- Background pixels are normalized to exact #ff00ff before RGBA conversion.
+- RGBA conversion uses explicit key #ff00ff, soft matte, transparent threshold 8, opaque threshold 96, edge feather 0.35, and no despill.

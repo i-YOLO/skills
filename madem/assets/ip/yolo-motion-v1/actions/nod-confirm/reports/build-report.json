@@ -1,0 +1,108 @@
+{
+  "status": "candidate",
+  "action_id": "nod-confirm",
+  "shared_scale_by_facing": {
+    "right": 1.604278,
+    "left": 1.666667
+  },
+  "logical_frames": 14,
+  "ticks": [
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    2,
+    12
+  ],
+  "duration_seconds": 2.333333,
+  "strip_corrections": {
+    "right": [
+      {
+        "from": "right-a-rgba.png",
+        "to": "right-b-rgba.png",
+        "scale": 0.947701,
+        "previous_tail_heights": [
+          528,
+          523
+        ],
+        "next_head_heights": [
+          556,
+          553
+        ]
+      }
+    ],
+    "left": [
+      {
+        "from": "left-a-rgba.png",
+        "to": "left-b-rgba.png",
+        "scale": 0.956357,
+        "previous_tail_heights": [
+          505,
+          503
+        ],
+        "next_head_heights": [
+          528,
+          526
+        ]
+      }
+    ]
+  },
+  "metrics": {
+    "right": {
+      "anchor_x_range": 0.0,
+      "anchor_y_range": 0.0,
+      "height_ratio": 1.072706,
+      "adjacent_mean_difference": {
+        "median": 4.0048,
+        "maximum": 9.2233,
+        "values": [
+          1.7645,
+          2.1188,
+          5.4704,
+          9.2233,
+          5.5934,
+          4.1958,
+          3.135,
+          7.8787,
+          4.6643,
+          3.8382,
+          3.264,
+          2.1316,
+          4.0048
+        ]
+      }
+    },
+    "left": {
+      "anchor_x_range": 0.0,
+      "anchor_y_range": 0.0,
+      "height_ratio": 1.073986,
+      "adjacent_mean_difference": {
+        "median": 3.3713,
+        "maximum": 6.0766,
+        "values": [
+          2.0733,
+          2.3249,
+          5.3517,
+          3.3713,
+          3.4522,
+          6.0766,
+          3.7377,
+          6.0135,
+          2.8919,
+          4.5,
+          1.1069,
+          1.9012,
+          1.92
+        ]
+      }
+    }
+  }
+}

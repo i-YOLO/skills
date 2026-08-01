@@ -1,0 +1,11 @@
+Use case: stylized-concept
+Asset type: left-facing sequential character animation pose strip
+Input images: Image 1 is the exact left-facing YOLO identity; Image 2 is only the approved right-facing motion-timing reference, not an image to mirror
+Primary request: create one extra-wide horizontal strip with exactly 8 ordered, separated, complete full-body poses showing the start of careful inspection through eye direction and very small head movement while the torso remains upright
+Character invariants: exact same youthful male YOLO IP as Image 1, dark navy hair and curl with the left-facing asymmetry preserved, large navy rectangular glasses, pale face, blue jacket with navy collar, white shirt, navy trousers, orange sneakers, clean filled illustration, navy outlines, proportions and three-quarter left-facing orientation
+Motion progression left to right: 1 exact neutral upright stance; 2 eyes begin looking toward the inner left-side content area; 3 eyebrows become attentive; 4 pupils continue a slow scan; 5 head turns only 2 degrees while shoulders stay level; 6 chin moves forward only a few pixels with no bow; 7 gaze continues scanning; 8 reaches an attentive upright mid-scan pose
+Composition: exactly 8 complete isolated full-body figures in one horizontal row, identical body scale, identical shoe baseline, shoulders and hips remain at nearly the same height, generous gaps, no overlap, no crop, no panels, no labels
+Scene/backdrop: perfectly flat solid #ff00ff chroma-key background
+Constraints: independently draw the left-facing poses; do not mirror Image 2; torso stays upright; no bowing; top of hair varies less than 3 percent of body height; feet, pelvis and shoulders remain stable; head rotation under 5 degrees; hands empty and natural
+Avoid: forward bending, shrinking silhouette, props, magnifier, cards, lightbulb, text, symbols, screens, shadows, floor, gradients, glow, motion blur, speed lines, duplicate limbs, identity drift, clothing changes, scale changes, touching figures, #ff00ff in the character
+

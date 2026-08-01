@@ -1,0 +1,9 @@
+Use case: illustration-story
+Asset type: YOLO IP continuous-pose strip, nod-confirm right-facing phase A
+Primary request: Generate exactly 8 separated full-body poses in one horizontal row. Use Image 2 as the proven motion-and-registration reference. Create only the first half of a restrained nod: neutral, gaze lock, eyelid anticipation, then gradual head-down rotation, ending at the same small low point seen near the middle of Image 2. Do not complete the return yet.
+Input images: Image 1 is the immutable right-facing identity master. Image 2 is the accepted right-facing nod reference; copy its figure scale, spacing, shoe baseline, fixed torso, subtle head-only motion and visual continuity, but output a new 8-pose phase A.
+Backdrop: perfectly uniform flat #ff00ff.
+Composition: exactly 8 complete figures, same generous separation as Image 2, same scale, same shoe baseline. Full-body height variance at most 5 percent. Feet, hips, torso, shoulders and hands stay registered; only gaze, eyelids, glasses angle, chin and head-neck angle change. Poses 7 and 8 are nearly identical low-point handoff poses.
+Style: exact same filled 2D YOLO identity and colors as references.
+Constraints: no props, text, symbols, panels, borders, grid, dividers, shadows, floor, gradients, blur, ghosting, overlaps, cropping or #ff00ff inside subject.
+Avoid: fewer or more than 8, scale drift, shrinking sequence, body lowering, bowing, moving shoulders, connected silhouettes, identity drift.

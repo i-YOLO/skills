@@ -1,0 +1,69 @@
+{
+  "status": "pass",
+  "asset_status": "candidate",
+  "actions": [
+    {
+      "action_id": "inspect-react",
+      "status": "pass",
+      "failure_count": 0,
+      "production_frame_count": 52,
+      "preview_video_count": 6
+    },
+    {
+      "action_id": "nod-confirm",
+      "status": "pass",
+      "failure_count": 0,
+      "production_frame_count": 28,
+      "preview_video_count": 3
+    },
+    {
+      "action_id": "deny-shake",
+      "status": "pass",
+      "failure_count": 0,
+      "production_frame_count": 28,
+      "preview_video_count": 3
+    },
+    {
+      "action_id": "present-reveal",
+      "status": "pass",
+      "failure_count": 0,
+      "production_frame_count": 40,
+      "preview_video_count": 3
+    },
+    {
+      "action_id": "welcome-wave",
+      "status": "pass",
+      "failure_count": 0,
+      "production_frame_count": 40,
+      "preview_video_count": 3
+    },
+    {
+      "action_id": "gather-conclude",
+      "status": "pass",
+      "failure_count": 0,
+      "production_frame_count": 40,
+      "preview_video_count": 3
+    },
+    {
+      "action_id": "question-shrug",
+      "status": "pass",
+      "failure_count": 0,
+      "production_frame_count": 40,
+      "preview_video_count": 3
+    },
+    {
+      "action_id": "success-celebrate",
+      "status": "pass",
+      "failure_count": 0,
+      "production_frame_count": 40,
+      "preview_video_count": 3
+    }
+  ],
+  "totals": {
+    "action_count": 8,
+    "production_frame_count": 308,
+    "preview_video_count": 27,
+    "failure_count": 0
+  },
+  "manual_visual_review_required": true
+}

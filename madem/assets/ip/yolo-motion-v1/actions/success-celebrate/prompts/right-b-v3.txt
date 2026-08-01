@@ -1,0 +1,10 @@
+Use case: stylized-concept
+Asset type: corrected right-facing compact success pose strip, key-action phase
+Input images: Image 1 is the exact right-facing YOLO identity; Image 2 is the approved right-a strip and defines posture, scale and the final two overlap poses
+Primary request: draw EXACTLY EIGHT full-body character poses, no fewer and no more, arranged as eight evenly spaced time steps in one horizontal row, continuing into a small chest-level success gesture
+Character invariants: exact right-facing YOLO identity, dark navy hair and curl, large navy glasses, pale face, blue jacket, white shirt, navy trousers, orange sneakers, clean filled illustration, navy outlines and proportions
+Eight required time steps from left to right: pose 1 repeats Image 2's second-to-last pose; pose 2 repeats Image 2's last pose; pose 3 elbows bend slightly; pose 4 outer fist rises only a few centimeters below the jacket collar; pose 5 second fist follows slightly and stays below collar; pose 6 compact peak with both fists between waist and lower chest; pose 7 shoulders ease down; pose 8 begins a small rebound with fists still below chest
+Composition: EXACTLY 8 separated complete figures with eight distinct slots across an extra-wide canvas, equal scale and shoe baseline, generous gaps, no overlap, no crop, no panels, no labels
+Scene/backdrop: perfectly flat solid #ff00ff chroma-key background
+Constraints: count and render all eight poses; both fists strictly below shoulder line and below collarbone; elbows near torso; no arm extends upward or outward; no jump; hips and shoes fixed; clean hands; background outside characters only flat magenta
+Avoid: seven poses, nine poses, missing time step, raised fist beside head, arm above shoulder, punching, boxing, waving, motion marks, floating strokes, props, confetti, stars, check marks, text, shadows, floor, gradients, glow, blur, duplicate limbs, identity or clothing changes, #ff00ff in the character

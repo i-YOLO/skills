@@ -1,0 +1,10 @@
+Use case: stylized-concept
+Asset type: left-facing success animation pose strip, rebound and settled phase
+Input images: Image 1 is the exact left-facing YOLO identity; Image 2 is the left-b strip and defines the celebration peak
+Primary request: create one extra-wide horizontal strip with exactly 8 ordered, separated, complete full-body poses easing from the restrained success peak into a stable confident result
+Character invariants: preserve the exact left-facing YOLO identity and asymmetry, hair, glasses, face, blue jacket, white shirt, navy trousers, orange sneakers, clean filled illustration, navy outlines and proportions
+Motion progression left to right: poses 1 and 2 faithfully reproduce the last two poses of Image 2; pose 3 forearms ease down slightly; pose 4 shoulders settle; pose 5 one fist relaxes near the waist while the other remains lightly raised; pose 6 head gives a tiny confident return; pose 7 reaches a stable self-assured stance; pose 8 holds the same final stance with a tiny breathing change
+Composition: exactly 8 isolated complete full-body figures in one row, identical scale and shoe baseline, generous gaps, no overlap, no crop, no labels
+Scene/backdrop: perfectly flat solid #ff00ff chroma-key background
+Constraints: preserve planted feet and stable pelvis; movement decelerates smoothly; final silhouette clearly reads as successful and confident at 280px; hands remain empty
+Avoid: returning to a blank neutral expression, jumping, props, confetti, stars, check marks, text, symbols, shadows, floor, gradients, glow, motion blur, duplicate limbs, identity or clothing changes, #ff00ff in the character

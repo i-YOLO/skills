@@ -1,0 +1,10 @@
+Use case: stylized-concept
+Asset type: corrected right-facing success animation pose strip, preparation phase
+Input image: the supplied transparent right-facing YOLO character is the exact identity and upright body reference
+Primary request: create one extra-wide horizontal strip with exactly 8 ordered, separated, complete full-body poses beginning a restrained success celebration without props or jumping
+Character invariants: exact same youthful male YOLO IP, dark navy hair and curl, large navy rectangular glasses, pale face, blue jacket with navy collar, white shirt, navy trousers, orange sneakers, clean filled illustration, navy outlines, proportions and three-quarter right-facing orientation
+Motion progression left to right: 1 neutral upright stance; 2 eyes recognize a successful result; 3 eyebrows brighten and a small smile begins; 4 shoulders make a tiny physical preparation with no drawn marks; 5 elbows start bending; 6 hands leave the pockets and form relaxed small fists near the waist; 7 forearms begin rising; 8 reaches a compact pre-celebration pose with fists below the chest
+Composition: exactly 8 complete isolated full-body figures in one horizontal row, identical scale, identical shoe baseline, generous gaps, no overlap, no crop, no panels, no labels
+Scene/backdrop: perfectly flat solid #ff00ff chroma-key background
+Constraints: feet remain planted; pelvis stable; total vertical body movement under 2 percent; shoulder-elbow-wrist motion is shown only by changed anatomy between poses; hands anatomically clean; expression positive but restrained; every pixel outside the eight characters is only flat magenta
+Avoid: any motion marks, curved action lines, vibration lines, floating strokes or symbols; jumping, raised arms above shoulders, victory sign, thumbs-up, props, confetti, stars, check marks, text, shadows, floor, gradients, glow, motion blur, speed lines, duplicate limbs, identity or clothing changes, #ff00ff in the character

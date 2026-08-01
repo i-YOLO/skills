@@ -1,0 +1,9 @@
+Use case: identity-preserve
+Asset type: sequential full-body character animation mother strip
+Input images: Image 1 is the immutable left-facing YOLO identity master.
+Primary request: create one extra-wide 3:1 production strip containing exactly eight chronological, clearly separated, complete full-body poses of the same character beginning a friendly left-facing welcome wave.
+Sequence left to right: 1 neutral left-facing stance; 2 eyes look toward the viewer while head angle changes only slightly; 3 friendly expression and tiny shoulder preparation; 4 waving-side elbow begins bending; 5 forearm lifts to chest height; 6 forearm lifts higher while upper arm stays close to body; 7 open palm reaches near face level facing the viewer; 8 stable wave-ready pose with elbow bent and wrist centered.
+Identity invariants: preserve exact face, navy-blue hair silhouette and tuft, large navy glasses, orange nose accent, blue jacket, white shirt, navy trousers, orange sneakers, proportions, line weight and clean fully filled style from Image 1. Lock foot baseline, pelvis and torso. Keep the non-waving arm natural.
+Scene/backdrop: perfectly uniform flat solid #ff00ff chroma-key background.
+Composition: one horizontal row of eight evenly spaced poses ordered left to right; no dividers, boxes, panels, captions or labels; generous clean separation; every hand, shoe and hair tip fully visible; identical scale and shoe baseline.
+Constraints: open palm faces viewer; no props, symbols, text, shadow, floor, grid, gradient, texture, reflection, blur, speed lines, residual limbs or ghost trails. Do not use #ff00ff inside the character.

@@ -1,0 +1,1007 @@
+{
+  "action_id": "nod-confirm",
+  "asset_id": "yolo-nod-confirm",
+  "status": "pass",
+  "checks": [
+    {
+      "id": "rgba-hash-and-edge",
+      "status": "pass",
+      "detail": "28 unique production frames validated"
+    },
+    {
+      "id": "sequence-geometry-and-hold",
+      "status": "pass",
+      "detail": [
+        {
+          "facing": "right",
+          "outcome": "slot",
+          "status": "pass",
+          "occupied_rect": [
+            194,
+            498,
+            343,
+            820
+          ],
+          "reserved_slot": [
+            80,
+            440,
+            460,
+            820
+          ]
+        },
+        {
+          "facing": "right",
+          "outcome": "default",
+          "status": "pass",
+          "logical_frames": 14,
+          "anchor_x_range_px": 0.0,
+          "anchor_y_range_px": 0.0,
+          "height_ratio": 1.072706,
+          "height_ratio_limit": 1.08,
+          "settled_ticks": 12,
+          "shoe_orange_pixels_min": 7887,
+          "shoe_orange_pixels_max": 9317,
+          "shoe_orange_coverage_ratio": 0.846517
+        },
+        {
+          "facing": "left",
+          "outcome": "slot",
+          "status": "pass",
+          "occupied_rect": [
+            1589,
+            498,
+            1736,
+            820
+          ],
+          "reserved_slot": [
+            1460,
+            440,
+            1840,
+            820
+          ]
+        },
+        {
+          "facing": "left",
+          "outcome": "default",
+          "status": "pass",
+          "logical_frames": 14,
+          "anchor_x_range_px": 0.0,
+          "anchor_y_range_px": 0.0,
+          "height_ratio": 1.073986,
+          "height_ratio_limit": 1.08,
+          "settled_ticks": 12,
+          "shoe_orange_pixels_min": 8420,
+          "shoe_orange_pixels_max": 9660,
+          "shoe_orange_coverage_ratio": 0.871636
+        }
+      ]
+    },
+    {
+      "id": "cross-facing-display-scale",
+      "status": "pass",
+      "detail": [
+        {
+          "outcome": "default",
+          "phase": "initial",
+          "status": "pass",
+          "right_height": 898,
+          "left_height": 900,
+          "height_ratio": 1.002227,
+          "height_ratio_limit": 1.08
+        },
+        {
+          "outcome": "default",
+          "phase": "settled",
+          "status": "pass",
+          "right_height": 844,
+          "left_height": 848,
+          "height_ratio": 1.004739,
+          "height_ratio_limit": 1.08
+        }
+      ]
+    },
+    {
+      "id": "preview-videos",
+      "status": "pass",
+      "detail": "3 H.264 previews validated"
+    }
+  ],
+  "summary": {
+    "failure_count": 0,
+    "production_frame_count": 28,
+    "preview_video_count": 3
+  },
+  "frames": {
+    "keyframes/left/left-00.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/left/left-00.png",
+      "sha256": "58089bef98cf45496a15e119d21bd341af3fef36fd757baa72b6c17be797b850",
+      "bbox": [
+        355,
+        70,
+        753,
+        970
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 900,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 3.81015e-05,
+      "shoe_orange_pixels": 9525,
+      "shoe_orange_mean_rgb": [
+        240.488,
+        101.513,
+        17.398
+      ]
+    },
+    "keyframes/left/left-01.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/left/left-01.png",
+      "sha256": "936891a3f15ff1b6077116f0c6044422c9d86a9ef545058bb82ea3fe81217a09",
+      "bbox": [
+        359,
+        75,
+        751,
+        970
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 895,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 1.10043e-05,
+      "shoe_orange_pixels": 9613,
+      "shoe_orange_mean_rgb": [
+        241.379,
+        102.82,
+        18.078
+      ]
+    },
+    "keyframes/left/left-02.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/left/left-02.png",
+      "sha256": "99776b06a6e3569fd23b8a6071f4679d90dd6507cd4dc9318c27c06bd4bede56",
+      "bbox": [
+        362,
+        78,
+        750,
+        971
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 893,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 5.5405e-05,
+      "shoe_orange_pixels": 9660,
+      "shoe_orange_mean_rgb": [
+        241.41,
+        102.599,
+        17.441
+      ]
+    },
+    "keyframes/left/left-03.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/left/left-03.png",
+      "sha256": "0ecdfc5cac5de128428314059415be7a1b20f408436337977740903a96a985fd",
+      "bbox": [
+        361,
+        95,
+        741,
+        970
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 875,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 4.54169e-05,
+      "shoe_orange_pixels": 9596,
+      "shoe_orange_mean_rgb": [
+        241.377,
+        101.714,
+        17.233
+      ]
+    },
+    "keyframes/left/left-04.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/left/left-04.png",
+      "sha256": "6208dea6b0d99e05c67b8ef0e63cb55ac4659a5823531a9889292159bba29497",
+      "bbox": [
+        362,
+        101,
+        737,
+        971
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 870,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 2.89298e-05,
+      "shoe_orange_pixels": 9365,
+      "shoe_orange_mean_rgb": [
+        241.427,
+        102.189,
+        17.314
+      ]
+    },
+    "keyframes/left/left-05.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/left/left-05.png",
+      "sha256": "410b50adb4c711e328749202e2144fd4bee202815669965a2c6abd3fe3818362",
+      "bbox": [
+        354,
+        105,
+        731,
+        970
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 865,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 4.06379e-05,
+      "shoe_orange_pixels": 9329,
+      "shoe_orange_mean_rgb": [
+        241.911,
+        102.466,
+        17.07
+      ]
+    },
+    "keyframes/left/left-06.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/left/left-06.png",
+      "sha256": "3f67661325b5040fb0c200dfb44abe523561cbc0e066e27e833a8f57e627beb8",
+      "bbox": [
+        347,
+        128,
+        715,
+        970
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 842,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 2.42884e-05,
+      "shoe_orange_pixels": 9081,
+      "shoe_orange_mean_rgb": [
+        240.766,
+        102.785,
+        17.42
+      ]
+    },
+    "keyframes/left/left-07.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/left/left-07.png",
+      "sha256": "8a429fc085a5396745230fbbf0f5044e70010144ef8b38a5cef77fa2c6ed9607",
+      "bbox": [
+        340,
+        132,
+        707,
+        970
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 838,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 1.21666e-05,
+      "shoe_orange_pixels": 9087,
+      "shoe_orange_mean_rgb": [
+        241.404,
+        102.686,
+        17.448
+      ]
+    },
+    "keyframes/left/left-08.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/left/left-08.png",
+      "sha256": "756414203c621380b9a8d60cba4d96cb9bac67ab29c6342ef80873c5e3cf22e3",
+      "bbox": [
+        356,
+        127,
+        731,
+        975
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 848,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 6.74863e-05,
+      "shoe_orange_pixels": 8602,
+      "shoe_orange_mean_rgb": [
+        241.812,
+        100.753,
+        17.393
+      ]
+    },
+    "keyframes/left/left-09.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/left/left-09.png",
+      "sha256": "ebceea739a56704f1a410436b5598fc37eae1de4fc5e3cbdff1dbc0c34a74b6a",
+      "bbox": [
+        363,
+        124,
+        731,
+        974
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 850,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 7.43333e-05,
+      "shoe_orange_pixels": 8535,
+      "shoe_orange_mean_rgb": [
+        241.465,
+        101.085,
+        17.636
+      ]
+    },
+    "keyframes/left/left-10.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/left/left-10.png",
+      "sha256": "ca7ab22f80c27277f564ebc437d57e83b68b12c7b274b8bead0c0d8b7beaf48c",
+      "bbox": [
+        370,
+        122,
+        740,
+        974
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 852,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 4.96333e-05,
+      "shoe_orange_pixels": 8525,
+      "shoe_orange_mean_rgb": [
+        242.168,
+        101.915,
+        17.977
+      ]
+    },
+    "keyframes/left/left-11.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/left/left-11.png",
+      "sha256": "e9401f026bb12bd5010d9643b74cf4b8637ef36e75de22afcbf31dd835d236ca",
+      "bbox": [
+        371,
+        124,
+        739,
+        974
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 850,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 8.09767e-05,
+      "shoe_orange_pixels": 8509,
+      "shoe_orange_mean_rgb": [
+        242.212,
+        101.993,
+        18.211
+      ]
+    },
+    "keyframes/left/left-12.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/left/left-12.png",
+      "sha256": "4a1231e9a26123cd9c769ceb1fc7c6903bcc954692a45c7fe851d2cfb84f0ad3",
+      "bbox": [
+        368,
+        125,
+        736,
+        975
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 850,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 0.0001182614,
+      "shoe_orange_pixels": 8420,
+      "shoe_orange_mean_rgb": [
+        241.687,
+        101.51,
+        18.189
+      ]
+    },
+    "keyframes/left/left-13.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/left/left-13.png",
+      "sha256": "b3d17b55470c2d60229a7cf027279226b277ab9132464f4e0f6b87bb81a49dba",
+      "bbox": [
+        365,
+        127,
+        733,
+        975
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 848,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 3.71496e-05,
+      "shoe_orange_pixels": 8550,
+      "shoe_orange_mean_rgb": [
+        242.012,
+        102.438,
+        18.192
+      ]
+    },
+    "keyframes/right/right-00.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/right/right-00.png",
+      "sha256": "59c92902e7a4868e77f46d2fa98aa11f783618cfd51d417f509761034a762c05",
+      "bbox": [
+        298,
+        72,
+        693,
+        970
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 898,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 0.0001314341,
+      "shoe_orange_pixels": 9317,
+      "shoe_orange_mean_rgb": [
+        241.412,
+        102.402,
+        16.283
+      ]
+    },
+    "keyframes/right/right-01.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/right/right-01.png",
+      "sha256": "ffe2c046abcd78967938617eeeeb26ba28c57c3f344ffa423414f043e59128cd",
+      "bbox": [
+        298,
+        70,
+        689,
+        970
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 900,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 0.0001043578,
+      "shoe_orange_pixels": 9195,
+      "shoe_orange_mean_rgb": [
+        242.001,
+        103.692,
+        16.627
+      ]
+    },
+    "keyframes/right/right-02.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/right/right-02.png",
+      "sha256": "72cf2e0edad207e0dbaed93f38111c0d7a300a427636ef9a3fe15dd8ad4b86af",
+      "bbox": [
+        301,
+        72,
+        691,
+        970
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 898,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 3.32196e-05,
+      "shoe_orange_pixels": 9195,
+      "shoe_orange_mean_rgb": [
+        242.311,
+        103.384,
+        16.457
+      ]
+    },
+    "keyframes/right/right-03.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/right/right-03.png",
+      "sha256": "fc3e1edc07f1b2e9c7c843e4eaf2667e0cf2d9c244037b1eaffa474e19c8b2a8",
+      "bbox": [
+        314,
+        83,
+        697,
+        970
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 887,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 9.09003e-05,
+      "shoe_orange_pixels": 9079,
+      "shoe_orange_mean_rgb": [
+        242.426,
+        103.989,
+        15.963
+      ]
+    },
+    "keyframes/right/right-04.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/right/right-04.png",
+      "sha256": "5968e2d9129afece4f9eb5c77cfbe6a050fcbf22b72262559f1848abfb9b9f9a",
+      "bbox": [
+        325,
+        107,
+        700,
+        970
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 863,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 5.32274e-05,
+      "shoe_orange_pixels": 8886,
+      "shoe_orange_mean_rgb": [
+        242.402,
+        103.563,
+        15.934
+      ]
+    },
+    "keyframes/right/right-05.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/right/right-05.png",
+      "sha256": "d9e51dc372d4f50972e9cfb04d0acb6d5702ec407f67885faa63950594e51959",
+      "bbox": [
+        335,
+        112,
+        712,
+        970
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 858,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 2.39014e-05,
+      "shoe_orange_pixels": 8948,
+      "shoe_orange_mean_rgb": [
+        242.539,
+        103.952,
+        15.864
+      ]
+    },
+    "keyframes/right/right-06.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/right/right-06.png",
+      "sha256": "3096c2e624008ae5cec12adb6cb977e316481ecc585f090cd2470afa72b41634",
+      "bbox": [
+        346,
+        123,
+        717,
+        970
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 847,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 6.08469e-05,
+      "shoe_orange_pixels": 9015,
+      "shoe_orange_mean_rgb": [
+        242.013,
+        103.06,
+        15.837
+      ]
+    },
+    "keyframes/right/right-07.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/right/right-07.png",
+      "sha256": "19c9af8a49a36d628f720d9aed81a19016c9cdd0449c6c133bec1cf53dd3e2ea",
+      "bbox": [
+        348,
+        131,
+        717,
+        970
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 839,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 1.8457e-05,
+      "shoe_orange_pixels": 9049,
+      "shoe_orange_mean_rgb": [
+        242.293,
+        103.808,
+        15.642
+      ]
+    },
+    "keyframes/right/right-08.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/right/right-08.png",
+      "sha256": "d4a5e0628dcb83352665ac2bdeb6eccc221d49c45c0c2c25017bebf8e851d623",
+      "bbox": [
+        326,
+        126,
+        698,
+        975
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 849,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 0.0001701709,
+      "shoe_orange_pixels": 8034,
+      "shoe_orange_mean_rgb": [
+        244.354,
+        103.498,
+        15.921
+      ]
+    },
+    "keyframes/right/right-09.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/right/right-09.png",
+      "sha256": "7b1c4531aac449ec9ab7a638fe56aff7a2c70d63de0ceb147c5bf0e4aff0b881",
+      "bbox": [
+        316,
+        123,
+        680,
+        975
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 852,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 9.57121e-05,
+      "shoe_orange_pixels": 8035,
+      "shoe_orange_mean_rgb": [
+        244.911,
+        102.701,
+        16.142
+      ]
+    },
+    "keyframes/right/right-10.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/right/right-10.png",
+      "sha256": "1cbd1348e97e8c971a10a72b7849e30761230de4134dcdd0ebeebec2643ff79c",
+      "bbox": [
+        314,
+        130,
+        673,
+        975
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 845,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 0.000155527,
+      "shoe_orange_pixels": 8010,
+      "shoe_orange_mean_rgb": [
+        244.633,
+        103.559,
+        16.139
+      ]
+    },
+    "keyframes/right/right-11.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/right/right-11.png",
+      "sha256": "1ed332b6d5ca708af9caecc3d2c8ff0120c124f1c717af9eb485666d36230f7a",
+      "bbox": [
+        311,
+        126,
+        667,
+        975
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 849,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 9.15463e-05,
+      "shoe_orange_pixels": 7887,
+      "shoe_orange_mean_rgb": [
+        244.153,
+        103.192,
+        15.511
+      ]
+    },
+    "keyframes/right/right-12.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/right/right-12.png",
+      "sha256": "34585cd41920f02fb8330e6223b58a6f246b7952824ea00404e0a33e087f23fe",
+      "bbox": [
+        309,
+        123,
+        667,
+        975
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 852,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 3.24099e-05,
+      "shoe_orange_pixels": 7976,
+      "shoe_orange_mean_rgb": [
+        244.443,
+        102.57,
+        15.963
+      ]
+    },
+    "keyframes/right/right-13.png": {
+      "file": "/Users/shike/AI-Second-Brain-Lite-Clean-Share/02-Projects/01-YOLO-IP逐帧动效资产包/06-no-prop-batch/actions/nod-confirm/keyframes/right/right-13.png",
+      "sha256": "4db8d7f05ad0e0bd432032130989b56781b7b78b61a0eb5fabdc754688f69210",
+      "bbox": [
+        320,
+        131,
+        671,
+        975
+      ],
+      "anchor": [
+        512.0,
+        970.0
+      ],
+      "anchor_method": "orange-shoes",
+      "height": 844,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hidden_rgb_pixels": 0,
+      "magenta_ratio": 0.0001185154,
+      "shoe_orange_pixels": 7951,
+      "shoe_orange_mean_rgb": [
+        244.734,
+        102.205,
+        15.385
+      ]
+    }
+  },
+  "videos": {
+    "nod-confirm-left-default-60fps.mp4": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "60/1"
+        }
+      ],
+      "format": {
+        "duration": "2.333333"
+      }
+    },
+    "nod-confirm-pair-default-60fps.mp4": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "60/1"
+        }
+      ],
+      "format": {
+        "duration": "2.333333"
+      }
+    },
+    "nod-confirm-right-default-60fps.mp4": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "60/1"
+        }
+      ],
+      "format": {
+        "duration": "2.333333"
+      }
+    }
+  },
+  "manual_visual_review_required": true
+}

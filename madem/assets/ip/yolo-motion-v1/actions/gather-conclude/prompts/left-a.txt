@@ -1,0 +1,11 @@
+Use case: identity-preserve
+Asset type: chronological full-body animation pose strip, stage A of three
+Input images: Image 1 is the exact left-facing YOLO identity master and the binding reference for face, hair, glasses, clothing, body proportions, colors, line quality, and facing.
+Primary request: Create one wide chronological strip containing exactly eight separate full-body poses of the same character, ordered from left to right. This is the opening of a restrained “gather information and conclude” gesture.
+Scene/backdrop: perfectly flat, uniform solid #ff00ff chroma-key background across the entire image.
+Style/medium: match Image 1 exactly: clean fully colored 2D character illustration, crisp navy outlines, identical blue jacket, white shirt, navy trousers, orange sneakers, same face and glasses.
+Composition/framing: eight evenly spaced complete figures in one horizontal row; no boxes, separators, labels, panels, overlap, or cropping; identical scale and shoe baseline; generous clear space between silhouettes.
+Chronological poses: 1 neutral stance with hands near jacket pockets; 2 gaze subtly shifts toward the inside of the frame while torso stays fixed; 3 both hands begin leaving the pockets and elbows unlock; 4 forearms open outward at low waist level; 5 wrists open and palms begin turning diagonally upward; 6 hands spread farther to the two waist sides as if receiving information from both sides; 7 widest relaxed receiving pose, hands no higher than the waist/lower ribs; 8 hands begin moving inward along a shallow arc.
+Motion mechanics: gaze leads; shoulders follow minimally; elbow then wrist then palm; lock shoes, pelvis, torso length, scale and head size; head rotation below 8 degrees; body translation below 3 percent.
+Constraints: preserve the exact left-facing orientation from Image 1; this must be independently drawn from the left-facing master, not a mirror of any right-facing strip; both hands must remain visibly separated; no hand contact; no clap; no prayer pose; no crossed hands; no props; no text; no symbols; no speech bubbles; no shadow; no ground plane; no reflections; no gradient; no texture; no motion blur; no speed lines; no afterimages; no watermark. Do not use #ff00ff anywhere inside the character.
+Output intent: production chroma-key pose mother strip for later frame extraction.
